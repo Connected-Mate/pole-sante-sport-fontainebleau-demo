@@ -42,7 +42,7 @@ npm run test:browser
 npm run export
 ```
 
-Le test navigateur utilise Chrome installé sur macOS ; `CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les deux archives sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP) et `exports/sources-completes.zip` (sources, administration, documentation). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
+Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les deux archives sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP) et `exports/sources-completes.zip` (sources, administration, documentation). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
 
 ## Démonstration publique et retrait
 

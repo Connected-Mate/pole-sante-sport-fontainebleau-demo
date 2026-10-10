@@ -71,3 +71,7 @@ Les droits des photos, l’identité de l’éditeur et les autres informations 
 ## Contrôles effectués sur le contenu
 
 Le JSON a été relu pour la présence des dix prestations réellement listées, la distinction 143/160, les sources par objet, l’absence de prix et d’avis inventés, et l’absence de promesse clinique. Les contrôles de parcours, d’accessibilité, de rendu et d’export relèvent de l’intégration technique ; ce document ne les déclare pas accomplis.
+
+## Mise à jour après validation du demandeur
+
+Le demandeur a confirmé les droits de réutilisation du logo et des photos dans la conversation du 10 octobre 2026. Les médias sélectionnés et leur provenance figurent dans assets-manifest.json. Les réserves antérieures sur l’absence d’autorisation sont donc levées ; les justificatifs et crédits restent à archiver avant le lancement officiel. L’hébergement de démonstration GitHub Pages est désormais confirmé.

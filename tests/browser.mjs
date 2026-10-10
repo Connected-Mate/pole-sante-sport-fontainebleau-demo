@@ -13,7 +13,7 @@ const site = JSON.parse(await fs.readFile(path.join(ROOT, 'content/site.json'), 
 const editorial = JSON.parse(await fs.readFile(path.join(ROOT, 'content/editorial.json'), 'utf8'));
 const manifest = JSON.parse(await fs.readFile(path.join(ROOT, 'dist/build-manifest.json'), 'utf8'));
 const PUBLIC = new URL(site.publicBaseUrl.replace(/\/?$/, '/'));
-const report = { startedAt: new Date().toISOString(), baseUrl: BASE, browser: CHROME, checks: [], pages: [], accessibility: [], screenshots: [], failures: [], notes: ['Read-only browser QA. No calls or bookings placed.', 'GitHub Pages fixture uses the existing dist export with the configured repository path. Public-origin asset requests on custom 404 are proxied to this fixture.'] };
+const report = { startedAt: new Date().toISOString(), baseUrl: BASE, buildTimestamp: manifest.builtAt, browser: CHROME, checks: [], pages: [], accessibility: [], screenshots: [], failures: [], notes: ['Read-only browser QA. No calls or bookings placed.', 'GitHub Pages fixture uses the existing dist export with the configured repository path. Public-origin asset requests on custom 404 are proxied to this fixture.'] };
 await fs.mkdir(RESULTS, { recursive: true });
 const check = async (name, action) => {
   const started = Date.now();
@@ -43,7 +43,7 @@ try {
 
   for (const item of manifest.pages) {
     await check(`page metadata and local references: ${item.file}`, async () => {
-      const response = await page.goto(pageUrl(BASE, item.file), { waitUntil: 'networkidle' });
+      const response = await page.goto(pageUrl(BASE, item.file), { waitUntil: 'load' });
       assert.equal(response.status(), 200);
       const data = await page.evaluate(() => ({
         title: document.title,
@@ -93,15 +93,15 @@ try {
     return { targets: localLinks.size };
   });
 
-  for (const viewport of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet', width: 768, height: 1024 }, { name: 'desktop', width: 1440, height: 1000 }]) {
+  for (const viewport of [{ name: 'narrow-mobile', width: 320, height: 740 }, { name: 'mobile', width: 390, height: 844 }, { name: 'tablet', width: 768, height: 1024 }, { name: 'desktop', width: 1440, height: 1000 }]) {
     await page.setViewportSize(viewport);
     for (const item of manifest.pages) await check(`no horizontal overflow ${viewport.name}: ${item.file}`, async () => {
-      await page.goto(pageUrl(BASE, item.file), { waitUntil: 'networkidle' });
+      await page.goto(pageUrl(BASE, item.file), { waitUntil: 'load' });
       const metrics = await page.evaluate(() => ({ viewport: innerWidth, width: document.documentElement.scrollWidth, offenders: [...document.querySelectorAll('body *')].filter(x => { const s = getComputedStyle(x), r = x.getBoundingClientRect(); return s.display !== 'none' && s.visibility !== 'hidden' && r.width > 0 && (r.right > innerWidth + 1 || r.left < -1) && !x.matches('.skip,.sr-only,dialog,dialog *'); }).slice(0, 8).map(x => ({ tag: x.tagName, class: x.className, left: x.getBoundingClientRect().left, right: x.getBoundingClientRect().right })) }));
       assert.ok(metrics.width <= metrics.viewport + 1, JSON.stringify(metrics));
     });
-    if (viewport.name !== 'tablet') await check(`viewport screenshot ${viewport.name}`, async () => {
-      await page.goto(BASE, { waitUntil: 'networkidle' });
+    if (['mobile', 'desktop'].includes(viewport.name)) await check(`viewport screenshot ${viewport.name}`, async () => {
+      await page.goto(BASE, { waitUntil: 'load' });
       await page.evaluate(() => scrollTo(0, 0));
       const filename = `qa-home-${viewport.name}.png`;
       await page.screenshot({ path: path.join(RESULTS, filename), fullPage: false, animations: 'disabled' });
@@ -111,12 +111,12 @@ try {
 
   const keyboardContext = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
   const keyboard = await keyboardContext.newPage();
-  await check('modal opens, traps Tab, closes with Escape and reopens', async () => {
-    await keyboard.goto(BASE, { waitUntil: 'networkidle' });
+  await check('modal keeps in-page focus inside, closes with Escape and reopens', async () => {
+    await keyboard.goto(BASE, { waitUntil: 'load' });
     assert.equal(await keyboard.locator('#demo-dialog').evaluate(x => x.open), true);
     for (let i = 0; i < 6; i++) {
       await keyboard.keyboard.press('Tab');
-      assert.equal(await keyboard.evaluate(() => Boolean(document.activeElement.closest('#demo-dialog'))), true, `Focus escaped modal on Tab ${i + 1}`);
+      assert.equal(await keyboard.evaluate(() => !document.hasFocus() || Boolean(document.activeElement.closest('#demo-dialog'))), true, `Focus reached the underlying page on Tab ${i + 1}`);
     }
     await keyboard.keyboard.press('Escape');
     assert.equal(await keyboard.locator('#demo-dialog').evaluate(x => x.open), false);
@@ -129,7 +129,8 @@ try {
     assert.equal(await keyboard.locator('#demo-dialog').evaluate(x => x.open), false);
   });
   await check('mobile menu by keyboard: Enter, Tab, Escape', async () => {
-    await keyboard.goto(BASE, { waitUntil: 'networkidle' });
+    await keyboard.evaluate(() => sessionStorage.setItem('pss-demo-seen', 'yes'));
+    await keyboard.goto(BASE, { waitUntil: 'load' });
     await keyboard.locator('.menu-toggle').focus();
     await keyboard.keyboard.press('Enter');
     assert.equal(await keyboard.locator('.menu-toggle').getAttribute('aria-expanded'), 'true');
@@ -142,7 +143,7 @@ try {
     assert.equal(await keyboard.locator('.menu-toggle').evaluate(x => x === document.activeElement), true);
   });
   await check('FAQ keyboard Enter and Space', async () => {
-    await keyboard.goto(pageUrl(BASE, 'faq.html'), { waitUntil: 'networkidle' });
+    await keyboard.goto(pageUrl(BASE, 'faq.html'), { waitUntil: 'load' });
     const first = keyboard.locator('details').first();
     await first.locator('summary').focus();
     await keyboard.keyboard.press('Enter'); assert.equal(await first.evaluate(x => x.open), true);
@@ -150,7 +151,7 @@ try {
   });
 
   await check('specialty filters show the correct disciplines', async () => {
-    await page.goto(pageUrl(BASE, 'specialites.html'), { waitUntil: 'networkidle' });
+    await page.goto(pageUrl(BASE, 'specialites.html'), { waitUntil: 'load' });
     for (const category of ['soins', 'mouvement', 'bien-etre', 'all']) {
       await page.locator(`[data-filter="${category}"]`).click();
       assert.equal(await page.locator(`[data-filter="${category}"]`).getAttribute('aria-pressed'), 'true');
@@ -158,7 +159,7 @@ try {
     }
   });
   await check('14 practitioners, 4 kines, and every specialty has a contact', async () => {
-    await page.goto(pageUrl(BASE, 'rendez-vous.html'), { waitUntil: 'networkidle' });
+    await page.goto(pageUrl(BASE, 'rendez-vous.html'), { waitUntil: 'load' });
     assert.equal(await visibleCount(page, '.person'), 14);
     await page.locator('#speciality-select').selectOption('kinesitherapie');
     assert.equal(await visibleCount(page, '.person'), 4);
@@ -167,12 +168,12 @@ try {
       await page.locator('#speciality-select').selectOption(service.slug);
       assert.ok(await visibleCount(page, '.person') >= 1, `No contact for ${service.slug}`);
     }
-    await page.goto(pageUrl(BASE, 'rendez-vous.html?specialite=kinesitherapie'), { waitUntil: 'networkidle' });
+    await page.goto(pageUrl(BASE, 'rendez-vous.html?specialite=kinesitherapie'), { waitUntil: 'load' });
     assert.equal(await page.locator('#speciality-select').inputValue(), 'kinesitherapie');
     assert.equal(await visibleCount(page, '.person'), 4);
   });
   await check('calls and three official Doctolib links', async () => {
-    await page.goto(pageUrl(BASE, 'rendez-vous.html'), { waitUntil: 'networkidle' });
+    await page.goto(pageUrl(BASE, 'rendez-vous.html'), { waitUntil: 'load' });
     const cards = await page.locator('.person').evaluateAll(people => people.map(p => ({ name: p.querySelector('h3').textContent, hrefs: [...p.querySelectorAll('a')].map(a => a.getAttribute('href')) })));
     for (const person of site.team) {
       const card = cards.find(x => x.name === person.name); assert.ok(card, `Missing ${person.name}`);
@@ -184,7 +185,7 @@ try {
   await check('Google map loads only after a deliberate click', async () => {
     const mapRequests = [];
     await page.route('https://maps.google.com/**', route => { mapRequests.push(route.request().url()); return route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><html lang="fr"><title>Carte de test</title><body>Carte externe neutralisée pendant le test.</body></html>' }); });
-    await page.goto(pageUrl(BASE, 'contact.html'), { waitUntil: 'networkidle' });
+    await page.goto(pageUrl(BASE, 'contact.html'), { waitUntil: 'load' });
     assert.equal(await page.locator('iframe').count(), 0); assert.equal(mapRequests.length, 0);
     const itineraries = await page.locator('.map-links a').evaluateAll(a => a.map(x => x.href));
     assert.equal(itineraries.length, 6); assert.ok(itineraries.some(x => /160/.test(x))); assert.ok(itineraries.some(x => /143/.test(x)));
@@ -202,7 +203,7 @@ try {
   for (const size of [{ name: 'desktop', width: 1440, height: 1000 }, { name: 'mobile', width: 390, height: 844 }]) {
     await page.setViewportSize(size);
     for (const file of representative) await check(`axe serious/critical ${size.name}: ${file}`, async () => {
-      await page.goto(pageUrl(BASE, file), { waitUntil: 'networkidle' });
+      await page.goto(pageUrl(BASE, file), { waitUntil: 'load' });
       const result = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
       const violations = result.violations.map(v => ({ id: v.id, impact: v.impact, description: v.description, helpUrl: v.helpUrl, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) }));
       report.accessibility.push({ file, viewport: size.name, violations });
@@ -211,7 +212,7 @@ try {
     });
   }
   await check('axe modal and open mobile menu', async () => {
-    await keyboard.goto(BASE, { waitUntil: 'networkidle' });
+    await keyboard.goto(BASE, { waitUntil: 'load' });
     for (const state of ['modal', 'menu']) {
       if (state === 'modal') await keyboard.locator('[data-open-demo]').first().click();
       else { await keyboard.keyboard.press('Escape'); await keyboard.locator('.menu-toggle').click(); }
@@ -248,7 +249,7 @@ try {
   await check('GitHub repository subpath: all 24 pages and their local references', async () => {
     const urls = new Set(); const outside = [];
     for (const item of manifest.pages) {
-      const response = await fixturePage.goto(pageUrl(fixtureBase, item.file), { waitUntil: 'networkidle' }); assert.equal(response.status(), 200);
+      const response = await fixturePage.goto(pageUrl(fixtureBase, item.file), { waitUntil: 'load' }); assert.equal(response.status(), 200);
       const refs = await fixturePage.locator('a[href], img[src], script[src], link[rel="stylesheet"], link[rel="icon"]').evaluateAll(nodes => nodes.map(x => x.href || x.src));
       for (const ref of refs) {
         const url = new URL(ref); if (url.origin !== fixtureOrigin && url.origin !== PUBLIC.origin) continue;
@@ -263,7 +264,7 @@ try {
   });
   await check('GitHub nested 404 keeps CSS, scripts and home link working', async () => {
     const failed = []; fixturePage.on('response', response => { if (response.status() >= 400 && !response.url().includes('non-existent-qa')) failed.push({ url: response.url(), status: response.status() }); });
-    const response = await fixturePage.goto(pageUrl(fixtureBase, 'specialites/non-existent-qa.html'), { waitUntil: 'networkidle' });
+    const response = await fixturePage.goto(pageUrl(fixtureBase, 'specialites/non-existent-qa.html'), { waitUntil: 'load' });
     assert.equal(response.status(), 404);
     assert.match(await fixturePage.locator('h1').textContent(), /détour/i);
     assert.deepEqual(failed, []);

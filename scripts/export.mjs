@@ -5,7 +5,7 @@ const root=process.cwd();
 const exportDir=path.join(root,'exports');await fs.mkdir(exportDir,{recursive:true});
 for(const [name,dir,files] of [
  ['site-public.zip',path.join(root,'dist'),['.']],
- ['sources-completes.zip',root,['package.json','package-lock.json','.gitignore','server.mjs','content','public','scripts','admin','tests','research/business-audit.json','research/local-research.md','research/editorial-audit.md','research/seo-checklist.md','research/assets-manifest.json','README.md','LIVRAISON.md','.github']]
+ ['sources-completes.zip',root,['package.json','package-lock.json','.gitignore','server.mjs','content','public','scripts','admin','tests','research/business-audit.json','research/local-research.md','research/editorial-audit.md','research/seo-checklist.md','research/assets-manifest.json','research/verification.md','README.md','LIVRAISON.md','.github']]
 ]){
  const target=path.join(exportDir,name);await fs.rm(target,{force:true});
  const r=spawnSync('zip',['-q','-r',target,...files],{cwd:dir,encoding:'utf8'});

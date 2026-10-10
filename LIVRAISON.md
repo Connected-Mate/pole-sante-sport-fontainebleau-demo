@@ -2,7 +2,7 @@
 
 ## Accès
 
-- Démonstration publique prévue : https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/
+- Démonstration publique en ligne : https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/
 - Dépôt : https://github.com/Connected-Mate/pole-sante-sport-fontainebleau-demo
 - Site sur cet ordinateur : http://127.0.0.1:4174/
 - Administration locale : http://127.0.0.1:4174/admin/
@@ -31,7 +31,9 @@ Les sources, limites, benchmark concurrentiel et étapes du lancement officiel f
 
 ## Validation
 
-Les résultats détaillés et limites seront consignés dans `research/verification.md` après les contrôles finaux. Les captures et rapports techniques locaux sont dans `test-results/`.
+10 tests serveur/build et 158 contrôles navigateur réussis. Aucun débordement à 320, 390, 768 et 1440 px. 24 audits Axe sans violation détectée ; ces contrôles ne constituent pas une certification.
+
+Les résultats détaillés et limites sont consignés dans `research/verification.md` avec les contrôles de livraison. Les captures et rapports techniques locaux sont dans `test-results/`.
 
 ## Export
 

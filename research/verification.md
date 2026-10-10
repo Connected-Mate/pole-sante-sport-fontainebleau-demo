@@ -1,12 +1,22 @@
 # Vérification de livraison — 10 octobre 2026
 
+## Mise à jour des illustrations IA
+
+Au deuxième tour, l’utilisateur a explicitement demandé de refaire les photographies avec le modèle d’image, avec un rendu photoréaliste haut de gamme. Cette demande élargit l’autorisation initiale de réutilisation des médias historiques. Six visuels ont été travaillés avec `image_gen` intégré : cinq illustrations nouvelles (kinésithérapie, podologie, nutrition, ostéopathie et yoga) et une retouche de la photographie historique de la façade du 143. Le logo historique est inchangé. La source de la façade est conservée dans `public/assets/facade.png` et consultable depuis la galerie.
+
+Les cinq nouvelles illustrations représentent des personnes et des décors fictifs, sans attribution à l’équipe, aux patients ou aux locaux réels. Leurs sorties PNG ont été inspectées visuellement : cadrage, cohérence anatomique, textures, lumière et absence de marque ou de texte lisible. La façade retouchée est issue d’une photographie réelle mais ses détails fins sont reconstruits par le modèle ; ce n’est pas une nouvelle prise de vue ni une garantie d’exactitude documentaire. Sorties PNG conservées dans `output/imagegen/`, variantes de diffusion dans `public/assets/generated/` en WebP qualité 90. Aucun recadrage, redimensionnement ni retouche supplémentaire n’est appliqué lors de la conversion WebP, qui utilise une compression avec perte. Dimensions réelles : 1402 × 1122 px pour la kinésithérapie, 1536 × 1024 px pour les quatre autres illustrations et 1373 × 1145 px pour la façade retouchée. Aucune résolution 8K native n’est revendiquée.
+
+Provenance et prompts : [photographies-ia.md](photographies-ia.md). Le contrôle ciblé [photos-qa.json](photos-qa.json), terminé le 10 octobre 2026 à 18:18 UTC, couvre neuf vues locales avant l’ajout de la façade retouchée : cinq WebP chargés et signalés comme illustrations IA, aucun débordement, aucune erreur JavaScript ou échec de requête et aucun défaut relevé. La lecture du cadrage a été contrôlée sur les captures desktop et mobile. La vérification complémentaire de la façade, le build, les exports et la publication actualisée restent à consigner après leur exécution. Les résultats ci-dessous sont l’historique de la livraison initiale et ne sont pas reconduits implicitement.
+
+## Historique des contrôles de la livraison initiale
+
 ## Site et contenus
 
 - 24 pages HTML construites : accueil, spécialités, 10 fiches, équipe, rendez-vous, FAQ, contact/accès, galerie, journal, 3 articles, mentions, confidentialité et 404.
 - 10 disciplines et 14 intervenants rapprochés des pages publiques ; 3 liens Doctolib.
 - Titres et descriptions uniques, un H1 par page, JSON-LD lisible, liens internes et ressources contrôlés.
 - Sources, contradiction du numéro d’Isabelle Trohel et limites des informations d’accès documentées. Aucune promesse médicale, aucun avis, diplôme ou tarif inventé.
-- Autorisation de réutiliser les images et le logo confirmée par le demandeur. Photo du 143 distinguée des images d’illustration. Pas de faux portraits ni d’images générées.
+- Autorisation de réutiliser les images et le logo confirmée par le demandeur. À la livraison initiale, la photo du 143 était distinguée des images d’illustration et aucune image générée n’était utilisée. Cinq illustrations IA ont ensuite été créées sur demande explicite, comme décrit ci-dessus ; elles ne sont pas des portraits réels de l’équipe.
 
 ## Serveur et administration
 
@@ -45,3 +55,7 @@ URL : https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/
 - Le retrait daté a été testé sur copie isolée ; la date réelle n’est pas fournie et `demo.retireAt` reste à `null`. L’action quotidienne est préparée, sans date de retrait active. Les sources et l’historique Git publics ne disparaissent pas avec le retrait des pages.
 - Les mentions exploitant, l’accessibilité physique, le numéro téléphonique contradictoire et la présence actuelle du yoga restent à confirmer. La fiche Google actuelle n’a pas été lue directement.
 - Sauvegardes et administration restent sur cet ordinateur ; aucune sauvegarde hors site automatique n’a été configurée.
+
+### Contrôle final après la retouche de façade
+
+Le parcours navigateur complet a été relancé après intégration des six visuels : **158 contrôles réussis, zéro échec, 24 pages et 24 audits Axe sans violation détectée**. Les dix tests serveur/build passent également. Les six images de la galerie chargent correctement ; captures de l’accueil et des vues intermédiaires de galerie inspectées à l’écran. Synthèse : [photos-final-qa.json](photos-final-qa.json). Les anciennes captures pleine page peuvent omettre le rendu des images hors écran ; les vérifications visuelles finales ont été faites après défilement.

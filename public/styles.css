@@ -8,3 +8,7 @@
 .hero-visual .photo-note{top:auto;bottom:168px;z-index:1}.person .person-note{font-size:11px;line-height:1.65;background:#edf2f3;padding:10px;margin-top:-8px}
 
 @media(max-width:600px){.page-intro h1{font-size:clamp(33px,10.5vw,41px);overflow-wrap:break-word}}
+
+.hero-photo{object-position:50% 35%}.gallery-wide:last-child img{height:auto;aspect-ratio:3/2;object-fit:contain;background:#efe9df}
+
+.hero-visual .photo-note{font-size:10px;line-height:1.4;padding:3px 7px}

@@ -42,7 +42,7 @@ npm run test:browser
 npm run export
 ```
 
-Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les deux archives sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP) et `exports/sources-completes.zip` (sources, administration, documentation). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
+Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les archives principales sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP) et `exports/sources-completes.zip` (sources, administration, documentation). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
 
 ## Démonstration publique et retrait
 
@@ -66,5 +66,10 @@ Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet 
 - [Audit éditorial](research/editorial-audit.md)
 - [Contrôles SEO et lancement](research/seo-checklist.md)
 - [Provenance des médias](research/assets-manifest.json)
+- [Photographies d’illustration créées avec l’IA](research/photographies-ia.md)
 
-Les photos d’illustration ne sont pas présentées comme des photos des locaux ou des praticiens. La façade du 143 est une photographie du lieu ; aucun intérieur ni portrait fictif n’a été généré.
+À la demande explicite de l’utilisateur au deuxième tour, six visuels ont été travaillés avec l’outil intégré `image_gen` : cinq nouvelles illustrations pour la kinésithérapie, la podologie, la nutrition, l’ostéopathie et le yoga, et une retouche de la photographie historique de la façade du 143. Les cinq illustrations représentent des scènes fictives et ne sont pas présentées comme les locaux, praticiens ou patients réels. La façade retouchée comporte des détails fins reconstruits par le modèle ; elle n’est pas une nouvelle photographie réelle ni une reproduction documentaire exacte. La source `public/assets/facade.png` reste conservée et consultable depuis la galerie. Le logo historique est inchangé ; les anciennes illustrations restent documentées dans le manifeste avec le statut `retired`.
+
+Les sorties PNG du modèle sont conservées dans `output/imagegen/` ; les fichiers diffusés sont `public/assets/generated/*-premium.webp` et `facade-retouchee.webp`, encodés en WebP qualité 90 sans recadrage, redimensionnement ni retouche supplémentaire lors de la conversion. Cette compression est avec perte ; les PNG restent intacts. La résolution native est de 1402 × 1122 px pour l’accueil (kinésithérapie), de 1536 × 1024 px pour les quatre autres illustrations et de 1373 × 1145 px pour la façade retouchée. La demande d’un rendu « 8K » guide l’esthétique et le détail : les fichiers ne sont pas en 8K natif. Les prompts exacts, sources et contrôles visuels sont documentés dans [le dossier des photographies IA](research/photographies-ia.md).
+
+Les six originaux PNG du nouveau jeu de visuels sont aussi livrés dans `exports/visuels-generes-originaux.zip`. Le détail des prompts et résolutions est dans [la provenance des photographies IA](research/photographies-ia.md).

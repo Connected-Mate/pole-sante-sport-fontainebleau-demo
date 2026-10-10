@@ -1,7 +1,7 @@
 {
   "auditedAt": "2026-10-10",
-  "rightsScope": "Photos et logo du site historique : droits confirmés explicitement par utilisateur au chef de projet. Cette autorisation ne concerne pas les photos de tiers extérieurs ni les portraits Doctolib.",
-  "assetCount": 8,
+  "rightsScope": "Photos et logo du site historique : droits de réutilisation confirmés explicitement par l’utilisateur. Cette autorisation ne concerne pas les photos de tiers extérieurs ni les portraits Doctolib. Au deuxième tour, l’utilisateur a explicitement demandé de refaire les photographies avec le modèle d’image : cinq illustrations nouvelles et une retouche de la photographie historique de façade ont été produites.",
+  "assetCount": 14,
   "assets": [
     {
       "path": "public/assets/facade.png",
@@ -15,7 +15,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Peut illustrer le143 ; ne pas employer comme façade du160."
+      "usageNote": "Photographie historique originale du143, conservée intacte et consultable depuis la galerie. La photo affichée en présentation est une retouche IA distincte ; cette source sert de référence documentaire historique, sans garantir l’état actuel du lieu. Ne pas employer comme façade du160.",
+      "status": "active",
+      "role": "source_originale_consultable"
     },
     {
       "path": "public/assets/soin-manuel.png",
@@ -29,7 +31,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Ne pas identifier les personnes comme praticiens ou patients du pôle ; ne pas présenter comme locaux."
+      "usageNote": "Ne pas identifier les personnes comme praticiens ou patients du pôle ; ne pas présenter comme locaux.",
+      "status": "retired",
+      "retirementReason": "Remplacée à la demande de l’utilisateur par une illustration photoréaliste créée avec l’IA. Entrée conservée pour la traçabilité des médias historiques."
     },
     {
       "path": "public/assets/podologie.png",
@@ -43,7 +47,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Ne pas attribuer la personne représentée à Carine Marie ; aucune promesse de résultat."
+      "usageNote": "Ne pas attribuer la personne représentée à Carine Marie ; aucune promesse de résultat.",
+      "status": "retired",
+      "retirementReason": "Remplacée à la demande de l’utilisateur par une illustration photoréaliste créée avec l’IA. Entrée conservée pour la traçabilité des médias historiques."
     },
     {
       "path": "public/assets/osteopathie.png",
@@ -57,7 +63,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Ne pas attribuer la personne représentée à Isabelle Trohel ni aux locaux."
+      "usageNote": "Ne pas attribuer la personne représentée à Isabelle Trohel ni aux locaux.",
+      "status": "retired",
+      "retirementReason": "Remplacée à la demande de l’utilisateur par une illustration photoréaliste créée avec l’IA. Entrée conservée pour la traçabilité des médias historiques."
     },
     {
       "path": "public/assets/nutrition.jpg",
@@ -71,7 +79,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Ne pas identifier le modèle comme Jonathan Herjean ni en déduire un titre de médecin."
+      "usageNote": "Ne pas identifier le modèle comme Jonathan Herjean ni en déduire un titre de médecin.",
+      "status": "retired",
+      "retirementReason": "Remplacée à la demande de l’utilisateur par une illustration photoréaliste créée avec l’IA. Entrée conservée pour la traçabilité des médias historiques."
     },
     {
       "path": "public/assets/logo.jpg",
@@ -85,7 +95,8 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Image basse définition ; obtenir fichier vectoriel pour production si disponible."
+      "usageNote": "Image basse définition ; obtenir fichier vectoriel pour production si disponible.",
+      "status": "active"
     },
     {
       "path": "public/assets/yoga.jpg",
@@ -99,7 +110,9 @@
       "rightsStatus": "confirmed_by_user",
       "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
       "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
-      "usageNote": "Le nom local yoga.jpg est trompeur : ne pas légender comme Pilates ; attribution nominative à confirmer."
+      "usageNote": "Le nom local yoga.jpg est trompeur : ne pas légender comme Pilates ; attribution nominative à confirmer.",
+      "status": "retired",
+      "retirementReason": "Remplacée à la demande de l’utilisateur par une illustration photoréaliste créée avec l’IA. Entrée conservée pour la traçabilité des médias historiques."
     },
     {
       "path": "public/assets/favicon.svg",
@@ -110,13 +123,198 @@
       "description": "Favicon géométrique dessiné enSVG pour cette démo, distinct du logo historique.",
       "rightsStatus": "created_for_project",
       "rightsEvidence": "Création nativeSVG par l’équipe de refonte ; aucune photographie ou ressource tierce incorporée.",
-      "verification": "CodeSVG local inspecté."
+      "verification": "CodeSVG local inspecté.",
+      "status": "active"
+    },
+    {
+      "path": "public/assets/generated/kinesitherapie-premium.webp",
+      "sha256": "2941c6a598fff9cbc9f7a83be38647f591aab2ae0231f4fe44b2006671b4c588",
+      "originalPath": "output/imagegen/kinesitherapie-premium.png",
+      "originalSha256": "7c59b9d6b6301e9a069c99bc236c29e065191c556413056949746de21db9c53f",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "width": 1402,
+      "height": 1122,
+      "classification": "illustration_photorealiste_generee_par_IA",
+      "description": "Illustration IA d’un accompagnement de mobilité de l’épaule.",
+      "status": "active",
+      "rightsStatus": "generated_for_project_at_user_request",
+      "rightsEvidence": "L’utilisateur a demandé explicitement au deuxième tour : « Refait les photo moche avec ton model d’image […] Ultra ultra realistique haut de gamme photo 8k ultra détailler ».",
+      "generationTool": "built-in image_gen",
+      "promptRecord": "research/generated-kinesitherapie.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "visualRetouch": false,
+        "originalPreserved": true
+      },
+      "verification": "PNG original inspecté visuellement. Dimensions natives et SHA-256 consignés. Contrôles finaux de l’intégration et de la publication consignés séparément dans research/verification.md.",
+      "usageNote": "Illustration fictive créée avec l’IA. Ne représente ni les professionnels, ni les patients, ni les locaux réels du Pôle Santé Sport. Ne pas présenter comme preuve d’un résultat ou d’un équipement. Signaler sa nature illustrative.",
+      "resolutionNote": "Esthétique de détail demandée de type 8K ; fichier livré à la résolution native indiquée, sans agrandissement et sans revendication de 8K natif."
+    },
+    {
+      "path": "public/assets/generated/podologie-premium.webp",
+      "sha256": "7d4a847d80f3141c10fad728405aca926c2783163bae1835771f0ec87a01c0fe",
+      "originalPath": "output/imagegen/podologie-premium.png",
+      "originalSha256": "d4fbdc23b041da958f3302a084565df004a15072770dd106a8bb179a8b168a65",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "width": 1536,
+      "height": 1024,
+      "classification": "illustration_photorealiste_generee_par_IA",
+      "description": "Illustration IA d’un examen non invasif du pied.",
+      "status": "active",
+      "rightsStatus": "generated_for_project_at_user_request",
+      "rightsEvidence": "L’utilisateur a demandé explicitement au deuxième tour : « Refait les photo moche avec ton model d’image […] Ultra ultra realistique haut de gamme photo 8k ultra détailler ».",
+      "generationTool": "built-in image_gen",
+      "promptRecord": "research/generated-podo-nutrition.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "visualRetouch": false,
+        "originalPreserved": true
+      },
+      "verification": "PNG original inspecté visuellement. Dimensions natives et SHA-256 consignés. Contrôles finaux de l’intégration et de la publication consignés séparément dans research/verification.md.",
+      "usageNote": "Illustration fictive créée avec l’IA. Ne représente ni les professionnels, ni les patients, ni les locaux réels du Pôle Santé Sport. Ne pas présenter comme preuve d’un résultat ou d’un équipement. Signaler sa nature illustrative.",
+      "resolutionNote": "Esthétique de détail demandée de type 8K ; fichier livré à la résolution native indiquée, sans agrandissement et sans revendication de 8K natif."
+    },
+    {
+      "path": "public/assets/generated/nutrition-premium.webp",
+      "sha256": "dbad497c4d3f8faeec2852c260bca5796c88ae7ce14e902f75e64ef3427b7942",
+      "originalPath": "output/imagegen/nutrition-premium.png",
+      "originalSha256": "82a90968eca7ef7d73079e4ba02e39e03d1ebe66c88392d8cbcc0a5e0c0a2f12",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "width": 1536,
+      "height": 1024,
+      "classification": "illustration_photorealiste_generee_par_IA",
+      "description": "Illustration IA d’un échange autour d’une alimentation variée.",
+      "status": "active",
+      "rightsStatus": "generated_for_project_at_user_request",
+      "rightsEvidence": "L’utilisateur a demandé explicitement au deuxième tour : « Refait les photo moche avec ton model d’image […] Ultra ultra realistique haut de gamme photo 8k ultra détailler ».",
+      "generationTool": "built-in image_gen",
+      "promptRecord": "research/generated-podo-nutrition.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "visualRetouch": false,
+        "originalPreserved": true
+      },
+      "verification": "PNG original inspecté visuellement. Dimensions natives et SHA-256 consignés. Contrôles finaux de l’intégration et de la publication consignés séparément dans research/verification.md.",
+      "usageNote": "Illustration fictive créée avec l’IA. Ne représente ni les professionnels, ni les patients, ni les locaux réels du Pôle Santé Sport. Ne pas présenter comme preuve d’un résultat ou d’un équipement. Signaler sa nature illustrative.",
+      "resolutionNote": "Esthétique de détail demandée de type 8K ; fichier livré à la résolution native indiquée, sans agrandissement et sans revendication de 8K natif."
+    },
+    {
+      "path": "public/assets/generated/osteopathie-premium.webp",
+      "sha256": "44c986b380e2fd706eb712ce568534813b4a6a04cdba8b71788ceb5633994eab",
+      "originalPath": "output/imagegen/osteopathie-premium.png",
+      "originalSha256": "3f1529587860a0324454610bf1fe86fac43f7deff3f6e6994c9d8101fde3a531",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "width": 1536,
+      "height": 1024,
+      "classification": "illustration_photorealiste_generee_par_IA",
+      "description": "Illustration IA d’un soutien manuel doux de la nuque.",
+      "status": "active",
+      "rightsStatus": "generated_for_project_at_user_request",
+      "rightsEvidence": "L’utilisateur a demandé explicitement au deuxième tour : « Refait les photo moche avec ton model d’image […] Ultra ultra realistique haut de gamme photo 8k ultra détailler ».",
+      "generationTool": "built-in image_gen",
+      "promptRecord": "research/generated-yoga-osteo.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "visualRetouch": false,
+        "originalPreserved": true
+      },
+      "verification": "PNG original inspecté visuellement. Dimensions natives et SHA-256 consignés. Contrôles finaux de l’intégration et de la publication consignés séparément dans research/verification.md.",
+      "usageNote": "Illustration fictive créée avec l’IA. Ne représente ni les professionnels, ni les patients, ni les locaux réels du Pôle Santé Sport. Ne pas présenter comme preuve d’un résultat ou d’un équipement. Signaler sa nature illustrative.",
+      "resolutionNote": "Esthétique de détail demandée de type 8K ; fichier livré à la résolution native indiquée, sans agrandissement et sans revendication de 8K natif."
+    },
+    {
+      "path": "public/assets/generated/yoga-premium.webp",
+      "sha256": "c8e80eb598a60729447e50dec378feaeeebe76a1dc1173d1502d19ba1b10a1ba",
+      "originalPath": "output/imagegen/yoga-premium.png",
+      "originalSha256": "c45506c140aefdb9d7b5e499c9321badd5d0067dd194ce91c25888a5be3cfce7",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "width": 1536,
+      "height": 1024,
+      "classification": "illustration_photorealiste_generee_par_IA",
+      "description": "Illustration IA d’une posture de yoga dans un décor générique.",
+      "status": "active",
+      "rightsStatus": "generated_for_project_at_user_request",
+      "rightsEvidence": "L’utilisateur a demandé explicitement au deuxième tour : « Refait les photo moche avec ton model d’image […] Ultra ultra realistique haut de gamme photo 8k ultra détailler ».",
+      "generationTool": "built-in image_gen",
+      "promptRecord": "research/generated-yoga-osteo.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "visualRetouch": false,
+        "originalPreserved": true
+      },
+      "verification": "PNG original inspecté visuellement. Dimensions natives et SHA-256 consignés. Contrôles finaux de l’intégration et de la publication consignés séparément dans research/verification.md.",
+      "usageNote": "Illustration fictive créée avec l’IA. Ne représente ni les professionnels, ni les patients, ni les locaux réels du Pôle Santé Sport. Ne pas présenter comme preuve d’un résultat ou d’un équipement. Signaler sa nature illustrative.",
+      "resolutionNote": "Esthétique de détail demandée de type 8K ; fichier livré à la résolution native indiquée, sans agrandissement et sans revendication de 8K natif."
+    },
+    {
+      "path": "public/assets/generated/facade-retouchee.webp",
+      "sha256": "3748a69375812b0139e1366dde83c4d1aab2cd7cfc3ce543247cc2a988dab221",
+      "originalPath": "output/imagegen/facade-retouchee.png",
+      "originalSha256": "a4a9cbcea95b052d4c5395399df29036dd71367eb4fa22e2663a21eceaac7b70",
+      "inputPath": "public/assets/facade.png",
+      "inputSha256": "20aaeb1866c201782f76ae6c7be62950f9c73c78ff66878239922c0a7c9ff045",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpa100ef1a_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/",
+      "width": 1373,
+      "height": 1145,
+      "classification": "photographie_historique_retouchee_par_IA",
+      "description": "Retouche IA de la photographie historique de la façade du143 rue Grande. Détails fins reconstruits par le modèle.",
+      "status": "active",
+      "rightsStatus": "edited_for_project_at_user_request",
+      "rightsEvidence": "Droits sur la photographie historique confirmés par l’utilisateur, puis demande explicite de refaire les photographies avec le modèle d’image au deuxième tour.",
+      "generationTool": "built-in image_gen",
+      "intent": "edit",
+      "promptRecord": "research/generated-facade.json",
+      "encoding": {
+        "format": "webp",
+        "quality": 90,
+        "lossy": true,
+        "resize": false,
+        "crop": false,
+        "additionalVisualRetouch": false,
+        "modelPngPreserved": true
+      },
+      "verification": "Dimensions du PNG et empreintes SHA-256 vérifiées. Source historique conservée et consultable depuis la galerie. Contrôle de l’intégration finale et de la publication à consigner dans research/verification.md.",
+      "usageNote": "Retouche par IA signalée comme telle ; ne pas présenter comme une nouvelle prise de vue réelle, une reproduction documentaire exacte ou une preuve de l’état actuel des locaux. Les détails fins sont reconstruits. Source originale accessible depuis la galerie.",
+      "resolutionNote": "Sortie native du modèle1373×1145px à partir de la source1020×851px. Aucun agrandissement ultérieur ; la reconstruction ne garantit pas la récupération de détails réels. Aucune revendication8K native."
     }
   ],
   "notes": [
-    "Les sept fichiers raster sont des copies binaires exactes des URLs source.",
-    "Les légendes distinguent photographie du lieu et images illustratives.",
-    "Aucune photographie de locaux intérieurs ou portrait de l’ensemble de l’équipe n’a été identifié.",
-    "Les assets temporaires de recherche non livrés dans public/assets ne sont pas intégrés à ce manifeste."
-  ]
+    "Les sept fichiers raster historiques ont été récupérés comme copies binaires exactes de leurs URL source. Leurs empreintes et provenances sont conservées dans ce manifeste.",
+    "Le logo historique reste inchangé. La photographie historique originale de la façade du143 reste active comme source consultable depuis la galerie ; une retoucheIA distincte est utilisée dans la présentation. Les cinq anciennes illustrations sont marquées retired.",
+    "Six visuels ont été travaillés avec image_gen intégré sur demande explicite de l’utilisateur : cinq illustrations fictives créées et une photographie de façade retouchée. Les sorties PNG sont archivées dans output/imagegen/.",
+    "La retouche de la façade reconstruit des détails fins ; ce n’est pas une nouvelle photographie réelle ni une reproduction documentaire garantie exacte. La source historique conservée permet la comparaison.",
+    "Les WebP de diffusion sont encodés en qualité90 sans redimensionnement, recadrage ou retouche supplémentaire pendant la conversion. La compression est avec perte : pixels décodés et fichiers binaires ne sont pas identiques aux PNG.",
+    "Les légendes distinguent les cinq illustrations fictives et la photographie de façade retouchée. Les illustrations ne représentent ni l’équipe, ni les patients, ni les locaux réels.",
+    "La demande8K porte sur le rendu esthétique ; les dimensions natives réelles sont documentées par fichier.",
+    "Les assets temporaires de recherche non livrés ne sont pas intégrés à ce manifeste."
+  ],
+  "updatedAt": "2026-10-10",
+  "activeAssetCount": 9,
+  "retiredAssetCount": 5
 }

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2026-10-10",
+  "tool": "built-in image_gen",
+  "usageNote": "Images créées avec l’IA pour illustrer les prestations ; personnes et lieux fictifs, sans lien avec l’équipe ou les locaux réels. Rendu demandé de style 8K ; résolution technique réelle indiquée pour chaque fichier.",
+  "review": "Contrôle visuel effectué avec view_image : cadrages paysage, lumière douce, absence de marque/visage/texte lisible, anatomie et textures cohérentes.",
+  "assets": [
+    {
+      "id": "podologie-premium",
+      "file": "public/assets/generated/podologie-premium.png",
+      "source": "/Users/0104389S/.codex/generated_images/01a12706-141b-7be3-acc9-47716a34f8b3/exec-5ec80355-8bd6-43ec-9827-4b73f6517b19.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium French health practice website, podiatry service illustration.\nPrimary request: create an ultra photorealistic, luxurious editorial healthcare photograph, extraordinarily detailed with an 8K-quality visual feel, landscape 3:2 framing, highest actual resolution available.\nScene/backdrop: an understated generic consultation setting suggested only by a softly blurred warm neutral background; no identifiable real clinic. Ecru towel on a professional examination couch, a subtle sliver of pale oak and muted blue-gray fabric.\nSubject: close-up of a healthy adult foot resting horizontally on an ecru towel, two adult professional hands gently supporting heel and midfoot in a routine noninvasive podiatry examination. Carefully believable anatomy, five natural toes, realistic nails, exactly two hands with plausible fingers and correct grip. Patient and professional faces completely out of frame.\nStyle/medium: real high-end editorial photography, tactile unretouched skin texture, natural pores and fine lines, true-to-life textile and subtle material imperfections, photographed with a full-frame 85mm lens at f/4.\nComposition/framing: intimate but tasteful medium close crop, full foot visible and hands comfortably within the frame, simple readable composition, restrained shallow depth of field; negative space around subject.\nLighting/mood: soft side window daylight, calm, expert and welcoming, controlled highlights and natural shadows.\nColor palette: warm ecru, natural skin tones, pale oak, muted blue gray. Color-accurate, delicate contrast.\nConstraints: no face, no branding, no readable text, no watermark, no instruments, no medical claims, no invented actual clinic details. Illustrative fictional scene. Avoid CGI, stock-photo gloss, plastic skin, sharpening halos, beauty smoothing, artificial bokeh, distorted foot or fingers, gloves, exposed wounds, invasive treatment."
+    },
+    {
+      "id": "nutrition-premium",
+      "file": "public/assets/generated/nutrition-premium.png",
+      "source": "/Users/0104389S/.codex/generated_images/01a12706-141b-7be3-acc9-47716a34f8b3/exec-fde50a6b-7c68-4368-ab99-74a129a753d7.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium French health practice website, nutrition service illustration.\nPrimary request: create an ultra photorealistic luxurious editorial photograph of a nutrition consultation, extraordinarily detailed with an 8K-quality visual feel, landscape 3:2, highest actual resolution available.\nScene/backdrop: understated generic consultation table in pale oak, no identifiable actual clinic, background softly out of focus in warm ecru and muted blue-gray.\nSubject: inviting handmade ivory ceramic bowl holding a naturally arranged colorful variety of ordinary fresh foods, including leafy greens, slices of carrot, cooked lentils, grains and cherry tomatoes. Beside the bowl, an opened cream notebook with faint indistinct marks, a simple pencil, and a clear glass of water. At opposite sides of the table, two adults' hands suggest a thoughtful conversation: one relaxed hand resting near the notebook, the other's single hand making a small relaxed open gesture. Faces and all bodies mostly out of frame, no identities.\nStyle/medium: authentic premium editorial food and healthcare photography, full-frame 50mm lens, f/4, extremely natural texture, subtle human skin imperfections and visible paper fibers, believable ceramic glaze and fresh vegetable detail, natural restrained colors.\nComposition/framing: elegant table-level three-quarter viewpoint, bowl and conversation hands as focal points, beautifully balanced unforced composition with breathing room. Show exactly two believable adult hands with natural fingers. Not a collage.\nLighting/mood: large soft window light from one side, delicate natural shadows, controlled highlights, calm welcoming atmosphere.\nColor palette: ecru, pale oak, muted blue gray clothing details, natural greens and orange.\nConstraints: no readable words, labels, logos, watermarks, measuring tape, scales, supplement packaging, diet promises, weight loss imagery, staged thumbs-up, faces, identifiable actual facility. Fictional illustrative scene only.\nAvoid: plastic food, overly saturated colors, CGI, unnatural gloss, excessive decoration, floating objects, extra fingers, skin smoothing, faux HDR and sharpening halos."
+    }
+  ]
+}

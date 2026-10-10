@@ -1,0 +1,258 @@
+{
+  "checkedAt": "2026-10-10T18:44:13.346Z",
+  "scope": "Refonte de direction artistique sport et soin haut de gamme — contrôles en lecture seule",
+  "buildTimestamp": "2026-10-10T18:43:00.942Z",
+  "baseUrl": "http://127.0.0.1:4174/",
+  "browserVersion": "154.0.8037.98",
+  "responsiveViewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "functionalChecks": "Métadonnées, titres uniques, liens internes et ressources, absence de débordement horizontal, clavier, popup, menu mobile, filtres de praticiens, liens téléphone et réservation, carte sur consentement, sous-chemin GitHub Pages et 404.",
+  "semanticAudit": {
+    "pages": 24,
+    "aiOrRetouchingMentions": [],
+    "decorativeEmoji": [],
+    "scope": "Texte HTML, titres, alternatives des images, libellés ARIA et métadonnées. Chemins techniques des fichiers exclus. © et ® autorisés comme symboles juridiques."
+  },
+  "notes": [
+    "Aucun appel ni aucune réservation déclenchés.",
+    "Les captures restent dans test-results (non versionnées).",
+    "La suite complète initiale contient 155 réussites et 3 échecs liés à un seul contraste. Après correction, seuls les contrôles ciblés décrits dans targetedRecheck ont été rejoués."
+  ],
+  "initialFullSuite": {
+    "checkedAt": "2026-10-10T18:44:13.346Z",
+    "buildTimestamp": "2026-10-10T18:43:00.942Z",
+    "summary": {
+      "passed": 155,
+      "failed": 3,
+      "pages": 24,
+      "axeRuns": 24
+    },
+    "failures": [
+      {
+        "name": "axe serious/critical desktop: index.html",
+        "cause": "Contraste de .care-steps li > span : #536963 sur #d5dcd4, ratio 4,2:1, minimum attendu 4,5:1."
+      },
+      {
+        "name": "axe serious/critical mobile: index.html",
+        "cause": "Contraste de .care-steps li > span : #536963 sur #d5dcd4, ratio 4,2:1, minimum attendu 4,5:1."
+      },
+      {
+        "name": "axe modal and open mobile menu",
+        "cause": "Contraste de .care-steps li > span : #536963 sur #d5dcd4, ratio 4,2:1, minimum attendu 4,5:1."
+      }
+    ]
+  },
+  "targetedRecheck": {
+    "checkedAt": "2026-10-10T18:44:55.002Z",
+    "scope": "Recontrôle ciblé après correction du contraste .care-steps span et simplification des en-têtes de cartes.",
+    "checks": [
+      {
+        "name": "Accueil sans débordement horizontal à 320 px",
+        "ok": true,
+        "detail": {
+          "viewport": 320,
+          "scrollWidth": 320
+        }
+      },
+      {
+        "name": "Images des cartes chargées après défilement à 320 px",
+        "ok": true,
+        "detail": [
+          {
+            "src": "./assets/generated/kinesitherapie-premium.webp",
+            "complete": true,
+            "width": 1402,
+            "height": 1122
+          },
+          {
+            "src": "./assets/generated/podologie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/osteopathie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/nutrition-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "name": "Accueil sans débordement horizontal à 390 px",
+        "ok": true,
+        "detail": {
+          "viewport": 390,
+          "scrollWidth": 390
+        }
+      },
+      {
+        "name": "Images des cartes chargées après défilement à 390 px",
+        "ok": true,
+        "detail": [
+          {
+            "src": "./assets/generated/kinesitherapie-premium.webp",
+            "complete": true,
+            "width": 1402,
+            "height": 1122
+          },
+          {
+            "src": "./assets/generated/podologie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/osteopathie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/nutrition-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "name": "Axe accueil mobile",
+        "ok": true,
+        "detail": {
+          "seriousOrCritical": 0,
+          "minorOrModerate": 0
+        }
+      },
+      {
+        "name": "Accueil sans débordement horizontal à 768 px",
+        "ok": true,
+        "detail": {
+          "viewport": 768,
+          "scrollWidth": 768
+        }
+      },
+      {
+        "name": "Images des cartes chargées après défilement à 768 px",
+        "ok": true,
+        "detail": [
+          {
+            "src": "./assets/generated/kinesitherapie-premium.webp",
+            "complete": true,
+            "width": 1402,
+            "height": 1122
+          },
+          {
+            "src": "./assets/generated/podologie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/osteopathie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/nutrition-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "name": "Accueil sans débordement horizontal à 1440 px",
+        "ok": true,
+        "detail": {
+          "viewport": 1440,
+          "scrollWidth": 1440
+        }
+      },
+      {
+        "name": "Images des cartes chargées après défilement à 1440 px",
+        "ok": true,
+        "detail": [
+          {
+            "src": "./assets/generated/kinesitherapie-premium.webp",
+            "complete": true,
+            "width": 1402,
+            "height": 1122
+          },
+          {
+            "src": "./assets/generated/podologie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/osteopathie-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          },
+          {
+            "src": "./assets/generated/nutrition-premium.webp",
+            "complete": true,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "name": "Axe accueil desktop",
+        "ok": true,
+        "detail": {
+          "seriousOrCritical": 0,
+          "minorOrModerate": 0
+        }
+      },
+      {
+        "name": "Axe menu mobile ouvert",
+        "ok": true,
+        "detail": {
+          "seriousOrCritical": 0,
+          "minorOrModerate": 0
+        }
+      },
+      {
+        "name": "Axe popup ouverte",
+        "ok": true,
+        "detail": {
+          "seriousOrCritical": 0,
+          "minorOrModerate": 0
+        }
+      }
+    ],
+    "axeRuns": [
+      {
+        "name": "Axe accueil mobile",
+        "violations": []
+      },
+      {
+        "name": "Axe accueil desktop",
+        "violations": []
+      },
+      {
+        "name": "Axe menu mobile ouvert",
+        "violations": []
+      },
+      {
+        "name": "Axe popup ouverte",
+        "violations": []
+      }
+    ],
+    "failures": []
+  }
+}

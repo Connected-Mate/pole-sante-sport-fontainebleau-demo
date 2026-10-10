@@ -1,5 +1,18 @@
 # Vérification de livraison — 10 octobre 2026
 
+## Révision artistique : soin et mouvement
+
+Nouvelle identité visuelle bleu profond, pierre et sable, typographie Manrope auto-hébergée, photographies rectangulaires, cartes de disciplines illustrées et section mouvement sur l’accueil. Suppression des émojis décoratifs et des mentions publiques IA/retouche à la demande de l’utilisateur ; sources et provenance conservées dans le projet. Aucun contact, tarif, diplôme, avis ou résultat médical ajouté.
+
+- Build de 24 pages réussi et dix tests serveur/build réussis.
+- Suite navigateur : 158 contrôles, 155 réussis. Les trois échecs concernaient le même défaut de contraste sur les trois numéros `.care-steps li > span` de l’accueil.
+- Couleur corrigée de `#536963` vers `#42594f`. Recontrôle ciblé : 12/12 réussis, sans défaut restant. Quatre audits Axe (accueil ordinateur/mobile, menu et popup), quatre largeurs sans débordement (320, 390, 768, 1440), quatre contrôles de chargement des images de cartes.
+- Titres, descriptions, H1 et noindex, liens internes, appels, trois liens Doctolib, filtres, clavier, carte chargée à la demande et chemins GitHub Pages contrôlés lors de la suite complète. Les audits des autres pages ne signalaient aucune violation.
+- Texte visible, alternatives et métadonnées des 24 pages : aucune mention IA/retouchée/générée et aucun emoji décoratif. Les flèches et repères fonctionnels sont des SVG.
+- Neuf captures inspectées : accueil ordinateur/mobile/tablette, mouvement, cartes de spécialités ordinateur/mobile, fiche kinésithérapie, rendez-vous et footer. Nouvelle capture des cartes mobiles après attente du décodage des quatre images.
+
+Rapport : [design-qa.json](design-qa.json). Les contrôles historiques ci-dessous restent datés et distincts de cette révision. Les tests dans Chrome redimensionné ne constituent pas des essais sur un téléphone/tablette physique ni une certification d’accessibilité.
+
 ## Mise à jour des illustrations IA
 
 Au deuxième tour, l’utilisateur a explicitement demandé de refaire les photographies avec le modèle d’image, avec un rendu photoréaliste haut de gamme. Cette demande élargit l’autorisation initiale de réutilisation des médias historiques. Six visuels ont été travaillés avec `image_gen` intégré : cinq illustrations nouvelles (kinésithérapie, podologie, nutrition, ostéopathie et yoga) et une retouche de la photographie historique de la façade du 143. Le logo historique est inchangé. La source de la façade est conservée dans `public/assets/facade.png` et consultable depuis la galerie.

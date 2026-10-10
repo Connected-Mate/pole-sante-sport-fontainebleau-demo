@@ -12,7 +12,7 @@
 
 24 pages HTML, 10 spécialités détaillées, 14 interlocuteurs, 3 articles pratiques, FAQ, présentation, galerie, contact et accès, mentions de démonstration et confidentialité. Appels directs, 3 liens Doctolib, Google Maps chargé à la demande, liens Waze/Apple Plans et QR code vers le 143 rue Grande. Carte et itinéraires par adresse : aucun temps de trajet ni accès PMR inventé.
 
-Direction visuelle issue des bleus et de la touche rouge du logo, composition typographique aérée et six visuels travaillés avec l’IA à la demande explicite de l’utilisateur au deuxième tour : cinq nouvelles illustrations et une retouche de la façade. Les scènes de kinésithérapie, podologie, nutrition, ostéopathie et yoga sont fictives ; elles ne représentent pas les praticiens, patients ou locaux réels. La façade retouchée s’appuie sur la photographie historique du 143 ; certains détails fins sont reconstruits par le modèle. Ce n’est ni une nouvelle prise de vue réelle ni une reproduction documentaire exacte. La source originale est conservée dans `public/assets/facade.png` et consultable depuis la galerie. Le logo historique est inchangé.
+Direction visuelle révisée à la demande de l’utilisateur : bleu profond, pierre et sable, typographie Manrope, photographie rectangulaire et repères numérotés. Le ton associe soin, mouvement et accompagnement, avec le titre « Le soin. Le mouvement. Votre rythme. ». Les émojis décoratifs et les mentions de génération/retouche ont été retirés des pages publiques. La provenance documentaire des six visuels reste conservée ici : cinq illustrations et une retouche de la façade. Les scènes de kinésithérapie, podologie, nutrition, ostéopathie et yoga sont fictives ; elles ne représentent pas les praticiens, patients ou locaux réels. La façade retouchée s’appuie sur la photographie historique du 143 ; certains détails fins sont reconstruits par le modèle. Ce n’est ni une nouvelle prise de vue réelle ni une reproduction documentaire exacte. La source originale est conservée dans `public/assets/facade.png` et consultable depuis la galerie. Le logo historique est inchangé.
 
 Les sorties PNG du modèle sont conservées dans `output/imagegen/` et diffusées en WebP qualité 90 dans `public/assets/generated/`, sans recadrage, redimensionnement ni retouche supplémentaire lors de la conversion ; l’encodage WebP est avec perte. Dimensions natives : 1402 × 1122 px pour l’image d’accueil, 1536 × 1024 px pour les quatre autres illustrations, 1373 × 1145 px pour la façade retouchée. Le rendu est photoréaliste et détaillé, sans revendication de 8K natif. Voir [la provenance et les prompts](research/photographies-ia.md).
 
@@ -33,14 +33,14 @@ Les sources, limites, benchmark concurrentiel et étapes du lancement officiel f
 
 ## Validation
 
-La livraison initiale, avant le remplacement des photographies, a passé 10 tests serveur/build et 158 contrôles navigateur : aucun débordement à 320, 390, 768 et 1440 px, et 24 audits Axe sans violation détectée. Ces contrôles ne constituent pas une certification.
+La dernière révision visuelle a passé les dix tests serveur/build. La suite navigateur a exécuté 158 contrôles : 155 réussis et trois signalements correspondant à un même contraste insuffisant sur les repères numérotés de la section mouvement. Après correction, 12 contrôles ciblés ont réussi : quatre audits Axe de l’accueil (ordinateur, mobile, menu et popup), quatre vérifications de débordement et quatre vérifications de chargement des photographies de cartes.
 
-Les cinq illustrations ont été inspectées visuellement et leur intégration a été contrôlée sur neuf vues locales : images chargées, légendes IA présentes, aucun débordement ni erreur navigateur détecté. Ce contrôle ciblé, consigné dans `research/photos-qa.json`, précède la retouche de la façade. La vérification complémentaire de la façade, le build, les exports et la publication actualisée restent à consigner dans `research/verification.md` après leur exécution ; les résultats initiaux ci-dessus ne valent pas validation de cette mise à jour.
+Les parcours d’appel et de réservation, filtres, liens locaux, clavier, métadonnées et export sous le chemin GitHub Pages ont été vérifiés. Captures inspectées à 390, 768 et 1440 px ; débordements contrôlés également à 320 px. Aucun défaut connu restant à l’issue de ces contrôles. Les téléphones et réservations n’ont pas été réellement déclenchés ; aucun test sur appareil physique ni certification d’accessibilité.
 
-Les résultats détaillés et limites sont consignés dans `research/verification.md` avec les contrôles de livraison. Les captures et rapports techniques locaux sont dans `test-results/`.
+Le rapport [design-qa.json](research/design-qa.json) distingue l’exécution complète initiale du recontrôle après correction. Le détail visuel figure dans [direction-artistique.md](research/direction-artistique.md).
 
 ## Export
 
 `npm run export` crée `exports/site-public.zip` et `exports/sources-completes.zip`. Aucun mot de passe, aucune session, aucun historique local ni dépendance npm n’est inclus. Les sources incluent les instructions pour réinstaller et relancer le projet.
 
-Après remplacement des images : six visuels IA (cinq scènes originales et une retouche de façade), 158 contrôles navigateur et dix tests serveur/build réussis. Originaux : `exports/visuels-generes-originaux.zip` ; prompts : `research/photographies-ia.md`.
+Originaux des six visuels : `exports/visuels-generes-originaux.zip` ; prompts : `research/photographies-ia.md`.

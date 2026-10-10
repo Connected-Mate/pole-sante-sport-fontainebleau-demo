@@ -59,6 +59,12 @@ Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet 
 5. Vérifier le site déployé, les réservations et téléphones avec le propriétaire, le mobile, le clavier, les mentions, le sitemap, les URL canoniques et les données structurées.
 6. Soumettre le sitemap dans les outils de recherche et harmoniser les coordonnées de la fiche Google. Aucune modification de la fiche Google n’a été effectuée.
 
+## Direction artistique actuelle
+
+La révision du 10 octobre privilégie le soin et le mouvement avec une palette bleu profond, pierre et sable. Typographie Manrope auto-hébergée (licence SIL OFL dans `public/assets/fonts/`), compositions photographiques rectangulaires, navigation et CTA au trait, sans émojis décoratifs. L’accueil associe soin, pratique sportive et rythme personnel sans promettre de résultat médical. Les pages publiques ne mentionnent plus la génération ou la retouche ; les scènes restent des illustrations sans attribution à l’équipe ou aux locaux.
+
+La provenance reste consignée dans les fichiers du projet. Voir [la direction artistique](research/direction-artistique.md) et [les contrôles de cette révision](research/design-qa.json).
+
 ## Dossiers de recherche
 
 - [Recherche locale et concurrents](research/local-research.md)

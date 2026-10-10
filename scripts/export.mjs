@@ -6,7 +6,7 @@ const exportDir=path.join(root,'exports');await fs.mkdir(exportDir,{recursive:tr
 for(const [name,dir,files] of [
  ['site-public.zip',path.join(root,'dist'),['.']],
  ['visuels-generes-originaux.zip',path.join(root,'output/imagegen'),['.']],
- ['sources-completes.zip',root,['package.json','package-lock.json','.gitignore','server.mjs','content','public','scripts','admin','tests','research/business-audit.json','research/local-research.md','research/editorial-audit.md','research/seo-checklist.md','research/assets-manifest.json','research/verification.md','research/photographies-ia.md','research/photos-qa.json','research/photos-final-qa.json','research/generated-kinesitherapie.json','research/generated-podo-nutrition.json','research/generated-yoga-osteo.json','research/generated-facade.json','output/imagegen','README.md','LIVRAISON.md','.github']]
+ ['sources-completes.zip',root,['package.json','package-lock.json','.gitignore','server.mjs','content','public','scripts','admin','tests','research/business-audit.json','research/local-research.md','research/editorial-audit.md','research/seo-checklist.md','research/assets-manifest.json','research/verification.md','research/photographies-ia.md','research/photos-qa.json','research/photos-final-qa.json','research/direction-artistique.md','research/design-qa.json','research/generated-kinesitherapie.json','research/generated-podo-nutrition.json','research/generated-yoga-osteo.json','research/generated-facade.json','output/imagegen','README.md','LIVRAISON.md','.github']]
 ]){
  const target=path.join(exportDir,name);await fs.rm(target,{force:true});
  const r=spawnSync('zip',['-q','-r',target,...files],{cwd:dir,encoding:'utf8'});

@@ -1,5 +1,15 @@
 # Vérification de livraison — 10 octobre 2026
 
+## Révision courante — 11 octobre 2026, photographies réelles
+
+Cette révision remplace les visuels synthétiques du site et de l’aperçu par de vraies photographies. Quatre portraits professionnels sont authentifiés et intégrés ; dix restent à obtenir. Le détail et les sources figurent dans `portraits-officiels.json`, `portraits-doctolib.json` et `real-sport-images.json`. Le JPEG social courant est `pole-sante-sport-preview-v3.jpg`.
+
+Validation locale : 10 tests serveur/build réussis ; 158 contrôles navigateur sur 24 pages, avec 24 analyses Axe sans violation détectée ; 20 contrôles ciblés sur les portraits, les photos et l’introduction du logo ; 6 contrôles du formulaire de portraits dans le back-office. Les captures attendent le décodage des photographies avant inspection. Les photographies natives restent archivées sans reconstruction de visage.
+
+La signature sportive, le vrai logo et son animation de 1,5 seconde sont intégrés. L’animation est rejouable au clavier, interrompue par une interaction et désactivée avec la réduction des mouvements. Le site conserve sa notice de démonstration publique et noindex. La date de retrait reste à définir.
+
+Les sections suivantes retracent les versions antérieures ; leurs images et résultats ne décrivent pas la version actuelle. Le bilan final de la révision se trouve dans `LIVRAISON.md`.
+
 ## Mise à jour du 11 octobre — aperçu social sportif
 
 La vieille façade était encore référencée dans `og:image`. Les 24 pages de contenu déclarent maintenant le JPEG 1200 × 630 `assets/social/pole-sante-sport-preview-v2.jpg`, avec type/dimensions/alternative, nom du site et carte Twitter. Le front public `share-preview.html` ajoute une animation finie de 4,5 s et un mode réduit. Le JPEG et le master PNG 2400 × 1260 sont rendus depuis le même HTML/CSS.

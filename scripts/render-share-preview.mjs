@@ -8,12 +8,12 @@ import { chromium } from 'playwright';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publicRoot = path.join(root, 'public');
-const imagePath = path.join(publicRoot, 'assets/generated/sport-preview-photo.webp');
+const imagePath = path.join(publicRoot, 'assets/real/pilates-mouvement.webp');
 const socialDir = path.join(publicRoot, 'assets/social');
 const masterDir = path.join(root, 'output/social');
 const chrome = process.env.QA_CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
-await fs.access(imagePath).catch(() => { throw new Error('La photographie sport-preview-photo.webp doit être créée avant le rendu de la carte.'); });
+const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
+await fs.access(imagePath).catch(() => { throw new Error('La photographie réelle pilates-mouvement.webp doit être présente avant le rendu de la carte.'); });
 
 // A loopback-only, read-only fixture serves public assets independently of dist/.
 const server = http.createServer(async (req, res) => {
@@ -40,20 +40,20 @@ try {
   page.on('response', response => { if (!response.ok()) errors.push(`HTTP ${response.status()} ${response.url()}`); });
   await page.goto(`http://127.0.0.1:${server.address().port}/share-preview.html?capture=1`, { waitUntil: 'networkidle' });
   await page.waitForFunction(() => document.documentElement.dataset.previewReady === 'true');
-  await page.evaluate(async () => { await document.fonts.load('530 73px Manrope'); await document.fonts.ready; await document.querySelector('.card-photo img').decode(); });
+  await page.evaluate(async () => { await document.fonts.load('530 73px Manrope'); await document.fonts.ready; await Promise.all([...document.querySelectorAll('.share-card img')].map(image => image.decode())); });
   const metrics = await page.evaluate(() => {
     const card = document.querySelector('.share-card').getBoundingClientRect();
     const image = document.querySelector('.card-photo img');
-    return { width: card.width, height: card.height, x: card.x, y: card.y, font: document.fonts.check('530 73px Manrope'), imageWidth: image.naturalWidth, imageHeight: image.naturalHeight, activeAnimations: document.getAnimations().length };
+    return { width: card.width, height: card.height, x: card.x, y: card.y, font: document.fonts.check('530 73px Manrope'), imageWidth: image.naturalWidth, imageHeight: image.naturalHeight, logoWidth: document.querySelector('.brand-logo').naturalWidth, activeAnimations: document.getAnimations().length };
   });
   assert.deepEqual(errors, [], 'Les ressources de la carte doivent toutes être chargées.');
   assert.equal(metrics.width, 1200); assert.equal(metrics.height, 630); assert.equal(metrics.x, 0); assert.equal(metrics.y, 0);
-  assert.equal(metrics.font, true); assert.ok(metrics.imageWidth > 1000); assert.equal(metrics.activeAnimations, 0);
+  assert.equal(metrics.font, true); assert.ok(metrics.imageWidth > 1000); assert.ok(metrics.logoWidth > 0); assert.equal(metrics.activeAnimations, 0);
   await fs.mkdir(socialDir, { recursive: true });
   await fs.mkdir(masterDir, { recursive: true });
   const card = page.locator('.share-card');
-  const master = path.join(masterDir, 'preview-master.png');
-  const jpeg = path.join(socialDir, 'pole-sante-sport-preview-v2.jpg');
+  const master = path.join(masterDir, 'preview-master-v3.png');
+  const jpeg = path.join(socialDir, 'pole-sante-sport-preview-v3.jpg');
   await card.screenshot({ path: master, type: 'png', scale: 'device', animations: 'disabled' });
   await card.screenshot({ path: jpeg, type: 'jpeg', quality: 94, scale: 'css', animations: 'disabled' });
   console.log(JSON.stringify({ jpeg, jpegDimensions: [1200, 630], master, masterDimensions: [2400, 1260], sourceImage: path.relative(root, imagePath), metrics }, null, 2));

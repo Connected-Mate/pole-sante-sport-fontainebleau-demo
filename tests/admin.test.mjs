@@ -41,6 +41,14 @@ test('validation des types, des clés et des liens', () => {
   const unsafeSource = content(); unsafeSource.editorial.services[0].sourceUrls = ['javascript:alert(1)']; assert.ok(validateContent(unsafeSource).some((line) => line.includes('sourceUrls')));
   const duplicate = content(); duplicate.editorial.services.push({ ...duplicate.editorial.services[0] }); assert.ok(validateContent(duplicate).some((line) => line.includes('existe déjà')));
   const badParagraphs = content(); badParagraphs.editorial.services[0].paragraphs = {}; assert.ok(validateContent(badParagraphs).some((line) => line.includes('paragraphs')));
+  const portrait = content(); portrait.site.team = [{ name: 'Praticien', role: 'Praticien', service: 'prestation', address: '1 rue de Test', phone: '', bookingUrl: '', portrait: 'team/praticien.webp', portraitSourceUrl: 'https://example.com/profil' }];
+  assert.deepEqual(validateContent(portrait), []);
+  for (const unsafePath of ['../../portrait.jpg', 'https://example.com/portrait.jpg', 'team/x.svg']) {
+    portrait.site.team[0].portrait = unsafePath;
+    assert.ok(validateContent(portrait).some(line => line.includes('portrait')));
+  }
+  portrait.site.team[0].portrait = ''; portrait.site.team[0].portraitSourceUrl = 'javascript:alert(1)';
+  assert.ok(validateContent(portrait).some(line => line.includes('portraitSourceUrl')));
 });
 
 test('administration locale : authentification, workflow, sauvegarde et rollback', async (t) => {

@@ -1,5 +1,7 @@
 {
-  "checkedAt": "2026-10-10T22:53:08.630Z",
+  "checkedAt": "2026-10-10T23:09:07.544Z",
+  "version": 3,
+  "buildTimestamp": "2026-10-10T23:06:08.388Z",
   "summary": {
     "passed": 12,
     "failed": 0
@@ -14,7 +16,7 @@
       "ok": true
     },
     {
-      "name": "animated preview has noindex, a decoded sport photo and loaded local Manrope font",
+      "name": "animated preview has noindex, the real Pilates photo, actual logo and local Manrope font",
       "ok": true
     },
     {
@@ -54,9 +56,46 @@
       "ok": true
     }
   ],
-  "additionalAxeAudits": {
-    "desktop1440": 0,
-    "mobile390": 0
+  "socialImage": "https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/assets/social/pole-sante-sport-preview-v3.jpg",
+  "photograph": {
+    "path": "public/assets/real/pilates-mouvement.webp",
+    "width": 6016,
+    "height": 4016,
+    "provenance": "research/real-sport-images.json"
   },
-  "visualReview": "JPEG and desktop/mobile composition inspected; entire face and all text visible, no address or emoji."
+  "logo": "public/assets/logo.jpg",
+  "poster": "public/assets/social/pole-sante-sport-preview-v3.jpg",
+  "master": "output/social/preview-master-v3.png",
+  "visualReview": "Poster JPEG et master PNG inspectés : vrai logo, geste Pilates et textes lisibles, sans adresse ; composition mobile vérifiée à 390 px.",
+  "exportChecks": [
+    {
+      "name": "Export command succeeds with local originals",
+      "pass": true
+    },
+    {
+      "name": "Preview includes only current poster and real image",
+      "pass": true
+    },
+    {
+      "name": "Source archive excludes local credentials",
+      "pass": true
+    },
+    {
+      "name": "Originals archive uses clean paths",
+      "pass": true
+    },
+    {
+      "name": "Missing original reports limitation without failing other exports",
+      "pass": true
+    },
+    {
+      "name": "Missing original leaves existing originals archive identical",
+      "pass": true
+    },
+    {
+      "name": "No pending temporary ZIP remains",
+      "pass": true
+    }
+  ],
+  "limitations": "Viewports navigateur, pas de test sur téléphones physiques. Le rafraîchissement des anciennes vignettes dépend des plateformes de partage."
 }

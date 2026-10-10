@@ -3,7 +3,9 @@ menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('ar
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuButton?.getAttribute('aria-expanded')==='true'){menuButton.click();menuButton.focus();}});
 const dialog=document.querySelector('#demo-dialog');
 let demoSeen=false;try{demoSeen=sessionStorage.getItem('pss-demo-seen')==='yes';}catch{}
-if(dialog&&!demoSeen)dialog.showModal();
+const playHomeIntro=()=>{if(document.body.dataset.home==='true'&&!document.body.classList.contains('demo-expired')) window.PSSBrandIntro?.play();};
+if(dialog&&!demoSeen)dialog.showModal();else playHomeIntro();
+dialog?.addEventListener('close',playHomeIntro);
 const acknowledge=()=>{try{sessionStorage.setItem('pss-demo-seen','yes');}catch{}};
 document.querySelector('#close-demo')?.addEventListener('click',()=>{acknowledge();dialog.close();});
 dialog?.addEventListener('cancel',acknowledge);

@@ -103,6 +103,7 @@ try {
     if (['mobile', 'desktop'].includes(viewport.name)) await check(`viewport screenshot ${viewport.name}`, async () => {
       await page.goto(BASE, { waitUntil: 'load' });
       await page.evaluate(() => scrollTo(0, 0));
+      await page.locator('.hero-photo').evaluate(image => image.decode());
       const filename = `qa-home-${viewport.name}.png`;
       await page.screenshot({ path: path.join(RESULTS, filename), fullPage: false, animations: 'disabled' });
       report.screenshots.push(filename);

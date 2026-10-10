@@ -15,7 +15,7 @@ function options(id, entries) {
 }
 function showPerson(content) {
   const person = content.site?.team?.[Number(byId('person-select').value)]; byId('person-fields').hidden = !person;
-  for (const key of ['name', 'role', 'address', 'phone', 'bookingUrl']) byId(key === 'bookingUrl' ? 'person-booking' : `person-${key}`).value = person?.[key] || '';
+  for (const key of ['name', 'role', 'address', 'phone', 'bookingUrl', 'portrait', 'portraitSourceUrl']) byId(key === 'bookingUrl' ? 'person-booking' : key === 'portraitSourceUrl' ? 'person-portrait-source' : `person-${key}`).value = person?.[key] || '';
 }
 function selectedEntry(content) { const [collection, index] = byId('entry-select').value.split(':'); return { collection, entry: content.editorial?.[collection]?.[Number(index)] }; }
 function showEntry(content) {
@@ -82,7 +82,7 @@ for (const [id, key] of [['hero-title', 'heroTitle'], ['hero-text', 'heroText'],
 byId('retire-date').addEventListener('input', () => guidedChange((content) => { content.site.demo = { ...content.site.demo, retireAt: byId('retire-date').value || null }; }));
 byId('person-select').addEventListener('change', () => showPerson(readEditors()));
 byId('entry-select').addEventListener('change', () => showEntry(readEditors()));
-for (const [id, key] of [['person-name', 'name'], ['person-role', 'role'], ['person-address', 'address'], ['person-phone', 'phone'], ['person-booking', 'bookingUrl']]) byId(id).addEventListener('input', () => guidedChange((content) => {
+for (const [id, key] of [['person-name', 'name'], ['person-role', 'role'], ['person-address', 'address'], ['person-phone', 'phone'], ['person-booking', 'bookingUrl'], ['person-portrait', 'portrait'], ['person-portrait-source', 'portraitSourceUrl']]) byId(id).addEventListener('input', () => guidedChange((content) => {
   const person = content.site.team[Number(byId('person-select').value)]; person[key] = byId(id).value;
   if (key === 'name') byId('person-select').selectedOptions[0].textContent = person.name || 'Praticien';
 }));

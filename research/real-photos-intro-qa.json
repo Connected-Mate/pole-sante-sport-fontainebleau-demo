@@ -1,0 +1,184 @@
+{
+  "at": "2026-10-10T23:06:30.765Z",
+  "base": "http://127.0.0.1:4174",
+  "checks": [
+    {
+      "name": "Popup présente avant animation",
+      "pass": true
+    },
+    {
+      "name": "Animation après fermeture popup",
+      "pass": true
+    },
+    {
+      "name": "Animation terminée automatiquement en environ 1,5 seconde",
+      "pass": true,
+      "detail": {
+        "reason": "completed",
+        "duration": 1550
+      }
+    },
+    {
+      "name": "Overlay retiré sans bloquer document",
+      "pass": true
+    },
+    {
+      "name": "Animation au retour à accueil",
+      "pass": true
+    },
+    {
+      "name": "Replay au clavier",
+      "pass": true
+    },
+    {
+      "name": "Animation annulée au clavier",
+      "pass": true,
+      "detail": {
+        "at": 1950.8999999761581,
+        "reason": "interaction"
+      }
+    },
+    {
+      "name": "Replay au clic",
+      "pass": true
+    },
+    {
+      "name": "Animation annulée à interaction pointeur",
+      "pass": true
+    },
+    {
+      "name": "Pas de débordement accueil 390",
+      "pass": true
+    },
+    {
+      "name": "Pas de débordement accueil 768",
+      "pass": true
+    },
+    {
+      "name": "Pas de débordement accueil 1440",
+      "pass": true
+    },
+    {
+      "name": "14 praticiens affichés",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "4 portraits réels",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "4 portraits chargés et authentiques",
+      "pass": true,
+      "detail": [
+        {
+          "alt": "Portrait de Jean-Luc Tutakowski",
+          "src": "http://127.0.0.1:4174/assets/team/jean-luc-tutakowski.webp",
+          "width": 805,
+          "height": 1001,
+          "loaded": true
+        },
+        {
+          "alt": "Portrait de Frédérique Marty",
+          "src": "http://127.0.0.1:4174/assets/team/frederique-marty.webp",
+          "width": 254,
+          "height": 296,
+          "loaded": true
+        },
+        {
+          "alt": "Portrait de Didier Lapôtre",
+          "src": "http://127.0.0.1:4174/assets/team/didier-lapotre.webp",
+          "width": 264,
+          "height": 277,
+          "loaded": true
+        },
+        {
+          "alt": "Portrait de Raj",
+          "src": "http://127.0.0.1:4174/assets/team/raj-card.webp",
+          "width": 286,
+          "height": 400,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Aucune image generated dans index.html",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:4174/assets/logo.jpg",
+        "http://127.0.0.1:4174/assets/real/pilates-mouvement.webp",
+        "http://127.0.0.1:4174/assets/real/kinesitherapie-soin.webp",
+        "http://127.0.0.1:4174/assets/real/podologie-soin.webp",
+        "http://127.0.0.1:4174/assets/real/osteopathie-soin.webp",
+        "http://127.0.0.1:4174/assets/real/pilates-reformer.webp",
+        "http://127.0.0.1:4174/assets/real/pilates-collectif.webp",
+        "http://127.0.0.1:4174/assets/facade.png"
+      ]
+    },
+    {
+      "name": "Aucune image generated dans galerie.html",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:4174/assets/logo.jpg",
+        "http://127.0.0.1:4174/assets/real/pilates-collectif.webp",
+        "http://127.0.0.1:4174/assets/real/pilates-mouvement.webp",
+        "http://127.0.0.1:4174/assets/real/pilates-reformer.webp",
+        "http://127.0.0.1:4174/assets/real/kinesitherapie-soin.webp",
+        "http://127.0.0.1:4174/assets/real/podologie-soin.webp",
+        "http://127.0.0.1:4174/assets/real/osteopathie-soin.webp",
+        "http://127.0.0.1:4174/assets/facade.png",
+        "http://127.0.0.1:4174/assets/real/yoga-posture.webp"
+      ]
+    },
+    {
+      "name": "Préférence mouvement réduit respectée au chargement",
+      "pass": true
+    },
+    {
+      "name": "Préférence mouvement réduit respectée au replay",
+      "pass": true
+    },
+    {
+      "name": "Aucune erreur JavaScript",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "captures": [
+    "test-results/real-intro-desktop.png",
+    "test-results/real-home-mobile.png",
+    "test-results/real-home-tablet.png",
+    "test-results/real-home-desktop.png",
+    "test-results/real-team-desktop.png",
+    "test-results/real-team-mobile.png",
+    "test-results/real-team-mobile-raj.png"
+  ],
+  "errors": [],
+  "summary": {
+    "passed": 20,
+    "total": 20
+  },
+  "heroImage": {
+    "src": "http://127.0.0.1:4174/assets/real/pilates-mouvement.webp",
+    "naturalWidth": 6016,
+    "naturalHeight": 4016,
+    "complete": true,
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "renderedWidth": 599,
+    "renderedHeight": 526
+  },
+  "visualInspection": {
+    "method": "Toutes les 7 captures ont été ouvertes avec view_image et inspectées visuellement.",
+    "defects": [],
+    "observations": [
+      "Hero réellement chargé aux tailles 390, 768 et 1440 ; détail de mouvement photographique net, aucun rectangle beige observé après décodage.",
+      "Portraits identifiables, non déformés, bonne lisibilité des noms et numéros sur desktop et mobile.",
+      "Animation observée pendant son entrée (capture à ~180 ms), logo et signature bien positionnés.",
+      "Frédérique Marty et Didier Lapôtre conservent le détourage circulaire et le cadre de leurs images sources ; aspect cohérent à la taille affichée.",
+      "Hero mobile partiellement sous la ligne de flottaison, contenu accessible au défilement ; CTA fixe lisible."
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "checkedAt": "2026-10-11",
+  "scope": "Portraits professionnels publics des sept praticiens du 143 rue Grande ; aucune génération ou retouche.",
+  "downloadedPortraits": 0,
+  "identifiedDoctolibPortraitReferences": 3,
+  "entries": [
+    {
+      "name": "Mickaël Becquet",
+      "profession": "Masseur-kinésithérapeute",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "sourcePage": null,
+      "sourceImage": null,
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Mickaël Becquet",
+        "profession": "Masseur-kinésithérapeute",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Nom, profession et téléphone figurent sur les pages officielles kinesitherapie.html et kine2.html."
+      },
+      "status": "portrait_non_trouve",
+      "limits": [
+        "Aucun profil public Doctolib associé avec certitude à ce praticien à Fontainebleau dans les recherches effectuées.",
+        "Aucun portrait identifié dans les pages officielles consultées. Les 15 images de la galerie kine2.html sont des illustrations de disciplines, pas des portraits nominatifs."
+      ],
+      "searchedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "Recherche web nominative et limitée à doctolib.fr"
+      ]
+    },
+    {
+      "name": "Raul Hernandez",
+      "profession": "Masseur-kinésithérapeute",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "sourcePage": null,
+      "sourceImage": null,
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Raul Hernandez",
+        "profession": "Masseur-kinésithérapeute",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Nom, profession et téléphone figurent sur les pages officielles kinesitherapie.html et kine2.html."
+      },
+      "status": "portrait_non_trouve",
+      "limits": [
+        "Aucun profil public Doctolib associé avec certitude à ce praticien à Fontainebleau dans les recherches effectuées.",
+        "Aucun portrait identifié dans les pages officielles consultées. Les 15 images de la galerie kine2.html sont des illustrations de disciplines, pas des portraits nominatifs."
+      ],
+      "searchedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "Recherche web nominative et limitée à doctolib.fr"
+      ]
+    },
+    {
+      "name": "Alice Tomas",
+      "profession": "Masseur-kinésithérapeute",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "sourcePage": null,
+      "sourceImage": null,
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Alice Tomas",
+        "profession": "Masseur-kinésithérapeute",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Nom, profession et téléphone figurent sur les pages officielles kinesitherapie.html et kine2.html."
+      },
+      "status": "portrait_non_trouve",
+      "limits": [
+        "Aucun profil public Doctolib associé avec certitude à ce praticien à Fontainebleau dans les recherches effectuées.",
+        "Aucun portrait identifié dans les pages officielles consultées. Les 15 images de la galerie kine2.html sont des illustrations de disciplines, pas des portraits nominatifs."
+      ],
+      "searchedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "Recherche web nominative et limitée à doctolib.fr"
+      ]
+    },
+    {
+      "name": "Louis Becquet",
+      "profession": "Masseur-kinésithérapeute",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "sourcePage": null,
+      "sourceImage": null,
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Louis Becquet",
+        "profession": "Masseur-kinésithérapeute",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Nom, profession et téléphone figurent sur les pages officielles kinesitherapie.html et kine2.html."
+      },
+      "status": "portrait_non_trouve",
+      "limits": [
+        "Aucun profil public Doctolib associé avec certitude à ce praticien à Fontainebleau dans les recherches effectuées.",
+        "Aucun portrait identifié dans les pages officielles consultées. Les 15 images de la galerie kine2.html sont des illustrations de disciplines, pas des portraits nominatifs."
+      ],
+      "searchedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "Recherche web nominative et limitée à doctolib.fr"
+      ]
+    },
+    {
+      "name": "Carine Marie",
+      "profession": "Pédicure-podologue",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/podologie.html",
+      "sourcePage": "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+      "sourceImage": "https://media.doctolib.com/image/upload/q_auto:eco,f_auto/cvjdxhrb8ipd0n4jigr9.jpg",
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Carine Marie",
+        "profession": "Pédicure-podologue",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Profil public Doctolib lié depuis le site du pôle : nom, profession et adresse concordants."
+      },
+      "status": "portrait_reference_mais_telechargement_refuse",
+      "limits": [
+        "La page publique Doctolib est accessible (HTTP 200). Le serveur d’images refuse le téléchargement direct (HTTP 403). Aucun contournement réalisé.",
+        "Image non téléchargée et non inspectée visuellement ; ne pas présenter ce fichier comme disponible.",
+        "Les pages du site historique consultées ne contiennent pas de portrait individuel utilisable."
+      ],
+      "publicPhoneOnDoctolib": "01 60 71 95 95",
+      "professionalFacts": [
+        "Podologie du sport et posturologie figurent dans les expertises du profil Doctolib."
+      ]
+    },
+    {
+      "name": "Isabelle Trohel",
+      "profession": "Ostéopathe",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+      "sourcePage": "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel",
+      "sourceImage": "https://media.doctolib.com/image/upload/q_auto:eco,f_auto/djguksc2nxg9pgo9usz2.jpg",
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Isabelle Trohel",
+        "profession": "Ostéopathe",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Profil public Doctolib lié depuis le site du pôle : nom, profession et adresse concordants."
+      },
+      "status": "portrait_reference_mais_telechargement_refuse",
+      "limits": [
+        "La page publique Doctolib est accessible (HTTP 200). Le serveur d’images refuse le téléchargement direct (HTTP 403). Aucun contournement réalisé.",
+        "Image non téléchargée et non inspectée visuellement ; ne pas présenter ce fichier comme disponible.",
+        "Les pages du site historique consultées ne contiennent pas de portrait individuel utilisable.",
+        "Le téléphone Doctolib (06 22 90 66 90) diffère du site historique ; ne pas résoudre la contradiction sans confirmation du cabinet."
+      ],
+      "publicPhoneOnDoctolib": "0622906690",
+      "professionalFacts": [
+        "Ostéopathie du sportif figure dans les expertises du profil Doctolib."
+      ]
+    },
+    {
+      "name": "Jonathan Herjean",
+      "profession": "Diététicien-nutritionniste",
+      "checkedAt": "2026-10-11",
+      "officialSourcePage": "https://pole-sante-sport-fontainebleau.fr/nutritionniste.html",
+      "sourcePage": "https://www.doctolib.fr/dieteticien/fontainebleau/jonathan-herjean",
+      "sourceImage": "https://media.doctolib.com/image/upload/q_auto:eco,f_auto/hkrweqk6uph9gz0te0zt.jpg",
+      "portraitPath": null,
+      "dimensions": null,
+      "identityConfirmed": {
+        "name": "Jonathan Herjean",
+        "profession": "Diététicien-nutritionniste",
+        "address": "143 rue Grande, 77300 Fontainebleau",
+        "method": "Profil public Doctolib lié depuis le site du pôle : nom, profession et adresse concordants."
+      },
+      "status": "portrait_reference_mais_telechargement_refuse",
+      "limits": [
+        "La page publique Doctolib est accessible (HTTP 200). Le serveur d’images refuse le téléchargement direct (HTTP 403). Aucun contournement réalisé.",
+        "Image non téléchargée et non inspectée visuellement ; ne pas présenter ce fichier comme disponible.",
+        "Les pages du site historique consultées ne contiennent pas de portrait individuel utilisable.",
+        "Plusieurs lieux de consultation figurent sur Doctolib ; conserver le conseil de sélectionner Fontainebleau."
+      ],
+      "publicPhoneOnDoctolib": "06 21 10 03 12"
+    }
+  ],
+  "rejectedAlternatives": [
+    {
+      "url": "https://www.doctolib.fr/masseur-kinesitherapeute/velizy-villacoublay/raul-hernandez-gutierrez",
+      "reason": "Homonyme à Vélizy-Villacoublay, identité non établie avec Raul Hernandez à Fontainebleau."
+    },
+    {
+      "url": "https://alumni.eso-suposteo.fr/osteopathes/514-trohel-isabelle",
+      "reason": "Avatar générique user.svg, aucun portrait réel."
+    },
+    {
+      "url": "https://www.osteopathe.do/fontainebleau/isabelle-trohel",
+      "reason": "Avatar générique woman.png, aucun portrait réel."
+    },
+    {
+      "url": "https://www.medicum.fr/spe-ville/pedicure-podologue/fontainebleau/carine-marie",
+      "reason": "Référence photo Google présente mais téléchargement HTTP 400 ; sujet non vérifiable, non retenu."
+    }
+  ],
+  "nextStep": "Obtenir les fichiers portraits originaux auprès du cabinet ou une autre source professionnelle publique effectivement téléchargeable et nominative. Conserver des initiales tant qu’aucun vrai portrait n’est disponible."
+}

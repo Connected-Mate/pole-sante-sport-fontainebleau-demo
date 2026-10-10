@@ -8,7 +8,7 @@ const ROOT = process.cwd();
 const BASE = (process.env.QA_BASE_URL || 'http://127.0.0.1:4174').replace(/\/?$/, '/');
 const CHROME = process.env.QA_CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const RESULTS = path.join(ROOT, 'test-results');
-const IMAGE = 'assets/social/pole-sante-sport-preview-v2.jpg';
+const IMAGE = 'assets/social/pole-sante-sport-preview-v3.jpg';
 const site = JSON.parse(await fs.readFile(path.join(ROOT, 'content/site.json'), 'utf8'));
 const manifest = JSON.parse(await fs.readFile(path.join(ROOT, 'dist/build-manifest.json'), 'utf8'));
 const PUBLIC = new URL(site.publicBaseUrl.replace(/\/?$/, '/'));
@@ -49,6 +49,16 @@ try {
   browser = await chromium.launch({ executablePath: CHROME, headless: true });
   report.browserVersion = browser.version();
   const context = await browser.newContext({ viewport: { width: 1440, height: 960 }, reducedMotion: 'reduce' });
+  // GitHub's nested 404 page deliberately uses absolute publication URLs.
+  // Validate those assets against this build, before they exist on GitHub Pages.
+  if (new URL(BASE).origin !== PUBLIC.origin) {
+    await context.route(`${PUBLIC.origin}${PUBLIC.pathname}**`, async route => {
+      const requested = new URL(route.request().url());
+      const local = new URL(requested.pathname.slice(PUBLIC.pathname.length) + requested.search, BASE);
+      const response = await context.request.get(local.href);
+      await route.fulfill({ response });
+    });
+  }
   const page = await context.newPage();
   watch(page);
   await page.addInitScript(() => { try { sessionStorage.setItem('pss-demo-seen', 'yes'); } catch {} });
@@ -57,7 +67,7 @@ try {
     assert.equal(manifest.pages.length, 24);
     const pages = [];
     for (const item of manifest.pages) {
-      const response = await page.goto(new URL(item.file, BASE).href, { waitUntil: 'load' });
+      const response = await page.goto(new URL(item.file, BASE).href, { waitUntil: 'networkidle' });
       assert.equal(response.status(), 200, item.file);
       const meta = await page.evaluate(() => Object.fromEntries([...document.querySelectorAll('meta[property],meta[name]')].map(node => [node.getAttribute('property') || node.name, node.content])));
       assert.equal(meta['og:image'], EXPECTED_IMAGE, item.file);
@@ -95,13 +105,19 @@ try {
     return { ...dimensions, bytes: bytes.length, contentType: response.headers()['content-type'] };
   });
 
-  await check('animated preview has noindex, a decoded sport photo and loaded local Manrope font', async () => {
+  await check('animated preview has noindex, the real Pilates photo, actual logo and local Manrope font', async () => {
     await loadPreview(page);
     const data = await page.evaluate(() => {
       const photo = document.querySelector('.card-photo img');
+      const logo = document.querySelector('.brand-logo');
       return {
         robots: document.querySelector('meta[name="robots"]')?.content,
         photo: { source: photo.src, width: photo.naturalWidth, height: photo.naturalHeight, complete: photo.complete },
+        logo: { source: logo.src, width: logo.naturalWidth, height: logo.naturalHeight, complete: logo.complete },
+        title: document.querySelector('#card-title').innerText.replaceAll('\n', ' '),
+        signature: document.querySelector('.card-signature').textContent,
+        socialImage: document.querySelector('meta[property="og:image"]')?.content,
+        imageReferences: [...document.querySelectorAll('img')].map(image => image.src),
         font: getComputedStyle(document.querySelector('#card-title')).fontFamily,
         loadedFonts: [...document.fonts].filter(font => font.status === 'loaded').map(font => font.family),
         headings: document.querySelectorAll('h1').length
@@ -109,8 +125,15 @@ try {
     });
     assert.match(data.robots || '', /\bnoindex\b/);
     assert.equal(data.headings, 1);
-    assert.match(data.photo.source, /sport-preview-photo\.webp$/);
-    assert.ok(data.photo.complete && data.photo.width > 0 && data.photo.height > 0);
+    assert.match(data.photo.source, /assets\/real\/pilates-mouvement\.webp$/);
+    assert.ok(data.photo.complete);
+    assert.equal(data.photo.width, 6016); assert.equal(data.photo.height, 4016);
+    assert.match(data.logo.source, /assets\/logo\.jpg$/);
+    assert.ok(data.logo.complete && data.logo.width > 0 && data.logo.height > 0);
+    assert.equal(data.title, 'Votre corps. Votre sport. Votre rythme.');
+    assert.equal(data.signature, 'Pour les sportifs de tous niveaux.');
+    assert.equal(data.socialImage, EXPECTED_IMAGE);
+    assert.ok(data.imageReferences.every(source => !source.includes('/generated/')));
     assert.match(data.font, /^Manrope\b/);
     assert.ok(data.loadedFonts.some(font => font.replaceAll('"', '') === 'Manrope'), 'Manrope was not loaded');
     return data;

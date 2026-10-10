@@ -1,0 +1,110 @@
+{
+  "retrievedAt": "2026-10-11",
+  "portraits": [
+    {
+      "name": "Jean-Luc Tutakowski",
+      "path": "public/assets/team/jean-luc-tutakowski.webp",
+      "originalPath": ".local/media-research/portrait-originals/jean-luc-tutakowski.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_71f481a980064b5ca0782f673648d24e.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/jean-luc-tutakowski",
+      "crossReferencePage": "https://pole-sante-sport-fontainebleau.fr/pilate.html",
+      "identityEvidence": "Page nominative de Espace Pilates ; profession de coach sportif et pratique Pilates mentionnées. Même portrait miniature sous son nom dans la page pilate.html du pôle.",
+      "width": 805,
+      "height": 1001,
+      "bytes": 69988,
+      "sha256": "07c3031e614d157b35917b4a73cb90aa87a6b6bfa61c542044ebee945aa552b3",
+      "sourceSha256": "dc15200a7e25bb607e2a0a5d755b8e88b602fb1b01ac1f8dc85408790d8e79bc",
+      "status": "verified_real_portrait",
+      "processing": "WebP quality 90, dimensions natives conservées, aucune retouche IA, aucun recadrage.",
+      "rightsContext": "Récupération de photos professionnelles publiques explicitement demandée par l’utilisateur le 11 octobre 2026 ; pas de licence tierce déduite de la simple disponibilité publique."
+    },
+    {
+      "name": "Raj",
+      "path": "public/assets/team/raj.webp",
+      "originalPath": ".local/media-research/portrait-originals/raj.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_c84628b0914f410cb92b1575c2442215~mv2.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/rajyashree-ramamurthi",
+      "crossReferencePage": "https://pole-sante-sport-fontainebleau.fr/yoga1.html",
+      "identityEvidence": "Page nominative Rajyashree Ramamurthi ; enseignement du yoga. Page yoga1.html du pôle associe Raj et le portrait au yoga au 143 rue Grande.",
+      "width": 3374,
+      "height": 4724,
+      "bytes": 1211832,
+      "sha256": "26326605c22a6537debdcfd8e6bec1cb4169de69b77db786f95e2abb7b5d1b8a",
+      "sourceSha256": "727bbb96d65110cb235601be42616a62fa0be9610f6c614fa7aaf4af602476f6",
+      "status": "verified_real_portrait",
+      "processing": "WebP quality 90, dimensions natives conservées, aucune retouche IA, aucun recadrage.",
+      "rightsContext": "Récupération de photos professionnelles publiques explicitement demandée par l’utilisateur le 11 octobre 2026 ; pas de licence tierce déduite de la simple disponibilité publique.",
+      "derivativePath": "public/assets/team/raj-card.webp",
+      "derivative": {
+        "path": "public/assets/team/raj-card.webp",
+        "width": 286,
+        "height": 400,
+        "bytes": 19236,
+        "processing": "Redimensionnement classique Lanczos à 400 px de hauteur et conversion WebP qualité 90 ; aucune IA, aucun recadrage, original natif conservé.",
+        "sha256": "7d0f1a744181333c2ac646c4dd7388f937b971ed6915a97e85f6ee4854497365"
+      }
+    },
+    {
+      "name": "Frédérique Marty",
+      "path": "public/assets/team/frederique-marty.webp",
+      "originalPath": ".local/media-research/portrait-originals/frederique-marty.png",
+      "sourceUrl": "https://static.wixstatic.com/media/4acaef_b44a221b0dda4b9eabf705eb424bfc2b~mv2.png",
+      "sourcePage": "https://www.gestaltmartylapotre.fr/",
+      "crossReferencePage": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
+      "identityEvidence": "Portrait explicitement légendé Frédérique Marty Gestalt Thérapeute. Nom, téléphone 06 34 05 32 74 et 160 rue Grande Fontainebleau correspondent au site du pôle.",
+      "width": 254,
+      "height": 296,
+      "bytes": 11716,
+      "sha256": "a7d851b970a0e1e42051723e867ba8c1c45b8bf89d72b282b0df3fc49ffc21f9",
+      "sourceSha256": "ccd165bd03200069a2d5686077929182f3165b77cd11935947b236d3dd550a1b",
+      "status": "verified_real_portrait",
+      "processing": "WebP quality 90, dimensions natives conservées, aucune retouche IA, aucun recadrage.",
+      "rightsContext": "Récupération de photos professionnelles publiques explicitement demandée par l’utilisateur le 11 octobre 2026 ; pas de licence tierce déduite de la simple disponibilité publique."
+    },
+    {
+      "name": "Didier Lapôtre",
+      "path": "public/assets/team/didier-lapotre.webp",
+      "originalPath": ".local/media-research/portrait-originals/didier-lapotre.png",
+      "sourceUrl": "https://static.wixstatic.com/media/4acaef_c24da533452247aba38b83a82ba12ac7~mv2.png",
+      "sourcePage": "https://www.gestaltmartylapotre.fr/",
+      "crossReferencePage": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
+      "identityEvidence": "Portrait explicitement légendé Didier Lapotre Gestalt thérapeute. Nom, téléphone 06 70 63 72 65 et 160 rue Grande Fontainebleau correspondent au site du pôle.",
+      "width": 264,
+      "height": 277,
+      "bytes": 18786,
+      "sha256": "b92fcf07a0c478dd1860e694e5b73061539b5876f6d2f57acfd606166fcc50a7",
+      "sourceSha256": "c0ad97683eedf607105e635bcdcde50bfaff8ca0e7b40f02d6500c58210e1215",
+      "status": "verified_real_portrait",
+      "processing": "WebP quality 90, dimensions natives conservées, aucune retouche IA, aucun recadrage.",
+      "rightsContext": "Récupération de photos professionnelles publiques explicitement demandée par l’utilisateur le 11 octobre 2026 ; pas de licence tierce déduite de la simple disponibilité publique."
+    }
+  ],
+  "missing": [
+    {
+      "name": "Morgane Palomo",
+      "status": "no_verified_portrait_found",
+      "checkedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/etiopathie.html",
+        "https://www.etiopathie.com/etiopathe/morgane-palomo/"
+      ],
+      "evidence": "Annuaire IFE : identité, téléphone et adresse concordent ; élément image de portrait vide. Recherche Doctolib sans profil identifié. Homonyme communication/marketing rejetée."
+    },
+    {
+      "name": "Marie Anciello Taffanel",
+      "status": "no_verified_portrait_found",
+      "checkedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/esthetique.html"
+      ],
+      "evidence": "Site du pôle sans portrait nominatif. Recherche Doctolib et annuaires : images génériques, aucun portrait authentifié. Ne pas utiliser de photo générique comme portrait."
+    },
+    {
+      "name": "Nadège Becquet",
+      "status": "no_verified_portrait_found",
+      "checkedSources": [
+        "https://pole-sante-sport-fontainebleau.fr/faciale.html",
+        "https://www.planity.com/nadege-becquet-77300-fontainebleau"
+      ],
+      "evidence": "Nom, adresse et téléphone concordent ; aucune photo nominative fiable exploitable dans les sources consultées. Ne pas identifier comme Nadège le modèle de soin facial."
+    }
+  ]
+}

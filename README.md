@@ -1,6 +1,6 @@
 # Pôle Santé Sport Fontainebleau — démonstration
 
-Refonte statique multipage en français. 24 pages, 10 disciplines, 14 intervenants, 3 guides pratiques. Informations tirées du site historique et des profils publics de réservation, avec audit daté du 10 octobre 2026. Aucun tarif, avis, diplôme ni résultat ajouté sans preuve.
+Refonte statique multipage en français. 24 pages, 10 disciplines, 14 intervenants, 3 guides pratiques. Informations tirées du site historique et des profils publics de réservation, avec audit initial du 10 octobre et recherche photographique du 11 octobre 2026. Aucun tarif, avis, diplôme ni résultat ajouté sans preuve.
 
 ## Ouvrir sur cet ordinateur
 
@@ -22,6 +22,15 @@ Le port par défaut est 4173 ; 4174 est utilisé ici parce que 4173 est déjà o
 
 Dans l’administration : modifier → enregistrer un brouillon → valider → publier localement. Une validation technique ne remplace pas la validation éditoriale du propriétaire. Historique et restauration sont locaux. Télécharger régulièrement une sauvegarde et la conserver sur un autre support. Voir [la documentation du back-office](admin/README.md).
 
+### Ajouter ou remplacer un portrait réel
+
+1. Déposer le fichier dans `public/assets/team/` avec un nom en minuscules, chiffres et tirets, au format JPG, PNG ou WebP (par exemple `jean-luc-tutakowski.webp`). L’administration ne téléverse pas de fichier image.
+2. Dans **Équipe & coordonnées**, choisir le praticien puis remplir **Portrait (fichier du projet)** avec `team/jean-luc-tutakowski.webp`, sans `public/assets/`. Ce champ correspond à `portrait` dans le JSON.
+3. Remplir **Source du portrait** avec la page professionnelle nominative en HTTPS. Ce champ correspond à `portraitSourceUrl` ; il permet au visiteur de consulter le profil professionnel.
+4. Vérifier que la photo représente bien cette personne, conserver sa provenance et les justificatifs de réutilisation, puis enregistrer, valider et publier localement. Vérifier ensuite l’affichage sur la page équipe et la fiche de la discipline.
+
+Laisser `portrait` vide affiche les initiales. La construction refuse un chemin de portrait dont le fichier manque, sans remplacer la version publiée. Ne pas substituer un modèle de soin, un homonyme, un avatar générique ou un visage généré. La sauvegarde JSON conserve les chemins et les sources, mais pas les fichiers image : sauvegarder aussi `public/assets/team/` et l’archive des originaux.
+
 Pour publier les modifications validées sur GitHub Pages :
 
 ```sh
@@ -42,7 +51,7 @@ npm run test:browser
 npm run export
 ```
 
-Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les archives principales sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP) et `exports/sources-completes.zip` (sources, administration, documentation). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
+Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet un autre chemin si nécessaire. Le site local doit être lancé. Les archives principales sont `exports/site-public.zip` (site HTML autonome, à servir en HTTP), `exports/sources-completes.zip` (sources, administration, documentation), `exports/photos-reelles-originaux.zip` (photographies réelles récupérées) et `exports/apercu-social.zip` (carte de partage). Les dépendances se réinstallent avec `npm ci` ; `.local/`, mots de passe, historique de travail et `node_modules` sont exclus.
 
 ## Démonstration publique et retrait
 
@@ -61,9 +70,29 @@ Le test navigateur utilise Chrome installé sur macOS ; `QA_CHROME_PATH` permet 
 
 ## Direction artistique actuelle
 
-La révision du 10 octobre privilégie le soin et le mouvement avec une palette bleu profond, pierre et sable. Typographie Manrope auto-hébergée (licence SIL OFL dans `public/assets/fonts/`), compositions photographiques rectangulaires, navigation et CTA au trait, sans émojis décoratifs. L’accueil associe soin, pratique sportive et rythme personnel sans promettre de résultat médical. Les pages publiques ne mentionnent plus la génération ou la retouche ; les scènes restent des illustrations sans attribution à l’équipe ou aux locaux.
+La version du 11 octobre s’adresse aux sportifs de tous niveaux, de la reprise à la pratique régulière : « Votre corps. Votre sport. Votre rythme. ». Bleu profond, pierre et sable, Manrope auto-hébergée (licence SIL OFL dans `public/assets/fonts/`), photographies réelles et habillage HTML/CSS sobre. Le texte valorise la compréhension du corps, le mouvement et l’accompagnement sans promettre de performance ni de résultat médical.
 
-La provenance reste consignée dans les fichiers du projet. Voir [la direction artistique](research/direction-artistique.md) et [les contrôles de cette révision](research/design-qa.json).
+L’arrivée sur l’accueil comporte une courte animation du logo historique : 1,5 seconde, après fermeture de la notice de démonstration lors de la première visite. Elle se rejoue depuis le pied de page, s’arrête dès une interaction et respecte `prefers-reduced-motion`. Le contenu ne dépend pas de cette animation pour fonctionner. Les fichiers sont `public/brand-intro.css` et `public/brand-intro.js`.
+
+## Photographies et portraits
+
+Quatre vrais portraits ont été rapprochés de sources professionnelles nominatives et des pages du pôle : **Jean-Luc Tutakowski, Raj, Frédérique Marty et Didier Lapôtre**. Ils figurent dans `public/assets/team/`. Les détails d’identité, les pages d’origine et les empreintes figurent dans [portraits-officiels.json](research/portraits-officiels.json).
+
+Dix portraits restent indisponibles : les trois portraits référencés sur Doctolib pour Carine Marie, Isabelle Trohel et Jonathan Herjean n’ont pas pu être téléchargés (HTTP 403 du serveur d’images), et aucun portrait fiable n’a été retrouvé pour les sept autres personnes. Ces fiches conservent leurs initiales. Les sources consultées et les limites sont consignées dans [portraits-doctolib.json](research/portraits-doctolib.json) et [portraits-officiels.json](research/portraits-officiels.json).
+
+Les photos de mouvement viennent du site professionnel Espace Pilates, relié au pôle ; les photographies de soins, la façade et le logo proviennent du site historique. Les modèles des photographies de disciplines ne sont pas présentés comme les praticiens ou patients du pôle. Aucun nouveau visage n’a été généré, aucune reconstruction de visage ni retouche IA n’a été appliquée à ce jeu de photos. Les originaux sont réunis dans `exports/photos-reelles-originaux.zip` ; les fichiers de diffusion et leurs traitements sont décrits dans [real-sport-images.json](research/real-sport-images.json) et [assets-manifest.json](research/assets-manifest.json).
+
+Les droits sur les photos et le logo du site historique ont été confirmés par l’utilisateur le 10 octobre. La récupération des photos professionnelles réelles a été explicitement demandée le 11 octobre. La disponibilité publique d’une photo ne vaut pas licence : conserver les autorisations et crédits du cabinet et des professionnels pour le lancement officiel. Aucune licence tierce n’est supposée.
+
+Les fichiers synthétiques des versions précédentes sont retirés des médias publics de cette révision. Les masters historiques et leurs prompts restent conservés dans `output/imagegen/` et `research/` pour la traçabilité ; ils ne sont plus utilisés sur le site. L’archive `exports/archives-visuels-ia-historiques.zip` est historique et ne fait pas partie du jeu photographique actuel.
+
+## Aperçu des liens et carte animée
+
+L’aperçu **v3** utilise une vraie photographie de Pilates, le logo du pôle et une composition HTML/CSS, sans adresse dans le visuel. Le JPEG social est `public/assets/social/pole-sante-sport-preview-v3.jpg` (1200 × 630), son master est `output/social/preview-master-v3.png` et la carte animée est accessible à `/share-preview.html`. Cette animation de partage est distincte de l’introduction de 1,5 seconde sur l’accueil. Les balises Open Graph et Twitter utilisent la ressource v3 ; les anciens partages peuvent garder leur vignette en cache.
+
+Pour recréer la carte après édition de `public/share-preview.html` ou `public/share-preview.css` : `npm run render:preview`, puis `npm run build`. Chrome local est paramétrable via `QA_CHROME_PATH`. `npm run test:preview` contrôle notamment les métadonnées, les ressources, le responsive, le clavier et la réduction des animations. Le rendu est commité ; le workflow Pages n’exécute pas de capture navigateur.
+
+Les 10 tests serveur/build et les 158 contrôles navigateur ont réussi pour cette révision ; 24 analyses Axe n’ont détecté aucun défaut. Les 20 contrôles ciblés des photos et de l’animation, les 12 contrôles de l’aperçu v3 et les 6 contrôles des champs portrait du back-office passent aussi. Les exports et la publication font l’objet d’une vérification finale. Consulter [le rapport de livraison](LIVRAISON.md) pour le bilan final ; les résultats historiques ne remplacent pas la validation de la version actuelle.
 
 ## Dossiers de recherche
 
@@ -71,19 +100,8 @@ La provenance reste consignée dans les fichiers du projet. Voir [la direction a
 - [Données vérifiées et contradictions](research/business-audit.json)
 - [Audit éditorial](research/editorial-audit.md)
 - [Contrôles SEO et lancement](research/seo-checklist.md)
-- [Provenance des médias](research/assets-manifest.json)
-- [Photographies d’illustration créées avec l’IA](research/photographies-ia.md)
-
-À la demande explicite de l’utilisateur au deuxième tour, six visuels ont été travaillés avec l’outil intégré `image_gen` : cinq nouvelles illustrations pour la kinésithérapie, la podologie, la nutrition, l’ostéopathie et le yoga, et une retouche de la photographie historique de la façade du 143. Les cinq illustrations représentent des scènes fictives et ne sont pas présentées comme les locaux, praticiens ou patients réels. La façade retouchée comporte des détails fins reconstruits par le modèle ; elle n’est pas une nouvelle photographie réelle ni une reproduction documentaire exacte. La source `public/assets/facade.png` reste conservée et consultable depuis la galerie. Le logo historique est inchangé ; les anciennes illustrations restent documentées dans le manifeste avec le statut `retired`.
-
-Les sorties PNG du modèle sont conservées dans `output/imagegen/` ; les fichiers diffusés sont `public/assets/generated/*-premium.webp` et `facade-retouchee.webp`, encodés en WebP qualité 90 sans recadrage, redimensionnement ni retouche supplémentaire lors de la conversion. Cette compression est avec perte ; les PNG restent intacts. La résolution native est de 1402 × 1122 px pour l’accueil (kinésithérapie), de 1536 × 1024 px pour les quatre autres illustrations et de 1373 × 1145 px pour la façade retouchée. La demande d’un rendu « 8K » guide l’esthétique et le détail : les fichiers ne sont pas en 8K natif. Les prompts exacts, sources et contrôles visuels sont documentés dans [le dossier des photographies IA](research/photographies-ia.md).
-
-Les six originaux PNG du nouveau jeu de visuels sont aussi livrés dans `exports/visuels-generes-originaux.zip`. Le détail des prompts et résolutions est dans [la provenance des photographies IA](research/photographies-ia.md).
-
-## Aperçu des liens et carte animée
-
-L’image de partage ne reprend plus la façade. Une carte sportive composée en HTML/CSS utilise une nouvelle photo, sans adresse dans le visuel. Le JPEG social est `public/assets/social/pole-sante-sport-preview-v2.jpg` (1200 × 630), son master est `output/social/preview-master.png` (2400 × 1260) et la version animée se trouve à `/share-preview.html`. Les balises Open Graph et Twitter des 24 pages de contenu pointent vers cette nouvelle ressource.
-
-Pour recréer la carte après édition de `public/share-preview.html` ou `public/share-preview.css` : `npm run render:preview`, puis `npm run build`. Le navigateur utilisé est Chrome local, paramétrable via `QA_CHROME_PATH`. `npm run test:preview` vérifie les métadonnées, les ressources, le responsive, le clavier et la réduction des animations. Le rendu est commité ; le workflow Pages n’exécute pas de capture navigateur.
-
-L’archive `exports/apercu-social.zip` contient le front, la photo, les polices et les rendus. Le dossier des photographies comporte désormais sept originaux (six visuels du site et une photo pour le partage). Voir [la documentation et les contrôles](research/preview-sociale.md) et [le prompt exact de la nouvelle photo](research/generated-preview-sport.json).
+- [Provenance et statut des médias](research/assets-manifest.json)
+- [Portraits professionnels récupérés](research/portraits-officiels.json)
+- [Recherche Doctolib et limites](research/portraits-doctolib.json)
+- [Photographies réelles de soins et de mouvement](research/real-sport-images.json)
+- [Historique des anciennes images générées, désormais retirées du site](research/photographies-ia.md)

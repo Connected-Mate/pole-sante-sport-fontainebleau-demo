@@ -1,0 +1,156 @@
+/* A short visual signature. It never captures focus or pointer events. */
+.brand-intro {
+  --brand-intro-ink: #122d37;
+  --brand-intro-sand: #d6c1a0;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fffaf1;
+  background: var(--brand-intro-ink);
+  pointer-events: none;
+  user-select: none;
+  contain: layout paint;
+}
+
+.brand-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 73% 13%, #335c68 0, transparent 51%),
+    linear-gradient(132deg, transparent 45%, #193d48 100%);
+  opacity: .65;
+}
+
+.brand-intro__line {
+  position: absolute;
+  width: min(135vw, 1500px);
+  height: min(80vw, 850px);
+  right: -42%;
+  bottom: -34%;
+  border: 1px solid rgb(214 193 160 / 22%);
+  border-radius: 50%;
+  transform: rotate(-31deg);
+}
+
+.brand-intro__line::after {
+  content: "";
+  position: absolute;
+  inset: 35px;
+  border: 1px solid rgb(214 193 160 / 9%);
+  border-radius: inherit;
+}
+
+.brand-intro__signature {
+  width: min(620px, calc(100% - 48px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.brand-intro__logo {
+  display: block;
+  width: clamp(104px, 16vw, 132px);
+  height: clamp(104px, 16vw, 132px);
+  box-sizing: border-box;
+  padding: 9px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 15px 45px rgb(0 0 0 / 12%);
+}
+.brand-intro__logo[hidden] { display: none; }
+
+.brand-intro__eyebrow {
+  margin: 29px 0 12px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brand-intro-sand);
+}
+
+.brand-intro__title {
+  margin: 0;
+  color: #fffaf1;
+  font-size: clamp(30px, 5vw, 54px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -.045em;
+}
+
+.brand-intro__baseline {
+  margin: 18px 0 0;
+  color: #c9d5d7;
+  font-size: clamp(13px, 2vw, 16px);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: .005em;
+}
+
+.brand-intro__rule {
+  width: 42px;
+  height: 2px;
+  margin-top: 28px;
+  background: var(--brand-intro-sand);
+  transform-origin: center;
+}
+
+.brand-intro--playing {
+  animation: brand-intro-veil 1.5s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.brand-intro--playing .brand-intro__logo {
+  animation: brand-intro-mark 650ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.brand-intro--playing .brand-intro__eyebrow,
+.brand-intro--playing .brand-intro__title,
+.brand-intro--playing .brand-intro__baseline {
+  animation: brand-intro-copy 600ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.brand-intro--playing .brand-intro__eyebrow { animation-delay: 85ms; }
+.brand-intro--playing .brand-intro__title { animation-delay: 130ms; }
+.brand-intro--playing .brand-intro__baseline { animation-delay: 190ms; }
+.brand-intro--playing .brand-intro__rule {
+  animation: brand-intro-rule 650ms 200ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes brand-intro-veil {
+  0%, 73% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes brand-intro-mark {
+  from { opacity: 0; transform: translateY(10px) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes brand-intro-copy {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes brand-intro-rule {
+  from { opacity: 0; transform: scaleX(.2); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+
+@media (max-width: 600px) {
+  .brand-intro__line { right: -68%; bottom: -12%; }
+  .brand-intro__eyebrow { font-size: 9px; letter-spacing: .15em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro { display: none !important; animation: none !important; }
+  .brand-intro * { animation: none !important; }
+}
+
+@media print {
+  .brand-intro { display: none !important; }
+}

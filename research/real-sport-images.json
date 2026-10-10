@@ -1,0 +1,216 @@
+{
+  "retrievedAt": "2026-10-11",
+  "selection": "Vraies photographies uniquement, aucune génération ou reconstruction de personne.",
+  "images": [
+    {
+      "path": "public/assets/real/pilates-mouvement.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_42a3848d9e4b4d049a59740541938164.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_42a3848d9e4b4d049a59740541938164.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/la-methode",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Détail d’un exercice de Pilates, main au premier plan.",
+      "width": 6016,
+      "height": 4016,
+      "bytes": 595894,
+      "sha256": "8e155fb380604387addb42cc2fb23c621ab5d50c6bbe1e367447d9ab09f00baf",
+      "sourceSha256": "b9827f9faf4dcbcf5dd9b1b25d686bd74f7666c765b8dac1dce3e0610ba31ad3",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/pilates-sangles.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_6eca2a70771f458fbbe9ff03e2c19f6a.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_6eca2a70771f458fbbe9ff03e2c19f6a.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Détail d’un exercice avec sangles sur machine Pilates.",
+      "width": 4016,
+      "height": 6016,
+      "bytes": 589550,
+      "sha256": "a97f4f9406e505c321a5f37518102f2c26d6ec16017fd31a0bee84d1603d26da",
+      "sourceSha256": "2d457be95530c7612da4451436b85e318e73ad4024cf7213ea4aa6c02e52410c",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/pilates-reformer.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_7f33a2e1595141c9b11925dd9146d9fd.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_7f33a2e1595141c9b11925dd9146d9fd.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/cours-individuels",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Équipement Pilates photographié au studio Espace Pilates.",
+      "width": 6016,
+      "height": 4016,
+      "bytes": 680740,
+      "sha256": "58cfdee7b1aad98cc249d179d0f669a306458f63e6a78c9c7f73e54988725343",
+      "sourceSha256": "9f80b8d49e5cc1d96fb14be39971b201baec76cba0bce2f1674b789bebb0dca0",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/pilates-chaise.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_82b96ec305e04a5286bf70e319a5d7b4.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_82b96ec305e04a5286bf70e319a5d7b4.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/cours-individuels",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Chaise Pilates présentée par Espace Pilates de Fontainebleau.",
+      "width": 6016,
+      "height": 4016,
+      "bytes": 2346218,
+      "sha256": "4d677a43323d7b571594888a068a0f955c6a1ea2f5fc57f6c72f9390ea6a3d42",
+      "sourceSha256": "38005c1f71713f554bbf9ea5e58a31e19a7381fc84a7bf9999226ec7e81eb321",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/pilates-collectif.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_07dc1b3cfe2348d882b5c1cb7ff37427~mv2_d_5414_2545_s_4_2.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_07dc1b3cfe2348d882b5c1cb7ff37427~mv2_d_5414_2545_s_4_2.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/cours-collectifs",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Cours collectif de Pilates avec ballons.",
+      "width": 5414,
+      "height": 2545,
+      "bytes": 778840,
+      "sha256": "690581b4b1c31e480e599bb89e7b46e2f7d88c74f429d27094fcb36483ed39f4",
+      "sourceSha256": "a08c64ffed8b8b49e61edf7fab1434fa09d7affddbdcdf2553b36dbd37aad9b4",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/pilates-tapis.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_d6265ad4a7854cd3a19cf6665bd09631~mv2_d_3345_3345_s_4_2.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_d6265ad4a7854cd3a19cf6665bd09631~mv2_d_3345_3345_s_4_2.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/cours-collectifs",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Exercice collectif de Pilates au tapis.",
+      "width": 3345,
+      "height": 3345,
+      "bytes": 551822,
+      "sha256": "4603c6d40168554bb682924a5f4c2f59a80b5752cb6802b4e1a9db6b44e12fda",
+      "sourceSha256": "4675904a461813c7b0f9f585e307f938ce9fd35760931c6cd138c29224899fd9",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/yoga-posture.webp",
+      "sourceOriginalPath": ".local/media-research/real-sport-candidates/483ad4_57794abb2f704585b6bf6f0130ceed58~mv2.jpg",
+      "sourceUrl": "https://static.wixstatic.com/media/483ad4_57794abb2f704585b6bf6f0130ceed58~mv2.jpg",
+      "sourcePage": "https://www.espace-pilates.fr/yoga",
+      "classification": "real_photograph_published_by_espace_pilates",
+      "description": "Posture de yoga sur un tapis orange.",
+      "width": 2596,
+      "height": 1273,
+      "bytes": 129310,
+      "sha256": "e4e253b1341d753135dc2c05cb4444b5723edca91b9ba3a28cfcef84500d49e9",
+      "sourceSha256": "3f7cfd5467c903bec4cdcc86d05c1aec44a75175278a8ade04cb85465c8242b4",
+      "rightsContext": "Requested by user on 2026-10-11: retrieve real professional photos. Espace Pilates is the provider linked by the original Pôle site pilate.html. No independent rights licence inferred.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photographie de la discipline publiée par Espace Pilates ; ne pas identifier les personnes comme équipe ou patients du pôle sans source nominative."
+    },
+    {
+      "path": "public/assets/real/kinesitherapie-soin.webp",
+      "sourceOriginalPath": "research/assets/wp522a3042_06.png",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp522a3042_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "classification": "real_illustrative_photograph_from_historical_site",
+      "description": "Photographie de soin de l’épaule publiée sur le site du pôle.",
+      "width": 1001,
+      "height": 828,
+      "bytes": 44712,
+      "sha256": "45db7bf84ce6a996a4ff3b90c6922f35a5f79333656459c15aa9f1ae79ba41b7",
+      "sourceSha256": "c49dcec837cdcfc79249a8a992ca0e8ed9876e534ce84b1580b62c26b853ab21",
+      "rightsContext": "User confirmed rights for historic site images on 2026-10-10.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photo illustrative historique ; ne pas attribuer les modèles à des praticiens du pôle."
+    },
+    {
+      "path": "public/assets/real/podologie-soin.webp",
+      "sourceOriginalPath": "research/assets/wpcfd14f66_06.png",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpcfd14f66_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/podologie.html",
+      "classification": "real_illustrative_photograph_from_historical_site",
+      "description": "Photographie illustrative d’un soin du pied publiée sur le site du pôle.",
+      "width": 1228,
+      "height": 742,
+      "bytes": 52514,
+      "sha256": "cb6c9c2515514a0f23b875e6e5efd31a1ca023bd07998af2aa8b70916ec971a9",
+      "sourceSha256": "eabe9b70365faa43261c4a9566f4593a49702d1f4e69e01df73af09d99264a8d",
+      "rightsContext": "User confirmed rights for historic site images on 2026-10-10.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photo illustrative historique ; ne pas attribuer les modèles à des praticiens du pôle."
+    },
+    {
+      "path": "public/assets/real/osteopathie-soin.webp",
+      "sourceOriginalPath": "research/assets/wp5fd8b484_06.png",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp5fd8b484_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+      "classification": "real_illustrative_photograph_from_historical_site",
+      "description": "Photographie illustrative d’un accompagnement manuel publiée sur le site du pôle.",
+      "width": 1312,
+      "height": 663,
+      "bytes": 45060,
+      "sha256": "9e3fadff6a07f640936765575a72101482f6d68cfed2b04be4880f22e34f1f4d",
+      "sourceSha256": "7946a0af180c168ec5ce7c18e4240bd4da573295664915260906af0074e3c32c",
+      "rightsContext": "User confirmed rights for historic site images on 2026-10-10.",
+      "edits": {
+        "ai": false,
+        "resize": false,
+        "crop": false,
+        "formatConversion": "WebP quality 88"
+      },
+      "usageNote": "Photo illustrative historique ; ne pas attribuer les modèles à des praticiens du pôle."
+    }
+  ]
+}

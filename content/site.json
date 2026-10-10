@@ -3,8 +3,8 @@
   "address": "143 rue Grande",
   "addressLocality": "Fontainebleau",
   "postalCode": "77300",
-  "heroTitle": "Le soin. Le mouvement. Votre rythme.",
-  "heroText": "Prendre soin de vous, retrouver le mouvement, accompagner votre pratique. Au cœur de Fontainebleau, trouvez le professionnel qui correspond à votre besoin.",
+  "heroTitle": "Votre corps. Votre sport. Votre rythme.",
+  "heroText": "Débuter, retrouver ses sensations, aller plus loin. Pour les sportifs de tous niveaux, le Pôle Santé Sport réunit des disciplines du soin et du mouvement, au cœur de Fontainebleau.",
   "phone": "",
   "bookingUrl": "",
   "hoursNote": "Consultations sur rendez-vous. Les horaires dépendent du praticien et de l’activité.",
@@ -141,7 +141,9 @@
       "phone": "06 87 25 94 19",
       "bookingUrl": "",
       "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/pilate.html",
-      "note": ""
+      "note": "",
+      "portrait": "team/jean-luc-tutakowski.webp",
+      "portraitSourceUrl": "https://www.espace-pilates.fr/jean-luc-tutakowski"
     },
     {
       "name": "Frédérique Marty",
@@ -151,7 +153,9 @@
       "phone": "06 34 05 32 74",
       "bookingUrl": "",
       "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
-      "note": ""
+      "note": "",
+      "portrait": "team/frederique-marty.webp",
+      "portraitSourceUrl": "https://www.gestaltmartylapotre.fr/"
     },
     {
       "name": "Didier Lapôtre",
@@ -161,7 +165,9 @@
       "phone": "06 70 63 72 65",
       "bookingUrl": "",
       "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
-      "note": ""
+      "note": "",
+      "portrait": "team/didier-lapotre.webp",
+      "portraitSourceUrl": "https://www.gestaltmartylapotre.fr/"
     },
     {
       "name": "Raj",
@@ -171,7 +177,9 @@
       "phone": "07 55 62 86 86",
       "bookingUrl": "",
       "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/yoga1.html",
-      "note": "Le site historique indique le 143 rue Grande. Présence actuelle et horaires à confirmer auprès de l’intervenante."
+      "note": "Le site historique indique le 143 rue Grande. Présence actuelle et horaires à confirmer auprès de l’intervenante.",
+      "portrait": "team/raj-card.webp",
+      "portraitSourceUrl": "https://www.espace-pilates.fr/rajyashree-ramamurthi"
     }
   ]
 }

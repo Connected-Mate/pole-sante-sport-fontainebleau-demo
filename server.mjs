@@ -113,6 +113,7 @@ export function validateContent(content) {
     else site.team.forEach((person, index) => { const label = `site.team[${index}]`; if (objectEntry(person, label, errors)) {
       textFields(person, ['name', 'role', 'service', 'address', 'phone', 'bookingUrl'], label, errors);
       if (typeof person.service === 'string' && !SAFE_SLUG.test(person.service)) errors.push(`${label}.service : identifiant de prestation invalide.`);
+      if (person.portrait !== undefined && (typeof person.portrait !== 'string' || (person.portrait && !/^team\/[a-z0-9-]+\.(?:jpe?g|png|webp)$/.test(person.portrait)))) errors.push(`${label}.portrait : fichier local team/nom.jpg, png ou webp requis.`);
     } });
     if (site.addresses !== undefined) {
       if (!Array.isArray(site.addresses)) errors.push('site.addresses : tableau requis.');

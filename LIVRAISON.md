@@ -38,7 +38,9 @@ Les sources, limites, benchmark concurrentiel et étapes du lancement officiel f
 
 La version du 11 octobre a passé les **10 tests serveur/build**, incluant la validation des nouveaux champs de portrait. La suite navigateur a réussi **158 contrôles sur 158**, avec 24 pages vérifiées et 24 analyses Axe sans défaut détecté.
 
-Les contrôles ciblés réussissent également : **20/20** pour l’introduction et les photos réelles, **12/12** pour l’aperçu v3, **6/6** pour les champs portrait du back-office. Rapports : `research/real-photos-intro-qa.json`, `research/preview-sociale-qa.json` et `research/admin-portraits-qa.json`. La vérification finale des exports et de la publication reste à consigner.
+Les contrôles ciblés réussissent également : **20/20** pour l’introduction et les photos réelles, **12/12** pour l’aperçu v3, **6/6** pour les champs portrait du back-office. Rapports : `research/real-photos-intro-qa.json`, `research/preview-sociale-qa.json` et `research/admin-portraits-qa.json`. Les cinq archives ont été produites et contrôlées ; les **62 fichiers du ZIP public** sont identiques au build, aucun accès local n’est exporté. Les 14 photographies originales correspondent aux empreintes des audits.
+
+Publication confirmée par [GitHub Actions](https://github.com/Connected-Mate/pole-sante-sport-fontainebleau-demo/actions/runs/38094061079). Les 24 pages publiques répondent 200 avec noindex et la carte v3. Les quatre portraits et les fichiers du logo animé sont identiques au build local. Animation, photo d’accueil et aperçu contrôlés dans Chrome sur l’URL publique, sans erreur JavaScript. Les anciens médias générés et les chemins privés contrôlés répondent 404. Rapport : `research/real-publication.json`.
 
 Les appels et les réservations ne sont pas réellement déclenchés pendant les contrôles. Les audits automatisés ne constituent pas une certification d’accessibilité ni un test sur appareil physique.
 

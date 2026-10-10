@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-10T23:10:46.080Z",
+  "base": "https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/",
+  "pages": [
+    "index.html",
+    "specialites.html",
+    "specialites/kinesitherapie.html",
+    "specialites/podologie.html",
+    "specialites/osteopathie.html",
+    "specialites/dietetique-nutrition.html",
+    "specialites/etiopathie.html",
+    "specialites/kine-esthetique-lpg.html",
+    "specialites/pilates.html",
+    "specialites/facialiste.html",
+    "specialites/gestalt-therapie.html",
+    "specialites/yoga.html",
+    "equipe.html",
+    "rendez-vous.html",
+    "faq.html",
+    "contact.html",
+    "galerie.html",
+    "journal.html",
+    "journal/preparer-premier-rendez-vous.html",
+    "journal/choisir-son-interlocuteur.html",
+    "journal/venir-rue-grande-fontainebleau.html",
+    "mentions-legales.html",
+    "confidentialite.html",
+    "404.html"
+  ],
+  "assets": [
+    "assets/real/pilates-mouvement.webp",
+    "assets/social/pole-sante-sport-preview-v3.jpg",
+    "brand-intro.js",
+    "brand-intro.css",
+    "assets/team/jean-luc-tutakowski.webp",
+    "assets/team/frederique-marty.webp",
+    "assets/team/didier-lapotre.webp",
+    "assets/team/raj-card.webp"
+  ],
+  "failures": [],
+  "summary": {
+    "pages": 24,
+    "portraits": 4,
+    "assetsVerified": 8,
+    "logoIntro": true,
+    "socialPreview": "v3",
+    "runtimeErrors": 0,
+    "retiredAndPrivatePaths404": true
+  },
+  "deployedCommit": "0d2e6dfc651187fed8eb5c6a182b897f5d692c9e",
+  "deployment": "https://github.com/Connected-Mate/pole-sante-sport-fontainebleau-demo/actions/runs/38094061079",
+  "exportCheck": {
+    "publicFilesComparedByteForByte": 62,
+    "privateAccessExcluded": true,
+    "originalPhotographs": 14
+  }
+}

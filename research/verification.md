@@ -6,6 +6,8 @@ Cette révision remplace les visuels synthétiques du site et de l’aperçu par
 
 Validation locale : 10 tests serveur/build réussis ; 158 contrôles navigateur sur 24 pages, avec 24 analyses Axe sans violation détectée ; 20 contrôles ciblés sur les portraits, les photos et l’introduction du logo ; 6 contrôles du formulaire de portraits dans le back-office. Les captures attendent le décodage des photographies avant inspection. Les photographies natives restent archivées sans reconstruction de visage.
 
+L’aperçu v3 passe 12 contrôles supplémentaires. Déploiement public du commit `0d2e6df` confirmé : 24 pages, quatre portraits, huit ressources comparées au build et chemins historiques/privés contrôlés. Les 62 fichiers de l’export public ont été comparés octet par octet. Détails dans `real-publication.json`.
+
 La signature sportive, le vrai logo et son animation de 1,5 seconde sont intégrés. L’animation est rejouable au clavier, interrompue par une interaction et désactivée avec la réduction des mouvements. Le site conserve sa notice de démonstration publique et noindex. La date de retrait reste à définir.
 
 Les sections suivantes retracent les versions antérieures ; leurs images et résultats ne décrivent pas la version actuelle. Le bilan final de la révision se trouve dans `LIVRAISON.md`.

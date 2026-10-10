@@ -92,7 +92,7 @@ L’aperçu **v3** utilise une vraie photographie de Pilates, le logo du pôle e
 
 Pour recréer la carte après édition de `public/share-preview.html` ou `public/share-preview.css` : `npm run render:preview`, puis `npm run build`. Chrome local est paramétrable via `QA_CHROME_PATH`. `npm run test:preview` contrôle notamment les métadonnées, les ressources, le responsive, le clavier et la réduction des animations. Le rendu est commité ; le workflow Pages n’exécute pas de capture navigateur.
 
-Les 10 tests serveur/build et les 158 contrôles navigateur ont réussi pour cette révision ; 24 analyses Axe n’ont détecté aucun défaut. Les 20 contrôles ciblés des photos et de l’animation, les 12 contrôles de l’aperçu v3 et les 6 contrôles des champs portrait du back-office passent aussi. Les exports et la publication font l’objet d’une vérification finale. Consulter [le rapport de livraison](LIVRAISON.md) pour le bilan final ; les résultats historiques ne remplacent pas la validation de la version actuelle.
+Les 10 tests serveur/build et les 158 contrôles navigateur ont réussi pour cette révision ; 24 analyses Axe n’ont détecté aucun défaut. Les 20 contrôles ciblés des photos et de l’animation, les 12 contrôles de l’aperçu v3 et les 6 contrôles des champs portrait du back-office passent aussi. Les cinq archives ont été vérifiées, dont les 62 fichiers du site public comparés au build. La publication des 24 pages, des portraits, du logo et de l’aperçu v3 est confirmée dans `research/real-publication.json`. Consulter [le rapport de livraison](LIVRAISON.md) pour le bilan final ; les résultats historiques ne remplacent pas la validation de la version actuelle.
 
 ## Dossiers de recherche
 

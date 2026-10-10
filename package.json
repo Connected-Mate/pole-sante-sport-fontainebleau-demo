@@ -1,0 +1,17 @@
+{
+  "name": "pole-sante-sport-fontainebleau-preview",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "setup": "node server.mjs --setup",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "export": "node scripts/export.mjs"
+  },
+  "dependencies": { "qrcode": "1.5.4" },
+  "devDependencies": { "@axe-core/playwright": "4.10.2", "playwright": "1.56.1" }
+}

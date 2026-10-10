@@ -1,0 +1,122 @@
+{
+  "auditedAt": "2026-10-10",
+  "rightsScope": "Photos et logo du site historique : droits confirmés explicitement par utilisateur au chef de projet. Cette autorisation ne concerne pas les photos de tiers extérieurs ni les portraits Doctolib.",
+  "assetCount": 8,
+  "assets": [
+    {
+      "path": "public/assets/facade.png",
+      "sha256": "20aaeb1866c201782f76ae6c7be62950f9c73c78ff66878239922c0a7c9ff045",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpa100ef1a_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/",
+      "width": 1020,
+      "height": 851,
+      "classification": "photographie_du_lieu",
+      "description": "Façade du 143 rue Grande, numéro143 visible.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Peut illustrer le143 ; ne pas employer comme façade du160."
+    },
+    {
+      "path": "public/assets/soin-manuel.png",
+      "sha256": "c49dcec837cdcfc79249a8a992ca0e8ed9876e534ce84b1580b62c26b853ab21",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp522a3042_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "width": 1001,
+      "height": 828,
+      "classification": "photographie_illustrative",
+      "description": "Illustration d’un soin manuel.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Ne pas identifier les personnes comme praticiens ou patients du pôle ; ne pas présenter comme locaux."
+    },
+    {
+      "path": "public/assets/podologie.png",
+      "sha256": "eabe9b70365faa43261c4a9566f4593a49702d1f4e69e01df73af09d99264a8d",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpcfd14f66_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/podologie.html",
+      "width": 1228,
+      "height": 742,
+      "classification": "photographie_illustrative",
+      "description": "Illustration d’un examen du pied.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Ne pas attribuer la personne représentée à Carine Marie ; aucune promesse de résultat."
+    },
+    {
+      "path": "public/assets/osteopathie.png",
+      "sha256": "7946a0af180c168ec5ce7c18e4240bd4da573295664915260906af0074e3c32c",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp5fd8b484_06.png",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+      "width": 1312,
+      "height": 663,
+      "classification": "photographie_illustrative",
+      "description": "Illustration d’un geste manuel.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Ne pas attribuer la personne représentée à Isabelle Trohel ni aux locaux."
+    },
+    {
+      "path": "public/assets/nutrition.jpg",
+      "sha256": "f81e26521c672c8a0e41b00584b240cc7ec0d21ea6fb0995ad65225b51f17bf5",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp7ed5d335_05_06.jpg",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/nutritionniste.html",
+      "width": 187,
+      "height": 158,
+      "classification": "photographie_illustrative",
+      "description": "Fruits, ruban et personne portant une blouse.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Ne pas identifier le modèle comme Jonathan Herjean ni en déduire un titre de médecin."
+    },
+    {
+      "path": "public/assets/logo.jpg",
+      "sha256": "32edf9086c8798ea90f749f9265498a93f18433e4c6afeafd7d48cbea71fb719",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp56e1c504_05_06.jpg",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/",
+      "width": 164,
+      "height": 155,
+      "classification": "logo_existant",
+      "description": "Logo Pôle Santé Sport Fontainebleau.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Image basse définition ; obtenir fichier vectoriel pour production si disponible."
+    },
+    {
+      "path": "public/assets/yoga.jpg",
+      "sha256": "1f547dcd7a83e2ea754d772977ad15ad5478e3c483132d1c3bb9f6ebc73888d5",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpf18c0aee_05_06.jpg",
+      "sourcePage": "https://pole-sante-sport-fontainebleau.fr/yoga.html",
+      "width": 1027,
+      "height": 284,
+      "classification": "photographie_illustrative_yoga",
+      "description": "Triptyque de postures de yoga provenant de la page yoga.",
+      "rightsStatus": "confirmed_by_user",
+      "rightsEvidence": "Utilisateur a confirmé au chef de projet, dans la conversation du10 octobre2026, disposer des droits sur le logo et toutes les photographies du site existant.",
+      "verification": "Copie locale comparée à la source : SHA-256 identique. Inspection visuelle effectuée.",
+      "usageNote": "Le nom local yoga.jpg est trompeur : ne pas légender comme Pilates ; attribution nominative à confirmer."
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "sha256": "0bbc0655a6503b3fc1fd92bb80fbbae6f099257b97188c1577c544d0f0c23138",
+      "sourceUrl": null,
+      "sourcePage": null,
+      "classification": "icone_vectorielle_creee_pour_la_refonte",
+      "description": "Favicon géométrique dessiné enSVG pour cette démo, distinct du logo historique.",
+      "rightsStatus": "created_for_project",
+      "rightsEvidence": "Création nativeSVG par l’équipe de refonte ; aucune photographie ou ressource tierce incorporée.",
+      "verification": "CodeSVG local inspecté."
+    }
+  ],
+  "notes": [
+    "Les sept fichiers raster sont des copies binaires exactes des URLs source.",
+    "Les légendes distinguent photographie du lieu et images illustratives.",
+    "Aucune photographie de locaux intérieurs ou portrait de l’ensemble de l’équipe n’a été identifié.",
+    "Les assets temporaires de recherche non livrés dans public/assets ne sont pas intégrés à ce manifeste."
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "auditDate": "2026-10-10",
+  "language": "fr",
+  "scope": "Informations publiques opérationnelles ; aucun diagnostic, avis médical ou classement de qualité des praticiens.",
+  "business": {
+    "name": "Pôle Santé Sport Fontainebleau",
+    "website": "https://pole-sante-sport-fontainebleau.fr/",
+    "addresses": [
+      {
+        "streetAddress": "143 rue Grande",
+        "postalCode": "77300",
+        "addressLocality": "Fontainebleau",
+        "addressCountry": "FR"
+      },
+      {
+        "streetAddress": "160 rue Grande",
+        "postalCode": "77300",
+        "addressLocality": "Fontainebleau",
+        "addressCountry": "FR"
+      }
+    ],
+    "sources": [
+      "https://pole-sante-sport-fontainebleau.fr/",
+      "https://pole-sante-sport-fontainebleau.fr/index0.html"
+    ],
+    "centralPhone": null,
+    "centralEmail": null,
+    "globalOpeningHours": null,
+    "areaServedConfirmed": [
+      "Fontainebleau"
+    ],
+    "targetAudience": "Patients et personnes intéressées par les activités proposées ; profils plus précis à valider.",
+    "primaryGoal": "Appels et Doctolib, confirmé par utilisateur au parent",
+    "googleMaps": {
+      "url": "https://www.google.fr/maps/place/P%C3%B4le+Sant%C3%A9+Sport+Fontainebleau/@48.4087264,2.701784,17z/data=!3m1!4b1!4m5!3m4!1s0x47e5f461bc6dc59b:0xebd1c271b6df121c!8m2!3d48.4087264!4d2.7039727",
+      "source": "https://pole-sante-sport-fontainebleau.fr/index0.html",
+      "status": "Lien présent sur site officiel ; fiche Google non consultable dans outil, horaires/avis/coordonnées actuels non validés",
+      "coordinatesFromLink": {
+        "latitude": 48.4087264,
+        "longitude": 2.7039727
+      },
+      "coordinatesUse": "Ne pas appliquer au 160 ; coordonnées reprises du lien historique et non vérifiées sur terrain."
+    }
+  },
+  "practitioners": [
+    {
+      "id": "mickael-becquet",
+      "name": "Mickaël Becquet",
+      "role": "Masseur-kinésithérapeute",
+      "phone": "+33684132320",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "raul-hernandez",
+      "name": "Raul Hernandez",
+      "role": "Masseur-kinésithérapeute",
+      "phone": "+33781276023",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "alice-tomas",
+      "name": "Alice Tomas",
+      "role": "Masseur-kinésithérapeute",
+      "phone": "+33744754224",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "louis-becquet",
+      "name": "Louis Becquet",
+      "role": "Masseur-kinésithérapeute",
+      "phone": "+33670609560",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "carine-marie",
+      "name": "Carine Marie",
+      "role": "Pédicure-podologue",
+      "phone": "+33160719595",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/podologie.html",
+        "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie"
+      ],
+      "verification": "published_by_business",
+      "notes": [],
+      "bookingUrl": "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie"
+    },
+    {
+      "id": "isabelle-trohel",
+      "name": "Isabelle Trohel",
+      "role": "Ostéopathe",
+      "phone": null,
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+        "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"
+      ],
+      "verification": "published_by_business",
+      "notes": [
+        "Téléphone contradictoire : site +33160711291 ; Doctolib +33622906690. Employer Doctolib avant validation du numéro."
+      ],
+      "bookingUrl": "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"
+    },
+    {
+      "id": "jonathan-herjean",
+      "name": "Jonathan Herjean",
+      "role": "Diététicien-nutritionniste",
+      "phone": "+33621100312",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/nutritionniste.html",
+        "https://www.doctolib.fr/dieteticien/fontainebleau/jonathan-herjean"
+      ],
+      "verification": "published_by_business",
+      "notes": [
+        "Profil Doctolib multi-adresses : sélectionner Fontainebleau et non Saint-Fargeau-Ponthierry."
+      ],
+      "bookingUrl": "https://www.doctolib.fr/dieteticien/fontainebleau/jonathan-herjean"
+    },
+    {
+      "id": "morgane-palomo",
+      "name": "Morgane Palomo",
+      "role": "Étiopathe",
+      "phone": "+33668559810",
+      "address": "160 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/etiopathie.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "marie-anciello-taffanel",
+      "name": "Marie Anciello Taffanel",
+      "role": "Kiné-esthétique LPG",
+      "phone": "+33660587322",
+      "address": "160 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/esthetique.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "nadege-becquet",
+      "name": "Nadège Becquet",
+      "role": "Facialiste",
+      "phone": "+33683493034",
+      "address": "160 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/faciale.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "jean-luc-tutakowski",
+      "name": "Jean-Luc Tutakowski",
+      "role": "Espace Pilates",
+      "phone": "+33687259419",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/pilate.html"
+      ],
+      "verification": "published_by_business",
+      "notes": [
+        "Nom publié sur accueil et portrait de la page Pilates. Site partenaire : https://www.espace-pilates.fr/ ; email espacepilates@gmail.com."
+      ]
+    },
+    {
+      "id": "frederique-marty",
+      "name": "Frédérique Marty",
+      "role": "Gestalt-thérapie",
+      "phone": "+33634053274",
+      "address": "160 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/gestalt.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "didier-lapotre",
+      "name": "Didier Lapôtre",
+      "role": "Gestalt-thérapie",
+      "phone": "+33670637265",
+      "address": "160 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/gestalt.html"
+      ],
+      "verification": "published_by_business",
+      "notes": []
+    },
+    {
+      "id": "raj",
+      "name": "Raj",
+      "role": "Yoga",
+      "phone": "+33755628686",
+      "address": "143 rue Grande, 77300 Fontainebleau",
+      "appointment": "Sur rendez-vous",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/yoga1.html",
+        "https://pole-sante-sport-fontainebleau.fr/yoga.html",
+        "https://rajstudio.yoga/"
+      ],
+      "verification": "published_by_business",
+      "notes": [
+        "Le 143 rue Grande est explicitement publié sur yoga1.html, vérifié par l’agent contenu au premier chargement GET. Confirmer la présence actuelle et les créneaux. Rajyashree se présente sur https://rajstudio.yoga/ sous marque Soma. Email rajstudio.yoga@gmail.com."
+      ],
+      "verificationNote": "Source mobile lue par agent contenu pendant cet audit ; requêtes GET ultérieures retournant une erreur temporaire 500. Cela ne constitue pas une preuve de suppression de la page."
+    }
+  ],
+  "services": [
+    {
+      "id": "kinesitherapie",
+      "title": "Kinésithérapie",
+      "practitionerIds": [
+        "mickael-becquet",
+        "raul-hernandez",
+        "alice-tomas",
+        "louis-becquet"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html"
+    },
+    {
+      "id": "podologie",
+      "title": "Pédicurie-podologie",
+      "practitionerIds": [
+        "carine-marie"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/podologie.html"
+    },
+    {
+      "id": "osteopathie",
+      "title": "Ostéopathie",
+      "practitionerIds": [
+        "isabelle-trohel"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/osteopathie.html"
+    },
+    {
+      "id": "dietetique",
+      "title": "Diététique et nutrition",
+      "practitionerIds": [
+        "jonathan-herjean"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/nutritionniste.html"
+    },
+    {
+      "id": "etiopathie",
+      "title": "Étiopathie",
+      "practitionerIds": [
+        "morgane-palomo"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/etiopathie.html"
+    },
+    {
+      "id": "lpg",
+      "title": "Kiné-esthétique LPG",
+      "practitionerIds": [
+        "marie-anciello-taffanel"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/esthetique.html"
+    },
+    {
+      "id": "facialiste",
+      "title": "Soins facialistes",
+      "practitionerIds": [
+        "nadege-becquet"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/faciale.html"
+    },
+    {
+      "id": "pilates",
+      "title": "Pilates",
+      "practitionerIds": [
+        "jean-luc-tutakowski"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/pilate.html"
+    },
+    {
+      "id": "yoga",
+      "title": "Yoga",
+      "practitionerIds": [
+        "raj"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/yoga.html"
+    },
+    {
+      "id": "gestalt",
+      "title": "Gestalt-thérapie",
+      "practitionerIds": [
+        "frederique-marty",
+        "didier-lapotre"
+      ],
+      "source": "https://pole-sante-sport-fontainebleau.fr/gestalt.html"
+    }
+  ],
+  "hoursObserved": [
+    {
+      "scope": "Espace Pilates seulement",
+      "hours": "Lundi au vendredi 08:00–20:00 ; samedi 10:00–14:00",
+      "source": "https://pole-sante-sport-fontainebleau.fr/pilate.html",
+      "publishAsGlobal": false
+    },
+    {
+      "scope": "Carine Marie seulement",
+      "hours": "Lundi et vendredi 09:00–13:00,14:00–19:00 ; mardi 10:30–20:00 ; mercredi et jeudi 08:30–20:00 ; samedi09:00–12:00",
+      "source": "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+      "publishAsGlobal": false
+    },
+    {
+      "scope": "Isabelle Trohel seulement",
+      "hours": "Lundi09:00–19:30 ; mardi08:00–19:00 ; mercredi08:30–19:00 ; vendredi08:30–19:30 ; samedi08:00–13:00. Aucun jeudi listé.",
+      "source": "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel",
+      "publishAsGlobal": false
+    }
+  ],
+  "access": {
+    "verifiedAddress": "143 et160 rue Grande,77300 Fontainebleau",
+    "nearbyStopFromPractitionerProfile": "Place de l’Étape",
+    "transportSource": "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+    "transportAuthoritySource": "https://www.iledefrance-mobilites.fr/actualites/locales/detail/le-16-septembre-2024-vos-lignes-de-bus-changent-de-numero-sur-le-territoire-de-fontainebleau-moret",
+    "routePlanner": "https://www.iledefrance-mobilites.fr/",
+    "wheelchairAccessConfirmed": false,
+    "parking": "Parking payant mentionné sur profil Isabelle Trohel ; emplacement exact et conditions non confirmés",
+    "travelTime": null
+  },
+  "assets": [
+    {
+      "url": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpa100ef1a_06.png",
+      "page": "https://pole-sante-sport-fontainebleau.fr/",
+      "dimensions": [
+        1020,
+        851
+      ],
+      "kind": "photo_facade",
+      "description": "Façade avec numéro143 visible, inspectée visuellement",
+      "rights": "Utilisateur a confirmé au parent les droits sur logo et toutes photos du site historique."
+    },
+    {
+      "url": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp2d6dd05c_05_06.jpg",
+      "page": "https://pole-sante-sport-fontainebleau.fr/pilate.html",
+      "dimensions": [
+        157,
+        194
+      ],
+      "kind": "portrait",
+      "description": "Portrait avec nom Jean-Luc Tutakowski incrusté",
+      "rights": "Confirmation utilisateur des photos du site historique."
+    },
+    {
+      "url": "https://pole-sante-sport-fontainebleau.fr/wpimages/wpf931c071_06.png",
+      "page": "https://pole-sante-sport-fontainebleau.fr/yoga.html",
+      "dimensions": [
+        178,
+        228
+      ],
+      "kind": "portrait_context",
+      "description": "Portrait associé à la page yoga ; identité précise à confirmer",
+      "rights": "Confirmation utilisateur des photos du site historique."
+    },
+    {
+      "url": "https://pole-sante-sport-fontainebleau.fr/wpimages/wp522a3042_06.png",
+      "page": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "dimensions": [
+        1001,
+        828
+      ],
+      "kind": "illustrative_photo",
+      "description": "Séance de massage, ne prouve ni identité de praticien ni locaux",
+      "rights": "Confirmation utilisateur des photos du site historique."
+    }
+  ],
+  "competitorMethod": "Sélection qualitative locale par proximité d’activité et présence officielle consultable ; ne constitue pas un classement des parts de marché, du SEO ou de la qualité des soins.",
+  "competitors": [
+    {
+      "name": "Marion Chevaux",
+      "type": "kinésithérapie, concurrente directe pour certains parcours",
+      "address": "41 boulevard Orloff, 77300 Fontainebleau",
+      "source": "https://www.doctolib.fr/masseur-kinesitherapeute/fontainebleau/marion-chevaux",
+      "observations": [
+        "Profil public de réservation avec actes, horaires, accessibilité, galerie et moyens de paiement.",
+        "Kinésithérapie du sport et ondes de choc listées."
+      ],
+      "uxLessons": [
+        "Rendre chaque contact immédiatement actionnable.",
+        "Attribuer les informations pratiques au praticien concerné."
+      ]
+    },
+    {
+      "name": "Anne-Hélène Boivin",
+      "type": "kinésithérapie spécialisée, concurrente locale partielle",
+      "address": "44 rue Saint-Merry, 77300 Fontainebleau",
+      "source": "https://www.doctolib.fr/masseur-kinesitherapeute/fontainebleau/anne-helene-boivin",
+      "observations": [
+        "Profil de réservation dédié à la rééducation oro-maxillo-faciale.",
+        "Réservation en ligne annoncée comme réservée aux patients déjà suivis ; numéro proposé aux autres visiteurs."
+      ],
+      "uxLessons": [
+        "Préciser les conditions de réservation et prévoir une solution d’appel.",
+        "Expliquer les prestations propres à chaque professionnel, sans appliquer celles d’un concurrent au pôle."
+      ]
+    },
+    {
+      "name": "Anne Garrigues",
+      "type": "ostéopathie, concurrente directe de cette activité",
+      "address": "45 rue de France, 77300 Fontainebleau",
+      "source": "https://www.osteogarrigues.com/",
+      "observations": [
+        "Site dédié avec profil, consultation, publics, contact, horaires et mention de Doctolib.",
+        "Informations d’accès et parking visibles sur accueil."
+      ],
+      "uxLessons": [
+        "Afficher adresse, horaires et réservation dès accueil.",
+        "Regrouper les informations de venue sur une seule page et tenir les transports à jour."
+      ]
+    },
+    {
+      "name": "Héricy Sport Santé",
+      "type": "offre voisine sport et bien-être, benchmark complémentaire",
+      "address": "22 bis rue des Fossés, 77850 Héricy",
+      "source": "https://hericysportsante.fr/",
+      "observations": [
+        "Pages de prestations et réservation reliées dans la navigation.",
+        "Présentation de la coach et contact regroupés."
+      ],
+      "uxLessons": [
+        "Utiliser des pages détaillées et des CTA nommés par service.",
+        "Ne pas reproduire promesses de résultat, avis ou tarifs de tiers."
+      ]
+    }
+  ],
+  "contradictionsAndGaps": [
+    {
+      "id": "phone-osteo",
+      "severity": "high",
+      "detail": "Numéro d’Isabelle Trohel différent entre site historique et Doctolib.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+        "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"
+      ],
+      "action": "Valider avec praticienne ; d’ici là CTA Doctolib."
+    },
+    {
+      "id": "global-phone",
+      "severity": "medium",
+      "detail": "Aucun téléphone commun établi par le site officiel. Des annuaires attribuent +33784542420 au pôle sans corroboration officielle.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/",
+        "https://fr.localitybiz.com/25237233/pole-sant%C3%A9-sport-fontainebleau"
+      ],
+      "action": "Ne pas convertir le téléphone d’un praticien en standard collectif."
+    },
+    {
+      "id": "hours",
+      "severity": "high",
+      "detail": "Pas d’horaires globaux officiels. Site annonce sur rendez-vous ; horaires propres au Pilates et à certains profils Doctolib.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "https://pole-sante-sport-fontainebleau.fr/pilate.html"
+      ],
+      "action": "Afficher sur rendez-vous et orienter vers chaque praticien."
+    },
+    {
+      "id": "team-count",
+      "severity": "medium",
+      "detail": "Site officiel liste quatre kinés ; présentation Doctolib d’Isabelle Trohel mentionne encore trois kinés collaborateurs.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+        "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"
+      ],
+      "action": "Employer la liste nominale officielle ; demander validation actuelle."
+    },
+    {
+      "id": "yoga",
+      "severity": "medium",
+      "detail": "Le site partenaire Yoga est maintenant présenté comme Soma. yoga1.html attribue Raj au 143 rue Grande. Sur yoga.html le numéro est lié par erreur à email Pilates.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/yoga.html",
+        "https://pole-sante-sport-fontainebleau.fr/yoga1.html",
+        "https://rajstudio.yoga/"
+      ],
+      "action": "Garder téléphone correct et adresse143 publiée ; confirmer intervenante, présence actuelle et créneaux."
+    },
+    {
+      "id": "stale-links",
+      "severity": "medium",
+      "detail": "Résidus maudvidalenc.fr signalés dans pages mobiles nutri1.html et gest.html ; ne correspondent pas aux praticiens affichés.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/nutri1.html",
+        "https://pole-sante-sport-fontainebleau.fr/gest.html"
+      ],
+      "action": "Ne pas reprendre ces liens ; vérifier contacts affichés page par page."
+    },
+    {
+      "id": "bus",
+      "severity": "medium",
+      "detail": "Les profils Doctolib citent anciennes lignes 1 et 8 ; IDFM annonce nouvelle numérotation dès 16 septembre 2024.",
+      "sources": [
+        "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+        "https://www.iledefrance-mobilites.fr/actualites/locales/detail/le-16-septembre-2024-vos-lignes-de-bus-changent-de-numero-sur-le-territoire-de-fontainebleau-moret"
+      ],
+      "action": "Préférer lien calculateur IDFM et nom d’arrêt. Ne pas publier anciens numéros."
+    },
+    {
+      "id": "accessibility",
+      "severity": "high",
+      "detail": "Profils Doctolib du 143 mentionnent rez-de-chaussée sans ascenseur, ce qui ne confirme pas un accès fauteuil. Photo façade montre un seuil. Aucun accès PMR documenté au 160.",
+      "sources": [
+        "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+        "https://pole-sante-sport-fontainebleau.fr/wpimages/wpa100ef1a_06.png"
+      ],
+      "action": "Demander au praticien les conditions adaptées, sans promesse PMR."
+    },
+    {
+      "id": "claims",
+      "severity": "high",
+      "detail": "Ancien contenu comporte promesses médicales absolues, notamment ondes de choc sans effet secondaire.",
+      "sources": [
+        "https://pole-sante-sport-fontainebleau.fr/kine2.html",
+        "https://pole-sante-sport-fontainebleau.fr/etiopathie.html"
+      ],
+      "action": "Ne pas reprendre promesses de guérison, absence de risque ni efficacité garantie."
+    },
+    {
+      "id": "domain",
+      "severity": "medium",
+      "detail": "Des profils et annuaires renvoient encore vers le domaine .com, tandis que URL fournies sont .fr.",
+      "sources": [
+        "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"
+      ],
+      "action": "Vérifier propriété, redirections et canonical lors du lancement."
+    }
+  ],
+  "launchInformationMissing": [
+    "Éditeur juridique, forme sociale, SIREN/SIRET, directeur de publication et contact officiel du site",
+    "Liste actuelle des praticiens, horaires par intervenant et présence actuelle du yoga au 143",
+    "Téléphone Isabelle Trohel à privilégier",
+    "Conditions d’accès au143 et160, stationnement exact, accessibilité fauteuil",
+    "Preuve actuelle des diplômes ou inscriptions ordinales avant toute nouvelle revendication",
+    "Validation des tarifs et remboursements si publiés",
+    "Date de retrait de la démo, à gérer selon dernière confirmation utilisateur",
+    "Logo source et photographies de locaux/équipe supplémentaires si souhaités"
+  ],
+  "excluded": [
+    "Avis et notes Google non vérifiés",
+    "Tarif collectif inventé",
+    "Horaires globaux inventés",
+    "Labels du service municipal Maison Sport-Santé, distinct du pôle privé",
+    "Fausse urgence ou promesse de réponse",
+    "Récits de résultats et diplômes ajoutés sans preuve"
+  ]
+}

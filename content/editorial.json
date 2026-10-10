@@ -1,0 +1,266 @@
+{
+  "services": [
+    {
+      "slug": "kinesitherapie",
+      "title": "Kinésithérapie",
+      "category": "soins",
+      "intro": "Quatre kinésithérapeutes vous reçoivent sur rendez-vous au 143 rue Grande, au centre de Fontainebleau.",
+      "paragraphs": [
+        "Mickaël Becquet, Raul Hernandez, Alice Tomas et Louis Becquet composent l’équipe de kinésithérapie présentée par le Pôle Santé Sport. Pour organiser une première séance ou poursuivre un suivi, contactez directement le praticien concerné.",
+        "Le site du pôle présente des activités de rééducation et de kinésithérapie du sport. Il mentionne également la thérapie manuelle, les ondes de choc radiales et le dry needling. Le choix d’une technique se discute avec le kinésithérapeute lors du rendez-vous ; sa présence sur cette page ne signifie pas qu’elle convient à toutes les situations.",
+        "Au moment de réserver, demandez quels documents apporter et précisez si vous disposez déjà d’une prescription ou d’un suivi en cours. Les disponibilités, les conditions de prise en charge et le tarif sont à confirmer auprès du praticien."
+      ],
+      "questions": [
+        {"q": "Où ont lieu les rendez-vous de kinésithérapie ?", "a": "L’adresse indiquée pour les quatre kinésithérapeutes est le 143 rue Grande, 77300 Fontainebleau."},
+        {"q": "Puis-je choisir une technique en réservant ?", "a": "Vous pouvez poser vos questions au praticien. Le rendez-vous permet de discuter de la démarche adaptée à votre situation ; aucune technique ni aucun résultat ne sont garantis par ce site."}
+      ],
+      "sourceUrls": ["https://pole-sante-sport-fontainebleau.fr/kine2.html", "https://www.pole-sante-sport-fontainebleau.fr/kinesitherapie.html"]
+    },
+    {
+      "slug": "podologie",
+      "title": "Podologie",
+      "category": "soins",
+      "intro": "Carine Marie reçoit sur rendez-vous au 143 rue Grande pour l’activité de podologie du pôle.",
+      "paragraphs": [
+        "La page de podologie du Pôle Santé Sport présente Carine Marie et propose une prise de rendez-vous en ligne. L’activité décrite s’intéresse aux pieds et à leur rôle dans le mouvement, avec une place donnée à la pratique sportive.",
+        "Le site mentionne les semelles orthopédiques dans sa présentation. Les besoins, la démarche et les éventuelles modalités de suivi sont à examiner avec la podologue ; cette présentation ne présume pas de la nécessité d’un équipement.",
+        "Lors de votre prise de contact, indiquez le motif de votre demande et demandez s’il faut apporter des chaussures utilisées au quotidien ou pour le sport, une prescription ou un équipement déjà porté. Les consignes précises vous seront données par le cabinet."
+      ],
+      "questions": [
+        {"q": "Comment prendre rendez-vous en podologie ?", "a": "La fiche de Carine Marie propose un lien Doctolib publié par le site du pôle, ainsi qu’un contact téléphonique."},
+        {"q": "Faut-il déjà avoir des semelles pour consulter ?", "a": "Exposez votre demande à la podologue lors de la réservation. Elle pourra préciser le type de rendez-vous et les éléments utiles à apporter."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/podologie.html", "https://www.pole-sante-sport-fontainebleau.fr/podo1.html", "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie"]
+    },
+    {
+      "slug": "osteopathie",
+      "title": "Ostéopathie",
+      "category": "soins",
+      "intro": "Isabelle Trohel propose des rendez-vous d’ostéopathie au 143 rue Grande, à Fontainebleau.",
+      "paragraphs": [
+        "L’ostéopathie figure parmi les activités du Pôle Santé Sport. La page consacrée à Isabelle Trohel présente une approche manuelle et propose une réservation sur Doctolib.",
+        "Avant de réserver, vous pouvez poser vos questions sur le déroulement de la séance, les situations accueillies et les documents utiles. La consultation est l’occasion d’échanger avec la praticienne sur votre demande et sur les limites de l’accompagnement proposé.",
+        "Les rendez-vous sont organisés directement avec la praticienne. Les horaires disponibles, les honoraires et les conditions d’annulation sont à consulter lors de la réservation."
+      ],
+      "questions": [
+        {"q": "Existe-t-il une prise de rendez-vous en ligne ?", "a": "Oui. Le site du pôle renvoie vers la fiche Doctolib d’Isabelle Trohel."},
+        {"q": "À quelle adresse se présenter ?", "a": "La page de la praticienne indique le 143 rue Grande, 77300 Fontainebleau. Vérifiez également l’adresse dans la confirmation du rendez-vous."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/osteo1.html", "https://www.pole-sante-sport-fontainebleau.fr/osteopathie.html", "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel"]
+    },
+    {
+      "slug": "dietetique-nutrition",
+      "title": "Diététique & nutrition",
+      "category": "soins",
+      "intro": "Jonathan Herjean reçoit sur rendez-vous pour l’activité de diététique et nutrition au 143 rue Grande.",
+      "paragraphs": [
+        "Le Pôle Santé Sport présente Jonathan Herjean comme son interlocuteur en diététique et nutrition. Sa page publique aborde les habitudes alimentaires, le suivi du poids et l’alimentation en lien avec la pratique sportive.",
+        "Pour préparer votre premier échange, vous pouvez noter vos questions, vos habitudes et ce que vous attendez du rendez-vous. Aucun objectif chiffré ni programme standard ne sont annoncés sur cette démonstration : le cadre de l’accompagnement doit être discuté avec le professionnel.",
+        "Un lien Doctolib est proposé depuis le site du pôle. Utilisez la fiche du praticien pour connaître les créneaux, le motif de consultation à sélectionner et les conditions du rendez-vous."
+      ],
+      "questions": [
+        {"q": "À qui s’adresser pour une question d’alimentation ?", "a": "Jonathan Herjean est le professionnel présenté pour l’activité de diététique et nutrition du pôle."},
+        {"q": "Que préparer avant le premier échange ?", "a": "Vous pouvez noter vos questions et vos attentes. Demandez au praticien quels documents sont utiles dans votre situation."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/nutritionniste.html", "https://www.pole-sante-sport-fontainebleau.fr/nutri1.html", "https://www.doctolib.fr/dieteticien/fontainebleau/jonathan-herjean"]
+    },
+    {
+      "slug": "etiopathie",
+      "title": "Étiopathie",
+      "category": "bien-etre",
+      "intro": "Morgane Palomo reçoit sur rendez-vous au 160 rue Grande pour l’activité d’étiopathie.",
+      "paragraphs": [
+        "L’étiopathie est l’une des activités manuelles présentées sur le site du Pôle Santé Sport. Morgane Palomo en est l’interlocutrice identifiée et dispose d’un contact direct pour organiser un rendez-vous.",
+        "Un premier contact permet de décrire votre demande, de poser vos questions sur le déroulement de la séance et de vérifier si l’accompagnement proposé correspond à vos attentes. Cette page ne formule aucune promesse de résultat.",
+        "Les rendez-vous sont indiqués au 160 rue Grande. Confirmez auprès de la praticienne l’horaire, les modalités d’accès et les conditions de la séance avant votre déplacement."
+      ],
+      "questions": [
+        {"q": "Comment contacter l’activité d’étiopathie ?", "a": "Utilisez les coordonnées de Morgane Palomo dans l’annuaire des praticiens."},
+        {"q": "Le rendez-vous se déroule-t-il au 143 rue Grande ?", "a": "La page d’étiopathie indique le 160 rue Grande, 77300 Fontainebleau. Le pôle possède deux adresses distinctes dans la même rue."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/etiopathe1.html", "https://www.pole-sante-sport-fontainebleau.fr/etiopathie.html"]
+    },
+    {
+      "slug": "kine-esthetique-lpg",
+      "title": "Kiné esthétique LPG",
+      "category": "bien-etre",
+      "intro": "Marie Anciello-Taffanel vous renseigne sur l’activité de kiné esthétique LPG au 160 rue Grande.",
+      "paragraphs": [
+        "Le Pôle Santé Sport présente une activité de kiné esthétique LPG assurée par Marie Anciello-Taffanel. Le site mentionne un appareil Cellu M6 Alliance.",
+        "Les prestations disponibles, le déroulement d’une séance et les précautions à prendre sont à préciser directement avec la praticienne. Aucun forfait, tarif ou résultat esthétique n’est annoncé sur cette démonstration.",
+        "L’accueil se fait sur rendez-vous au 160 rue Grande, 77300 Fontainebleau. Prenez contact avant de vous déplacer pour échanger sur votre demande et obtenir les informations pratiques."
+      ],
+      "questions": [
+        {"q": "Quel appareil est mentionné par le pôle ?", "a": "Le site public mentionne le Cellu M6 Alliance. Sa disponibilité actuelle et les prestations associées restent à confirmer avec la praticienne."},
+        {"q": "Où obtenir le tarif et les modalités ?", "a": "Contactez Marie Anciello-Taffanel. Aucun tarif vérifié n’est publié dans cette démonstration."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/esthetique.html", "https://www.pole-sante-sport-fontainebleau.fr/lpg1.html"]
+    },
+    {
+      "slug": "pilates",
+      "title": "Pilates",
+      "category": "mouvement",
+      "intro": "L’Espace Pilates propose des cours particuliers et collectifs, au sol et sur machines, au 143 rue Grande.",
+      "paragraphs": [
+        "Jean-Luc Tutakowski est l’interlocuteur de l’Espace Pilates présenté par le pôle. Le studio, situé au centre de Fontainebleau, propose plusieurs formats de cours : individuels ou collectifs, au sol ou sur machines.",
+        "Avant de choisir un cours, contactez le studio pour parler de votre expérience, de vos attentes et du format disponible. Le planning, la composition des groupes et le matériel à apporter sont à confirmer directement.",
+        "La page du pôle renvoie vers le site de l’Espace Pilates pour en savoir plus. Les créneaux du studio lui sont propres et ne correspondent pas aux horaires de l’ensemble des praticiens du pôle."
+      ],
+      "questions": [
+        {"q": "Les cours sont-ils individuels ou collectifs ?", "a": "Le site annonce les deux formats, au sol et sur machines. Renseignez-vous auprès de l’Espace Pilates pour connaître les possibilités actuelles."},
+        {"q": "Comment réserver un premier cours ?", "a": "Contactez Jean-Luc Tutakowski ou consultez le site de l’Espace Pilates, accessible depuis sa fiche."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/pilate.html", "https://www.pole-sante-sport-fontainebleau.fr/pilates1.html"]
+    },
+    {
+      "slug": "facialiste",
+      "title": "Facialiste",
+      "category": "bien-etre",
+      "intro": "Nadège Becquet propose des massages du visage sur rendez-vous au 160 rue Grande.",
+      "paragraphs": [
+        "L’activité de facialiste du Pôle Santé Sport est présentée par Nadège Becquet. La carte publique mentionne le massage facial détente, le massage japonais Kobi-do, le massage Gua Sha et le stretching facial.",
+        "Pour choisir une séance, prenez contact avec la praticienne et exposez vos attentes. Elle pourra préciser les gestes proposés, la durée, les conditions et les précautions à connaître avant de réserver.",
+        "Les rendez-vous ont lieu au 160 rue Grande, à Fontainebleau. Cette présentation décrit les prestations affichées par le pôle sans promettre d’effet médical ou de résultat esthétique."
+      ],
+      "questions": [
+        {"q": "Quels massages du visage sont annoncés ?", "a": "Le site mentionne le massage facial détente, le Kobi-do, le Gua Sha et le stretching facial. Confirmez la carte actuelle auprès de Nadège Becquet."},
+        {"q": "Les tarifs sont-ils disponibles ici ?", "a": "Aucun tarif vérifié n’est renseigné dans cette démonstration. La praticienne vous indiquera les conditions de la séance choisie."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/face.html", "https://www.pole-sante-sport-fontainebleau.fr/faciale.html"]
+    },
+    {
+      "slug": "gestalt-therapie",
+      "title": "Gestalt-thérapie",
+      "category": "bien-etre",
+      "intro": "Frédérique Marty et Didier Lapôtre sont les interlocuteurs de l’activité de Gestalt-thérapie au 160 rue Grande.",
+      "paragraphs": [
+        "La page du pôle présente une activité de Gestalt-thérapie centrée sur l’expérience vécue et la relation. Frédérique Marty et Didier Lapôtre reçoivent sur rendez-vous avec des contacts distincts.",
+        "Pour un premier échange, contactez la personne de votre choix afin de préciser votre demande et de vous renseigner sur le cadre des séances. La durée, les modalités de suivi et les honoraires sont à confirmer directement.",
+        "Le site historique évoque différents publics. La possibilité d’accueillir une personne mineure ou un couple doit être vérifiée auprès du praticien concerné avant de réserver. Aucun titre de psychologue, psychiatre ou psychothérapeute n’est attribué par cette démonstration."
+      ],
+      "questions": [
+        {"q": "Qui contacter pour une première prise de renseignements ?", "a": "Frédérique Marty ou Didier Lapôtre, à l’aide de leurs coordonnées respectives dans l’annuaire du pôle."},
+        {"q": "Peut-on réserver pour un couple ou une personne mineure ?", "a": "Le site historique mentionne ces publics. Contactez le praticien choisi pour vérifier ses possibilités actuelles et les modalités du premier rendez-vous."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/gestalt.html", "https://www.pole-sante-sport-fontainebleau.fr/gest.html"]
+    },
+    {
+      "slug": "yoga",
+      "title": "Yoga",
+      "category": "mouvement",
+      "intro": "Une pratique de postures et de respiration, proposée sur rendez-vous au 143 rue Grande.",
+      "paragraphs": [
+        "L’activité yoga du Pôle Santé Sport est présentée autour des postures et de la respiration. Raj est le prénom indiqué sur la page mobile du pôle.",
+        "La page détaillée mentionne des cours individuels et de groupe. Pour connaître les formats actuellement proposés, les niveaux accueillis et le planning, contactez directement l’intervenante avant de réserver.",
+        "L’adresse publiée est le 143 rue Grande, 77300 Fontainebleau. Demandez également quel matériel apporter et quelles sont les conditions d’inscription pour le cours retenu."
+      ],
+      "questions": [
+        {"q": "Quels types de cours sont présentés ?", "a": "Le site du pôle évoque des cours individuels et de groupe, associant postures et respiration. L’offre et le planning actuels sont à confirmer directement."},
+        {"q": "Où se renseigner pour débuter ?", "a": "Le contact yoga figure dans l’annuaire des intervenants. Vous pourrez préciser votre expérience et demander les informations utiles au premier cours."}
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/yoga.html", "https://www.pole-sante-sport-fontainebleau.fr/yoga1.html"]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "preparer-premier-rendez-vous",
+      "title": "Votre premier rendez-vous : les bonnes informations à préparer",
+      "category": "Avant de venir",
+      "excerpt": "Le nom du praticien, la bonne adresse et quelques questions simples : les repères pour préparer votre venue.",
+      "paragraphs": [
+        "Commencez par identifier le praticien et la prestation souhaitée. Au Pôle Santé Sport Fontainebleau, les rendez-vous sont organisés auprès des différents professionnels. Certains disposent d’un lien de réservation en ligne ; les autres proposent un contact direct.",
+        "Lors de la réservation, demandez quels documents et effets personnels apporter. Si vous avez une prescription, des comptes rendus ou un équipement déjà utilisé, indiquez-le au professionnel : il vous dira ce qui sera utile. Notez aussi les questions que vous souhaitez lui poser.",
+        "Vérifiez enfin l’adresse portée sur votre confirmation. Le pôle est réparti entre le 143 et le 160 rue Grande. Les horaires dépendent du praticien et de votre rendez-vous. En cas d’empêchement, utilisez le contact ou le service avec lequel vous avez réservé."
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://pole-sante-sport-fontainebleau.fr/kine2.html", "https://www.pole-sante-sport-fontainebleau.fr/podo1.html", "https://www.pole-sante-sport-fontainebleau.fr/etiopathe1.html"]
+    },
+    {
+      "slug": "choisir-son-interlocuteur",
+      "title": "Trouver le bon interlocuteur au sein du pôle",
+      "category": "Le pôle en pratique",
+      "excerpt": "Un même lieu rassemble plusieurs activités. Voici comment retrouver le professionnel correspondant à votre demande.",
+      "paragraphs": [
+        "Le Pôle Santé Sport réunit dix activités : kinésithérapie, podologie, ostéopathie, diététique et nutrition, étiopathie, kiné esthétique LPG, Pilates, facialiste, Gestalt-thérapie et yoga. Leurs modalités et leurs intervenants sont distincts.",
+        "Si vous connaissez déjà le nom de votre praticien, l’annuaire constitue le chemin le plus direct. Si vous recherchez une activité précise, ouvrez sa page pour retrouver la personne à contacter, le lieu du rendez-vous et les informations publiques disponibles.",
+        "Une page de présentation ne permet pas de déterminer à elle seule quel accompagnement convient à un problème de santé. Si votre demande ne correspond pas clairement à une activité ou à une prescription déjà reçue, demandez conseil à un professionnel de santé qui connaît votre situation."
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://www.pole-sante-sport-fontainebleau.fr/index0.html"]
+    },
+    {
+      "slug": "venir-rue-grande-fontainebleau",
+      "title": "143 ou 160 rue Grande : préparer votre venue à Fontainebleau",
+      "category": "Accès",
+      "excerpt": "Deux adresses dans la même rue : vérifiez celle de votre rendez-vous avant de lancer votre itinéraire.",
+      "paragraphs": [
+        "Le Pôle Santé Sport Fontainebleau présente deux adresses : 143 et 160 rue Grande, 77300 Fontainebleau. Le numéro à sélectionner dépend de votre activité et du praticien avec lequel vous avez rendez-vous.",
+        "Les pages publiques indiquent le 143 pour la kinésithérapie, la podologie, l’ostéopathie, la diététique et nutrition, le Pilates et le yoga. Le 160 est indiqué pour l’étiopathie, la kiné esthétique LPG, l’activité de facialiste et la Gestalt-thérapie. Reportez-vous également à la confirmation de votre réservation.",
+        "Pour votre trajet, utilisez l’itinéraire correspondant au bon numéro de rue. Les conditions de stationnement, l’entrée exacte et les possibilités d’accès avec un besoin particulier ne sont pas suffisamment documentées dans les sources consultées : faites-les préciser par votre interlocuteur avant de venir."
+      ],
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://www.pole-sante-sport-fontainebleau.fr/pilates1.html", "https://www.pole-sante-sport-fontainebleau.fr/yoga1.html", "https://www.pole-sante-sport-fontainebleau.fr/etiopathe1.html", "https://www.pole-sante-sport-fontainebleau.fr/lpg1.html", "https://www.pole-sante-sport-fontainebleau.fr/face.html", "https://www.pole-sante-sport-fontainebleau.fr/gest.html"]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Comment prendre rendez-vous ?",
+      "a": "Choisissez votre activité ou votre praticien, puis utilisez son contact direct. Des liens Doctolib sont publiés pour la podologie, l’ostéopathie et la diététique. Les autres rendez-vous se préparent auprès de l’interlocuteur indiqué.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/podo1.html", "https://www.pole-sante-sport-fontainebleau.fr/osteo1.html", "https://www.pole-sante-sport-fontainebleau.fr/nutri1.html"]
+    },
+    {
+      "q": "Le pôle se trouve-t-il au 143 ou au 160 rue Grande ?",
+      "a": "Les deux adresses sont utilisées. Le 143 accueille les activités de kinésithérapie, podologie, ostéopathie, diététique, Pilates et yoga. Le 160 est indiqué pour l’étiopathie, le LPG, la facialiste et la Gestalt-thérapie. Vérifiez l’adresse de votre praticien avant votre venue.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://www.pole-sante-sport-fontainebleau.fr/index0.html"]
+    },
+    {
+      "q": "Quels sont les horaires d’ouverture ?",
+      "a": "Les professionnels reçoivent sur rendez-vous. Aucun horaire commun à l’ensemble du pôle n’a été confirmé. Consultez les disponibilités du praticien choisi ou contactez-le directement.",
+      "sourceUrls": ["https://pole-sante-sport-fontainebleau.fr/kine2.html", "https://www.pole-sante-sport-fontainebleau.fr/etiopathe1.html", "https://www.pole-sante-sport-fontainebleau.fr/pilate.html"]
+    },
+    {
+      "q": "Le pôle s’adresse-t-il uniquement aux sportifs ?",
+      "a": "Le site présente des activités de soins, de mouvement et de bien-être, dont certaines concernent le sport. Les publics accueillis varient selon les professionnels ; contactez celui qui correspond à votre demande.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://www.pole-sante-sport-fontainebleau.fr/nutritionniste.html", "https://www.pole-sante-sport-fontainebleau.fr/yoga.html"]
+    },
+    {
+      "q": "Quels documents dois-je apporter ?",
+      "a": "Demandez les consignes au moment de la réservation. Selon le rendez-vous, le praticien pourra vous préciser les documents, vêtements ou équipements utiles. Aucune liste unique n’a été confirmée pour l’ensemble du pôle.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html"]
+    },
+    {
+      "q": "Où consulter les tarifs et les conditions de remboursement ?",
+      "a": "Les tarifs et les conditions de prise en charge dépendent du professionnel et de la prestation. Ils ne sont pas renseignés dans cette démonstration ; demandez-les directement au praticien avant de réserver.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html"]
+    },
+    {
+      "q": "L’accès est-il adapté à un besoin particulier ?",
+      "a": "Les informations disponibles ne permettent pas de confirmer les conditions d’accessibilité de chaque adresse. Contactez votre praticien pour vérifier l’entrée et les aménagements correspondant à votre besoin.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html"]
+    },
+    {
+      "q": "Cette démonstration permet-elle de confirmer un rendez-vous ?",
+      "a": "La démonstration présente des informations publiques et renvoie vers les coordonnées ou services publiés par le pôle. Un rendez-vous est confirmé uniquement par le praticien ou le service de réservation utilisé. Cette URL de démonstration est publique.",
+      "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html"]
+    }
+  ],
+  "legal": {
+    "paragraphs": [
+      "Ce site est une proposition de refonte et une démonstration non officielle du Pôle Santé Sport Fontainebleau. Les informations ont été rapprochées des pages publiques du pôle le 10 octobre 2026. Elles restent à valider par les responsables et les professionnels avant un lancement officiel.",
+      "La démonstration est accessible publiquement. La demande de non-indexation destinée aux moteurs de recherche ne constitue ni une protection par mot de passe ni une garantie de confidentialité.",
+      "Les informations présentées servent à découvrir les activités et à retrouver leurs contacts. Elles ne constituent pas un diagnostic, une prescription ou une garantie de résultat. Les rendez-vous, honoraires et conditions des prestations sont à confirmer auprès du professionnel concerné.",
+      "Les liens de réservation et d’itinéraire ouvrent des services tiers, qui appliquent leurs propres conditions d’utilisation et de protection des données. La confirmation d’un rendez-vous relève du praticien ou du service de réservation utilisé.",
+      "Les mentions d’identification de l’éditeur, de publication et d’hébergement doivent être complétées avec les informations exactes du responsable de cette démonstration puis du futur site officiel. Le nom commercial et les adresses de consultation ne permettent pas, à eux seuls, d’identifier l’entité juridique éditrice.",
+      "Avant toute collecte de données par le futur site, une information adaptée doit préciser le responsable du traitement, son objectif, sa base légale, ses destinataires, la durée de conservation, les droits des personnes et le moyen de les exercer. Aucun renseignement médical ne doit être saisi dans un espace de démonstration."
+    ],
+    "missing": [
+      "Identité et coordonnées complètes de l’éditeur de la démonstration et du futur site officiel.",
+      "Forme juridique, immatriculation et autres mentions applicables à l’entité éditrice, après confirmation de son statut.",
+      "Nom du responsable de publication et adresse de contact éditorial.",
+      "Identité et coordonnées de l’hébergeur retenu pour le site officiel ; mentions de l’hébergeur de la démonstration à finaliser au déploiement.",
+      "Informations professionnelles réglementaires applicables à chaque praticien, après vérification.",
+      "Titularité des droits et autorisations de publication pour le logo, les photographies et les personnes reconnaissables.",
+      "Responsable du traitement, contacts, durées et destinataires exacts pour les éventuels formulaires et outils du site officiel.",
+      "Conditions commerciales et dispositif de médiation applicables aux prestations concernées, à déterminer selon les activités et contrats réels.",
+      "Date demandée pour le retrait de la popup de démonstration : non fournie."
+    ],
+    "sourceUrls": ["https://www.pole-sante-sport-fontainebleau.fr/index.html", "https://entreprendre.service-public.gouv.fr/vosdroits/F37351", "https://entreprendre.service-public.gouv.fr/vosdroits/F31228", "https://www.cnil.fr/fr/exemples-de-formulaire-de-collecte-de-donnees-caractere-personnel"]
+  }
+}

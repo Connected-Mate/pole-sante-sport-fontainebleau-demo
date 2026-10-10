@@ -1,0 +1,16 @@
+const menuButton=document.querySelector('.menu-toggle');
+menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));document.getElementById('navigation').classList.toggle('open',open);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuButton?.getAttribute('aria-expanded')==='true'){menuButton.click();menuButton.focus();}});
+const dialog=document.querySelector('#demo-dialog');
+let demoSeen=false;try{demoSeen=sessionStorage.getItem('pss-demo-seen')==='yes';}catch{}
+if(dialog&&!demoSeen)dialog.showModal();
+const acknowledge=()=>{try{sessionStorage.setItem('pss-demo-seen','yes');}catch{}};
+document.querySelector('#close-demo')?.addEventListener('click',()=>{acknowledge();dialog.close();});
+dialog?.addEventListener('cancel',acknowledge);
+document.querySelectorAll('[data-open-demo]').forEach(b=>{if(dialog)b.addEventListener('click',()=>dialog.showModal());else b.hidden=true;});
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});document.querySelectorAll('.service-card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter);}));
+const select=document.querySelector('#speciality-select');
+if(select){const filter=()=>{let count=0;document.querySelectorAll('.person').forEach(p=>{p.hidden=select.value!=='all'&&p.dataset.service!==select.value;if(!p.hidden)count++;});document.querySelector('#results-count').textContent=`${count} interlocuteur${count>1?'s':''}`;};const requested=new URLSearchParams(location.search).get('specialite');if([...select.options].some(o=>o.value===requested))select.value=requested;select.addEventListener('change',filter);filter();}
+document.querySelector('#load-map')?.addEventListener('click',e=>{const q=e.currentTarget.dataset.query;const frame=document.createElement('iframe');frame.src=`https://maps.google.com/maps?q=${q}&output=embed`;frame.title='Google Maps : 143 rue Grande, Fontainebleau';frame.referrerPolicy='no-referrer';frame.loading='lazy';document.querySelector('#map-slot').replaceChildren(frame);});
+const retireAt=document.body.dataset.retireAt;
+if(retireAt&&new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())>=retireAt){dialog?.close();document.body.classList.add('demo-expired');const main=document.querySelector('main');main.replaceChildren();const box=document.createElement('section');box.className='page-intro container';const h=document.createElement('h1');h.textContent='Cette démonstration est terminée.';const p=document.createElement('p');p.textContent='Retrouvez les informations et les contacts sur le site actuel du Pôle Santé Sport Fontainebleau.';const a=document.createElement('a');a.href='https://pole-sante-sport-fontainebleau.fr/';a.className='button';a.textContent='Consulter le site actuel ↗';box.append(h,p,a);main.append(box);document.querySelector('.mobile-appointment')?.remove();}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Atelier éditorial · Administration locale</title>
+  <link rel="stylesheet" href="/admin/admin.css"><script src="/admin/admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a href="/" class="brand">Pôle Santé Sport<span>Atelier éditorial</span></a><div class="local-label"><span></span> Administration locale</div></header>
+  <main>
+    <section id="login-panel" class="login-panel" aria-labelledby="login-title">
+      <p class="eyebrow">Votre espace de travail</p><h1 id="login-title">Des contenus<br>toujours à jour.</h1>
+      <p>Connectez-vous depuis cet ordinateur pour préparer, valider et publier les contenus du site local.</p>
+      <form id="login-form"><label for="password">Mot de passe local</label><input id="password" name="password" type="password" autocomplete="current-password" required><button type="submit">Se connecter <span aria-hidden="true">→</span></button></form>
+      <p class="hint">Les identifiants sont conservés dans <code>.local/access.json</code>, sur cet ordinateur. Cet espace ne reçoit aucune donnée patient.</p>
+    </section>
+    <section id="workspace" hidden aria-labelledby="workspace-title">
+      <div class="workspace-heading"><div><p class="eyebrow">Écrire · relire · publier</p><h1 id="workspace-title">L’atelier éditorial.</h1></div><button class="button-secondary" id="logout">Se déconnecter</button></div>
+      <p class="intro">Les modifications restent locales jusqu’au déploiement sur GitHub Pages. La validation vérifie le format ; la relecture des informations et des droits reste nécessaire.</p>
+      <div class="steps" aria-label="Étapes de publication"><span>01 <strong>Brouillon</strong></span><span>02 <strong>Validation</strong></span><span>03 <strong>Publication locale</strong></span></div>
+      <p class="hint">Modifiez les champs ci-dessous, puis enregistrez votre brouillon. N’insérez aucune information personnelle de patient.</p>
+      <p id="guided-warning" class="hint" hidden>Le JSON avancé contient une erreur. Corrigez-le pour retrouver l’édition guidée.</p>
+      <fieldset id="guided-editor" class="guided-editor"><legend class="sr-only">Édition guidée des contenus</legend>
+        <div class="guided-grid"><section class="guided-card" aria-labelledby="home-heading"><h2 id="home-heading">Accueil & informations</h2>
+          <label for="hero-title">Titre de l’accueil</label><input id="hero-title" type="text" maxlength="500">
+          <label for="hero-text">Texte de présentation</label><textarea id="hero-text" rows="4" maxlength="5000"></textarea>
+          <label for="hours-note">Horaires et rendez-vous</label><textarea id="hours-note" rows="3" maxlength="5000"></textarea>
+          <label for="retire-date">Date de retrait de la popup</label><input id="retire-date" type="date" aria-describedby="retire-help"><p class="hint" id="retire-help">Laissez vide si aucune date n’est fixée. Le retrait de la popup ne rend pas cette démonstration officielle et ne retire pas la non-indexation.</p>
+        </section><section class="guided-card" aria-labelledby="team-heading"><h2 id="team-heading">Équipe & coordonnées</h2>
+          <label for="person-select">Choisir un praticien</label><select id="person-select"></select>
+          <div id="person-fields"><label for="person-name">Nom</label><input id="person-name" type="text"><label for="person-role">Profession ou activité</label><input id="person-role" type="text"><label for="person-address">Adresse de consultation</label><input id="person-address" type="text"><label for="person-phone">Téléphone</label><input id="person-phone" type="tel"><label for="person-booking">Lien de réservation</label><input id="person-booking" type="url" placeholder="https://…"></div>
+        </section></div>
+        <section class="guided-card editorial-guided" aria-labelledby="content-heading"><h2 id="content-heading">Prestations & articles</h2><label for="entry-select">Choisir une page à modifier</label><select id="entry-select"></select>
+          <div id="entry-fields"><label for="entry-title">Titre de la page</label><input id="entry-title" type="text"><label for="entry-intro">Introduction ou résumé</label><textarea id="entry-intro" rows="3"></textarea><label for="entry-paragraphs">Texte de la page</label><textarea id="entry-paragraphs" rows="9" aria-describedby="paragraph-help"></textarea><p class="hint" id="paragraph-help">Séparez chaque paragraphe par une ligne vide.</p><label for="entry-sources">Sources des informations</label><textarea id="entry-sources" rows="3" aria-describedby="sources-help"></textarea><p class="hint" id="sources-help">Un lien complet par ligne, commençant par https:// ou http://.</p></div>
+        </section>
+      </fieldset>
+      <details class="advanced-editor"><summary>Réglages avancés · Tous les contenus au format JSON</summary><p class="hint" id="json-help">L’édition avancée donne accès à tous les champs, aux FAQ et aux mentions légales. Conservez les noms des champs, les guillemets et les virgules. Les champs guidés et le JSON restent synchronisés.</p><div class="editor-grid"><section class="editor-card"><label for="site-editor">Informations de l’établissement</label><textarea id="site-editor" spellcheck="false" aria-describedby="json-help"></textarea></section><section class="editor-card"><label for="editorial-editor">Contenus éditoriaux</label><textarea id="editorial-editor" spellcheck="false" aria-describedby="json-help"></textarea></section></div></details>
+      <p id="draft-state" class="draft-state"></p><div class="actions"><button id="save-draft">Enregistrer le brouillon</button><button id="validate-draft" class="button-secondary">Valider le brouillon</button><button id="publish-draft" class="button-secondary">Publier localement</button><a class="text-link" href="/" target="_blank" rel="noopener">Voir le site local ↗</a></div>
+      <section class="history-card"><div class="section-heading"><div><p class="eyebrow">Conserver une trace</p><h2>Historique & sauvegarde</h2></div><a class="button-secondary" href="/api/backup" download>Télécharger la sauvegarde</a></div><p class="hint">Une version est conservée avant et après chaque publication. Restaurer prépare un nouveau brouillon à valider. La sauvegarde contient les contenus et l’historique, sans identifiants.</p><ul id="history-list"></ul></section>
+      <section class="publication-note" aria-labelledby="publication-heading"><h2 id="publication-heading">Comment mettre en ligne ?</h2><p>« Publier localement » reconstruit le dossier <code>dist/</code> sur cet ordinateur. Après relecture, suivez le guide du projet pour envoyer les changements vers GitHub et lancer le déploiement Pages. Ce back-office ne fonctionne pas sur GitHub Pages et n’y est pas exporté.</p></section>
+    </section>
+    <div id="message" role="status" aria-live="polite" tabindex="-1" hidden></div>
+  </main><footer>Administration locale · Session de 8 heures · Aucun envoi automatique vers GitHub</footer>
+</body>
+</html>

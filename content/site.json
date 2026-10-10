@@ -1,0 +1,177 @@
+{
+  "name": "Pôle Santé Sport Fontainebleau",
+  "address": "143 rue Grande",
+  "addressLocality": "Fontainebleau",
+  "postalCode": "77300",
+  "heroTitle": "Le soin. Le mouvement. Vous.",
+  "heroText": "Des disciplines complémentaires, un même lieu de rencontre. Retrouvez votre praticien au cœur de Fontainebleau.",
+  "phone": "",
+  "bookingUrl": "",
+  "hoursNote": "Consultations sur rendez-vous. Les horaires dépendent du praticien et de l’activité.",
+  "officialUrl": "https://pole-sante-sport-fontainebleau.fr/",
+  "publicBaseUrl": "https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/",
+  "objective": "appels-et-rendez-vous",
+  "demo": {
+    "enabled": true,
+    "retireAt": null
+  },
+  "media": {
+    "approved": true,
+    "approvedBy": "Utilisateur, conversation du 10 octobre 2026",
+    "assets": []
+  },
+  "addresses": [
+    {
+      "street": "143 rue Grande",
+      "label": "Le pôle",
+      "note": "Vérifiez l’adresse indiquée par votre praticien lors de la réservation."
+    },
+    {
+      "street": "160 rue Grande",
+      "label": "Le second espace",
+      "note": "Certaines activités sont proposées à cette adresse. Consultez la fiche de votre intervenant."
+    }
+  ],
+  "team": [
+    {
+      "name": "Mickaël Becquet",
+      "role": "Masseur-kinésithérapeute",
+      "service": "kinesitherapie",
+      "address": "143 rue Grande",
+      "phone": "06 84 13 23 20",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "note": ""
+    },
+    {
+      "name": "Raul Hernandez",
+      "role": "Masseur-kinésithérapeute",
+      "service": "kinesitherapie",
+      "address": "143 rue Grande",
+      "phone": "07 81 27 60 23",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "note": ""
+    },
+    {
+      "name": "Alice Tomas",
+      "role": "Masseur-kinésithérapeute",
+      "service": "kinesitherapie",
+      "address": "143 rue Grande",
+      "phone": "07 44 75 42 24",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "note": ""
+    },
+    {
+      "name": "Louis Becquet",
+      "role": "Masseur-kinésithérapeute",
+      "service": "kinesitherapie",
+      "address": "143 rue Grande",
+      "phone": "06 70 60 95 60",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/kinesitherapie.html",
+      "note": ""
+    },
+    {
+      "name": "Carine Marie",
+      "role": "Pédicure-podologue",
+      "service": "podologie",
+      "address": "143 rue Grande",
+      "phone": "01 60 71 95 95",
+      "bookingUrl": "https://www.doctolib.fr/pedicure-podologue/fontainebleau/carine-marie",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/podologie.html",
+      "note": ""
+    },
+    {
+      "name": "Isabelle Trohel",
+      "role": "Ostéopathe",
+      "service": "osteopathie",
+      "address": "143 rue Grande",
+      "phone": "",
+      "bookingUrl": "https://www.doctolib.fr/osteopathe/fontainebleau/isabelle-trohel",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/osteopathie.html",
+      "note": "Numéro téléphonique à confirmer : il diffère entre le site historique et Doctolib. Utilisez le lien de réservation."
+    },
+    {
+      "name": "Jonathan Herjean",
+      "role": "Diététicien-nutritionniste",
+      "service": "dietetique-nutrition",
+      "address": "143 rue Grande",
+      "phone": "06 21 10 03 12",
+      "bookingUrl": "https://www.doctolib.fr/dieteticien/fontainebleau/jonathan-herjean",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/nutritionniste.html",
+      "note": "Plusieurs lieux figurent sur Doctolib : sélectionnez Fontainebleau."
+    },
+    {
+      "name": "Morgane Palomo",
+      "role": "Étiopathe",
+      "service": "etiopathie",
+      "address": "160 rue Grande",
+      "phone": "06 68 55 98 10",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/etiopathie.html",
+      "note": ""
+    },
+    {
+      "name": "Marie Anciello Taffanel",
+      "role": "Kiné-esthétique LPG",
+      "service": "kine-esthetique-lpg",
+      "address": "160 rue Grande",
+      "phone": "06 60 58 73 22",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/esthetique.html",
+      "note": ""
+    },
+    {
+      "name": "Nadège Becquet",
+      "role": "Facialiste",
+      "service": "facialiste",
+      "address": "160 rue Grande",
+      "phone": "06 83 49 30 34",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/faciale.html",
+      "note": ""
+    },
+    {
+      "name": "Jean-Luc Tutakowski",
+      "role": "Espace Pilates",
+      "service": "pilates",
+      "address": "143 rue Grande",
+      "phone": "06 87 25 94 19",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/pilate.html",
+      "note": ""
+    },
+    {
+      "name": "Frédérique Marty",
+      "role": "Gestalt-thérapie",
+      "service": "gestalt-therapie",
+      "address": "160 rue Grande",
+      "phone": "06 34 05 32 74",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
+      "note": ""
+    },
+    {
+      "name": "Didier Lapôtre",
+      "role": "Gestalt-thérapie",
+      "service": "gestalt-therapie",
+      "address": "160 rue Grande",
+      "phone": "06 70 63 72 65",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/gestalt.html",
+      "note": ""
+    },
+    {
+      "name": "Raj",
+      "role": "Yoga",
+      "service": "yoga",
+      "address": "143 rue Grande",
+      "phone": "07 55 62 86 86",
+      "bookingUrl": "",
+      "sourceUrl": "https://pole-sante-sport-fontainebleau.fr/yoga1.html",
+      "note": "Le site historique indique le 143 rue Grande. Présence actuelle et horaires à confirmer auprès de l’intervenante."
+    }
+  ]
+}

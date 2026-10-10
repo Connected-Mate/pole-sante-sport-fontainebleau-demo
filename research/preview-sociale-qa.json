@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-10T22:53:08.630Z",
+  "summary": {
+    "passed": 12,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "24 site pages declare the new social JPEG and complete card metadata",
+      "ok": true
+    },
+    {
+      "name": "social JPEG is served and decodes at exactly 1200 by 630 pixels",
+      "ok": true
+    },
+    {
+      "name": "animated preview has noindex, a decoded sport photo and loaded local Manrope font",
+      "ok": true
+    },
+    {
+      "name": "preview fits viewport 320px",
+      "ok": true
+    },
+    {
+      "name": "preview fits viewport 390px",
+      "ok": true
+    },
+    {
+      "name": "preview fits viewport 768px",
+      "ok": true
+    },
+    {
+      "name": "preview fits viewport 1440px",
+      "ok": true
+    },
+    {
+      "name": "reduced motion prevents animation and disables replay",
+      "ok": true
+    },
+    {
+      "name": "capture mode produces a stable 1200 by 630 card without surrounding controls",
+      "ok": true
+    },
+    {
+      "name": "normal motion starts, finishes within five seconds and can replay by keyboard",
+      "ok": true
+    },
+    {
+      "name": "preview, photo, fonts and links work under the GitHub repository path",
+      "ok": true
+    },
+    {
+      "name": "no JavaScript, HTTP or request failures",
+      "ok": true
+    }
+  ],
+  "additionalAxeAudits": {
+    "desktop1440": 0,
+    "mobile390": 0
+  },
+  "visualReview": "JPEG and desktop/mobile composition inspected; entire face and all text visible, no address or emoji."
+}

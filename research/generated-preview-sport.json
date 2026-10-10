@@ -1,0 +1,13 @@
+{
+  "asset": "sport-preview-photo",
+  "mode": "built-in image_gen",
+  "createdAt": "2026-10-11",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: premium French sports and health centre social preview, photo layer only; a web developer will add typography separately.\nScene: quiet light woodland trail, beautiful soft warm morning light, softly blurred beige, grey-green forest background with no distinctive or fabricated landmark.\nSubject: one adult woman around 35, ordinary healthy athletic build, jogging gently with fluid natural movement and calm attentive expression, no advertisement smile. She wears refined matte slate-blue and muted teal sports clothing with realistic fabric texture. Natural skin detail, believable elegant understated sport editorial photography, no glossy beauty retouch effect.\nComposition: portrait 4:5 photograph, frame from knees to above head, entire head, arms and torso inside the frame with at least 10 percent comfortable margin. Subject central, enough environment around her. Face visible in gentle three-quarter orientation. Arms, hands, fingers and leg positions anatomically correct for easy jogging. Both hands fully visible and natural.\nStyle: truly photographic, very high detail, premium magazine sports editorial, 85mm lens feel, sharp subject and lightly blurred background only, subtly warm highlights and deep slate shadows, sophisticated and reassuring mood about personal movement and wellbeing rather than extreme competition.\nConstraints: photograph only; absolutely no text, no logo, no watermark, no graphics or design framing, no address, no building, no medical props, no equipment, no other people. Do not resemble any famous athlete. No intense motion blur, exaggerated muscles, hyper-smooth skin, implausible pose, or synthetic CGI appearance.",
+  "sourcePath": "/Users/0104389S/.codex/generated_images/01a12801-ffb4-78f0-8725-87ed15272376/exec-0717e714-2f28-48ff-9c31-f80ae16f6645.png",
+  "originalPath": "output/imagegen/sport-preview-photo.png",
+  "webPath": "public/assets/generated/sport-preview-photo.webp",
+  "width": 1122,
+  "height": 1402,
+  "conversion": "WebP quality 90, no resizing or image retouching after generation",
+  "review": "Visually inspected. Single fictional adult runner in a forest, no text/logos/address/medical claims. Both hands and face clear. Natural slate apparel, soft warm morning light. Editorial illustration of movement; not a photographed patient or staff member."
+}

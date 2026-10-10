@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="Le soin, le mouvement et votre rythme : découvrez la nouvelle identité du Pôle Santé Sport.">
+  <meta name="theme-color" content="#163641">
+  <link rel="canonical" href="https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/share-preview.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Pôle Santé Sport">
+  <meta property="og:title" content="Le soin. Le mouvement. Votre rythme.">
+  <meta property="og:description" content="Le soin, le mouvement et votre rythme : découvrez la nouvelle identité du Pôle Santé Sport.">
+  <meta property="og:url" content="https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/share-preview.html">
+  <meta property="og:image" content="https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/assets/social/pole-sante-sport-preview-v2.jpg">
+  <meta property="og:image:secure_url" content="https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/assets/social/pole-sante-sport-preview-v2.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Le soin. Le mouvement. Votre rythme. Une sportive dans la forêt, aux couleurs du Pôle Santé Sport.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le soin. Le mouvement. Votre rythme.">
+  <meta name="twitter:description" content="Découvrez la nouvelle identité du Pôle Santé Sport, tournée vers le soin et le mouvement.">
+  <meta name="twitter:image" content="https://connected-mate.github.io/pole-sante-sport-fontainebleau-demo/assets/social/pole-sante-sport-preview-v2.jpg">
+  <meta name="twitter:image:alt" content="Le soin. Le mouvement. Votre rythme. Une sportive dans la forêt, aux couleurs du Pôle Santé Sport.">
+  <title>Le mouvement, à votre rythme — Pôle Santé Sport</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/generated/sport-preview-photo.webp" as="image">
+  <link rel="stylesheet" href="share-preview.css">
+  <script>if (new URLSearchParams(location.search).get('capture') === '1') document.documentElement.classList.add('capture');</script>
+</head>
+<body>
+  <main class="preview-page">
+    <header class="preview-toolbar" aria-label="Commandes de l’aperçu">
+      <p>Un nouvel élan.</p>
+      <button type="button" id="replay">Rejouer l’animation</button>
+    </header>
+    <div class="card-frame">
+      <article class="share-card" aria-labelledby="card-title">
+        <div class="card-photo">
+          <img src="assets/generated/sport-preview-photo.webp" width="1122" height="1402" alt="Une sportive en mouvement dans une lumière naturelle." decoding="sync" fetchpriority="high">
+        </div>
+        <div class="card-shade" aria-hidden="true"></div>
+        <svg class="movement-line" viewBox="0 0 1200 630" fill="none" aria-hidden="true">
+          <path d="M637 741C597 625 644 505 771 467C898 429 985 457 1044 381C1101 308 1074 213 1237 178" />
+        </svg>
+        <div class="card-content">
+          <div class="wordmark" aria-label="Pôle Santé Sport">
+            <span class="brand-rule" aria-hidden="true"></span>
+            <span>PÔLE<br>SANTÉ SPORT</span>
+          </div>
+          <div class="card-message">
+            <p class="card-kicker">SANTÉ &amp; MOUVEMENT</p>
+            <h1 id="card-title"><span>Le soin.</span><span>Le mouvement.</span><span class="warm">Votre rythme.</span></h1>
+          </div>
+          <p class="card-signature">L’attention au corps. L’envie d’avancer.</p>
+        </div>
+      </article>
+    </div>
+    <footer class="preview-footer">
+      <p>Proposition de refonte · Aperçu public</p>
+      <a href="index.html">Découvrir le site<svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg></a>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const capture = document.documentElement.classList.contains('capture');
+      const frame = document.querySelector('.card-frame');
+      const card = document.querySelector('.share-card');
+      const button = document.querySelector('#replay');
+      const motion = matchMedia('(prefers-reduced-motion: reduce)');
+      const resize = () => frame.style.setProperty('--card-scale', frame.clientWidth / 1200);
+      new ResizeObserver(resize).observe(frame);
+      resize();
+      const syncMotion = () => {
+        button.disabled = motion.matches;
+        button.textContent = motion.matches ? 'Animations désactivées' : 'Rejouer l’animation';
+        if (motion.matches) card.classList.remove('animate');
+      };
+      syncMotion();
+      motion.addEventListener('change', syncMotion);
+      const start = () => {
+        if (capture || motion.matches) return;
+        card.classList.remove('animate');
+        void card.offsetWidth;
+        card.classList.add('animate');
+      };
+      button.addEventListener('click', start);
+      Promise.all([document.fonts.ready, document.querySelector('.card-photo img').decode().catch(() => {})]).then(() => {
+        document.documentElement.dataset.previewReady = 'true';
+        start();
+      });
+    })();
+  </script>
+</body>
+</html>

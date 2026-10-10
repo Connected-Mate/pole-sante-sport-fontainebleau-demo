@@ -44,3 +44,11 @@ Le rapport [design-qa.json](research/design-qa.json) distingue l’exécution co
 `npm run export` crée `exports/site-public.zip` et `exports/sources-completes.zip`. Aucun mot de passe, aucune session, aucun historique local ni dépendance npm n’est inclus. Les sources incluent les instructions pour réinstaller et relancer le projet.
 
 Originaux des six visuels : `exports/visuels-generes-originaux.zip` ; prompts : `research/photographies-ia.md`.
+
+## Mise à jour du 11 octobre — aperçu sportif
+
+L’ancienne façade de l’aperçu de lien est remplacée par une composition sportive : photographie de course douce, Manrope, bleu profond et sable, sans adresse. La typographie et l’habillage sont codés en HTML/CSS. Carte fixe JPEG 1200 × 630 déclarée sur les 24 pages du site ; version animée publique : `share-preview.html`. Animation limitée à 4,5 secondes, rejouable au clavier, désactivée avec la préférence de réduction du mouvement.
+
+Douze contrôles spécifiques réussis et dix tests serveur/build réussis. Deux audits Axe supplémentaires de la page animée (ordinateur et mobile) n’ont relevé aucune violation. Ces contrôles ne constituent pas une certification. Les services de partage peuvent conserver temporairement l’ancienne vignette en cache ; les messages déjà envoyés ne sont pas modifiés par la publication.
+
+Fichiers : `public/assets/social/pole-sante-sport-preview-v2.jpg`, `output/social/preview-master.png`, `public/share-preview.html`, `public/share-preview.css`. Archive dédiée : `exports/apercu-social.zip`. Photo créée via l’outil intégré, provenance et prompt conservés dans `research/generated-preview-sport.json`. Instructions : `research/preview-sociale.md`.

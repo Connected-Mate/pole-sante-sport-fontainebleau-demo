@@ -1,5 +1,11 @@
 # Vérification de livraison — 10 octobre 2026
 
+## Mise à jour du 11 octobre — aperçu social sportif
+
+La vieille façade était encore référencée dans `og:image`. Les 24 pages de contenu déclarent maintenant le JPEG 1200 × 630 `assets/social/pole-sante-sport-preview-v2.jpg`, avec type/dimensions/alternative, nom du site et carte Twitter. Le front public `share-preview.html` ajoute une animation finie de 4,5 s et un mode réduit. Le JPEG et le master PNG 2400 × 1260 sont rendus depuis le même HTML/CSS.
+
+Dix tests serveur/build et douze contrôles de preview réussis. Deux audits Axe (ordinateur/mobile) sans violation. Cadrage du visage, lisibilité, absence d’adresse/emoji/façade inspectés ; chargement, clavier, réduction de mouvement, dimensions et sous-chemin GitHub vérifiés. Les autres pages du site ne sont pas modifiées visuellement par cette mise à jour. Provenance, prompt et processus : [preview-sociale.md](preview-sociale.md).
+
 ## Révision artistique : soin et mouvement
 
 Nouvelle identité visuelle bleu profond, pierre et sable, typographie Manrope auto-hébergée, photographies rectangulaires, cartes de disciplines illustrées et section mouvement sur l’accueil. Suppression des émojis décoratifs et des mentions publiques IA/retouche à la demande de l’utilisateur ; sources et provenance conservées dans le projet. Aucun contact, tarif, diplôme, avis ou résultat médical ajouté.

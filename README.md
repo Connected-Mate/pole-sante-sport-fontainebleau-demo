@@ -79,3 +79,11 @@ La provenance reste consignée dans les fichiers du projet. Voir [la direction a
 Les sorties PNG du modèle sont conservées dans `output/imagegen/` ; les fichiers diffusés sont `public/assets/generated/*-premium.webp` et `facade-retouchee.webp`, encodés en WebP qualité 90 sans recadrage, redimensionnement ni retouche supplémentaire lors de la conversion. Cette compression est avec perte ; les PNG restent intacts. La résolution native est de 1402 × 1122 px pour l’accueil (kinésithérapie), de 1536 × 1024 px pour les quatre autres illustrations et de 1373 × 1145 px pour la façade retouchée. La demande d’un rendu « 8K » guide l’esthétique et le détail : les fichiers ne sont pas en 8K natif. Les prompts exacts, sources et contrôles visuels sont documentés dans [le dossier des photographies IA](research/photographies-ia.md).
 
 Les six originaux PNG du nouveau jeu de visuels sont aussi livrés dans `exports/visuels-generes-originaux.zip`. Le détail des prompts et résolutions est dans [la provenance des photographies IA](research/photographies-ia.md).
+
+## Aperçu des liens et carte animée
+
+L’image de partage ne reprend plus la façade. Une carte sportive composée en HTML/CSS utilise une nouvelle photo, sans adresse dans le visuel. Le JPEG social est `public/assets/social/pole-sante-sport-preview-v2.jpg` (1200 × 630), son master est `output/social/preview-master.png` (2400 × 1260) et la version animée se trouve à `/share-preview.html`. Les balises Open Graph et Twitter des 24 pages de contenu pointent vers cette nouvelle ressource.
+
+Pour recréer la carte après édition de `public/share-preview.html` ou `public/share-preview.css` : `npm run render:preview`, puis `npm run build`. Le navigateur utilisé est Chrome local, paramétrable via `QA_CHROME_PATH`. `npm run test:preview` vérifie les métadonnées, les ressources, le responsive, le clavier et la réduction des animations. Le rendu est commité ; le workflow Pages n’exécute pas de capture navigateur.
+
+L’archive `exports/apercu-social.zip` contient le front, la photo, les polices et les rendus. Le dossier des photographies comporte désormais sept originaux (six visuels du site et une photo pour le partage). Voir [la documentation et les contrôles](research/preview-sociale.md) et [le prompt exact de la nouvelle photo](research/generated-preview-sport.json).
